@@ -176,7 +176,8 @@ def find_anchor_point_by_graph_truncated(question: str, graph: Graph, result: st
     anchor_list = []
     for node in graph.nodes:
         if len(node.inward_edge) == 0 and len(node.outward_edge) > 0:
-            chain_list = find_chain_list_by_DFS(node, set(), [], [])
+            chain_list = []
+            find_chain_list_by_DFS(node, set(), [], chain_list)
             for chain in chain_list:
                 list = find_anchor_point_truncated(question, chain, result, model, embedding_model, similarity_threshold)
                 for anchor in list:
