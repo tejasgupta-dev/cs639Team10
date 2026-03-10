@@ -1,4 +1,50 @@
-strategy\ fall/__pycache__
-*.pyc   
-.vscode
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# Bytecode
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Project-specific folders
+strategy fall/__pycache__/
+
+# Generated graph outputs
+outputs/
+graphs/
+*.png
+*.dot
+*.json
+
+# Misc
+*.tmp
+*.swp
