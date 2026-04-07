@@ -1,0 +1,12 @@
+networkx
+matplotlib
+numpy
+torch
+transformers
+accelerate
+vllm
+datasets
+sentence-transformers
+umap-learn
+scikit-learn
+huggingface_hub
