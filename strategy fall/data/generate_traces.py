@@ -7,13 +7,14 @@ from transformers import AutoTokenizer
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate reasoning traces using local GPU.")
-    parser.add_argument("--model", type=str, required=True, help="Hugging Face model path (e.g. Qwen/Qwen2.5-7B-Instruct)")
+    parser.add_argument("--model", type=str, required=True, help="Hugging Face model path (e.g. Qwen/Qwen2.5-7B-Instruct-AWQ)")
     parser.add_argument("--num_questions", type=int, default=50, help="Number of GSM8K questions to process")
     parser.add_argument("--n_samples", type=int, default=10, help="Number of trajectories per question")
     parser.add_argument("--temp", type=float, default=0.8, help="Sampling temperature")
     # Memory management
     parser.add_argument("--gpu_memory_utilization", type=float, default=0.8, help="Fraction of GPU memory to reserve")
     parser.add_argument("--max_model_len", type=int, default=2048, help="Limit context length to save VRAM")
+    parser.add_argument("--quantization", type=str, default=None, choices=["awq", "gptq", "squeezellm", None], help="Quantization method")
     return parser.parse_args()
 
 def get_base_prompt(question):
@@ -37,13 +38,13 @@ def main():
     ground_truths = gsm8k["answer"][:args.num_questions]
 
     print(f"Initializing vLLM for {args.model}...")
-    # Using memory-safe defaults for 11GB-12GB GPUs
     llm = LLM(
         model=args.model, 
         trust_remote_code=True,
         gpu_memory_utilization=args.gpu_memory_utilization,
         max_model_len=args.max_model_len,
-        enforce_eager=True
+        quantization=args.quantization,
+        enforce_eager=True 
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     
@@ -95,8 +96,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# Base Model: python strategy_fall/data/generate_traces.py --model Qwen/Qwen2.5-7B --num_questions 50
-# SFT Model: python strategy_fall/data/generate_traces.py --model Qwen/Qwen2.5-7B-Instruct --num_questions 50
-# RL Model: python strategy_fall/data/generate_traces.py --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B --num_questions 50
