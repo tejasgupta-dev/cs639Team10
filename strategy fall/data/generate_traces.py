@@ -11,18 +11,15 @@ def parse_args():
     parser.add_argument("--num_questions", type=int, default=50, help="Number of GSM8K questions to process")
     parser.add_argument("--n_samples", type=int, default=10, help="Number of trajectories per question")
     parser.add_argument("--temp", type=float, default=0.8, help="Sampling temperature")
+    # Memory management
+    parser.add_argument("--gpu_memory_utilization", type=float, default=0.8, help="Fraction of GPU memory to reserve")
+    parser.add_argument("--max_model_len", type=int, default=2048, help="Limit context length to save VRAM")
     return parser.parse_args()
 
 def get_base_prompt(question):
     """Prompt format for Base models (non-instruct). Uses few-shot CoT."""
     return f"""Question: Janet has 3 rabbits. She gets 2 more. How many total?
-Answer: Janet started with 3 rabbits. 
-She got 2 more. 
-3 + 2 = 5.
-Final Answer: 5
-
-Question: {question}
-Answer:"""
+Answer: Janet started with 3 rabbits. \nShe got 2 more. \n3 + 2 = 5.\nFinal Answer: 5\n\nQuestion: {question}\nAnswer:"""
 
 def get_instruct_prompt(question, model_id):
     """Prompt format for Instruct models using chat templates."""
@@ -35,12 +32,19 @@ def main():
     args = parse_args()
     
     print(f"Loading dataset...")
-    gsm8k = load_dataset("openai/gsm8k", "main", split="test")
+    gsm8k = load_dataset("openai/gsm8k", "main", split="test", trust_remote_code=True)
     questions = gsm8k["question"][:args.num_questions]
     ground_truths = gsm8k["answer"][:args.num_questions]
 
     print(f"Initializing vLLM for {args.model}...")
-    llm = LLM(model=args.model, trust_remote_code=True)
+    # Using memory-safe defaults for 11GB-12GB GPUs
+    llm = LLM(
+        model=args.model, 
+        trust_remote_code=True,
+        gpu_memory_utilization=args.gpu_memory_utilization,
+        max_model_len=args.max_model_len,
+        enforce_eager=True
+    )
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     
     is_instruct = "instruct" in args.model.lower() or "distill" in args.model.lower()
@@ -56,7 +60,7 @@ def main():
     sampling_params = SamplingParams(
         n=args.n_samples,
         temperature=args.temp,
-        max_tokens=1024,
+        max_tokens=args.max_model_len,
         stop=["Question:", "Answer:"] if not is_instruct else None
     )
 
@@ -80,8 +84,9 @@ def main():
         })
 
     model_basename = args.model.split("/")[-1]
-    output_path = f"strategy_fall/data/{model_basename}_traces.json"
-    os.makedirs("strategy_fall/data", exist_ok=True)
+    output_dir = "strategy_fall/data"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"{model_basename}_traces.json")
     
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
