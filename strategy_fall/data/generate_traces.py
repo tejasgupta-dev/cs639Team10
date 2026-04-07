@@ -14,7 +14,7 @@ def parse_args():
     # Memory management
     parser.add_argument("--gpu_memory_utilization", type=float, default=0.8, help="Fraction of GPU memory to reserve")
     parser.add_argument("--max_model_len", type=int, default=2048, help="Limit context length to save VRAM")
-    parser.add_argument("--quantization", type=str, default=None, choices=["awq", "gptq", "squeezellm", None], help="Quantization method")
+    parser.add_argument("--quantization", type=str, default=None, choices=["awq", "gptq", "squeezellm", "compressed-tensors", None], help="Quantization method")
     return parser.parse_args()
 
 def get_base_prompt(question):
