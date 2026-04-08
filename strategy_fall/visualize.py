@@ -1,28 +1,9 @@
-from __future__ import annotations
-
 from typing import Dict, Optional, Tuple
-
 import matplotlib.pyplot as plt
 import networkx as nx
+import numpy as np
 
 from utils import Graph, Node, Edge
-
-
-NODE_COLOR_MAP: Dict[Optional[str], str] = {
-    "question": "#4C78A8",
-    "reasoning": "#72B7B2",
-    "result": "#F58518",
-    "anchor": "#E45756",
-    None: "#B0B0B0",
-}
-
-EDGE_COLOR_MAP: Dict[Optional[str], str] = {
-    "leads to": "#4C78A8",
-    "equivalence": "#54A24B",
-    "contradiction": "#E45756",
-    "contrapositive": "#B279A2",
-    None: "#7F7F7F",
-}
 
 
 def to_networkx(graph: Graph) -> nx.DiGraph:
@@ -35,103 +16,125 @@ def to_networkx(graph: Graph) -> nx.DiGraph:
         G.add_node(
             node.node_id,
             label=_node_label(node),
-            node_type=getattr(node, "node_type", None),
             context=getattr(node, "context", ""),
         )
 
     for edge in graph.edges:
-        edge_type = getattr(edge, "edge_type", None)
         G.add_edge(
             edge.source.node_id,
             edge.target.node_id,
             weight=getattr(edge, "weight", 0),
-            edge_type=edge_type,
-            label=edge_type if edge_type is not None else "",
         )
 
     return G
 
 
-def _node_label(node: Node, max_len: int = 28) -> str:
+def _node_label(node: Node, max_len: int = 30) -> str:
     prefix = f"N{node.node_id}"
     text = (node.context or "").strip().replace("\n", " ")
     if len(text) > max_len:
         text = text[: max_len - 3] + "..."
-    return f"{prefix}: {text}" if text else prefix
+    return f"{prefix}\n{text}" if text else prefix
 
 
-def draw_graph(
+def get_hierarchical_pos(G: nx.DiGraph) -> Dict:
+    """
+    Constructs a hierarchical (Top-to-Bottom) layout based on topological depth.
+    If the graph has cycles (rare in reasoning), falls back to spring_layout.
+    """
+    try:
+        # Assign 'layers' based on topological order
+        levels = {}
+        for node in nx.topological_sort(G):
+            # level is 1 + max level of predecessors
+            preds = list(G.predecessors(node))
+            levels[node] = 1 + max([levels[p] for p in preds], default=0)
+        
+        # multipartite_layout uses 'subset' attribute
+        for node, val in levels.items():
+            G.nodes[node]['subset'] = val
+            
+        pos = nx.multipartite_layout(G, subset_key='subset', align='horizontal')
+        # Flip Y to ensure top-to-bottom
+        for node in pos:
+            pos[node][1] *= -1
+        return pos
+    except nx.NetworkXUnfeasible:
+        # Fallback for cycles (shouldn't happen in DAGs)
+        return nx.spring_layout(G, seed=42)
+
+
+def draw_fancy_graph(
     graph: Graph,
-    title: str = "Reasoning Graph",
-    figsize: Tuple[int, int] = (12, 8),
-    with_edge_labels: bool = True,
+    title: str = "Reasoning Strategy Map",
+    ax=None,
     save_path: Optional[str] = None,
 ) -> None:
     """
-    Draw a single reasoning graph.
+    A lush, colorful version of the reasoning graph.
     """
     G = to_networkx(graph)
-
     if len(G.nodes) == 0:
-        print("Graph is empty.")
         return
 
-    pos = nx.kamada_kawai_layout(G)
+    pos = get_hierarchical_pos(G)
+    
+    node_weights = np.array([G.degree(n, weight='weight') for n in G.nodes])
+    if node_weights.max() > 0:
+        node_sizes = 500 + 3000 * (node_weights / node_weights.max())
+    else:
+        node_sizes = [1500] * len(G.nodes)
 
-    node_colors = [
-        NODE_COLOR_MAP.get(G.nodes[n].get("node_type"), "#B0B0B0")
-        for n in G.nodes
-    ]
-    edge_colors = [
-        EDGE_COLOR_MAP.get(G.edges[e].get("edge_type"), "#7F7F7F")
-        for e in G.edges
-    ]
+    # Node color: distance from start (Topological level)
+    levels = {n: pos[n][1] for n in G.nodes}
+    min_l, max_l = min(levels.values()), max(levels.values())
+    if max_l != min_l:
+        colors = [(levels[n] - min_l) / (max_l - min_l) for n in G.nodes]
+    else:
+        colors = [0.5] * len(G.nodes)
 
-    labels = {n: G.nodes[n]["label"] for n in G.nodes}
-    edge_labels = {(u, v): G.edges[u, v].get("label", "") for u, v in G.edges}
-
-    plt.figure(figsize=figsize)
-    nx.draw_networkx_nodes(
-        G,
-        pos,
-        node_color=node_colors,
-        node_size=2200,
-        alpha=0.95,
-    )
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(12, 10))
+        
+    # Draw Edges with varying thickness and transparency
+    edge_weights = [G.edges[e]['weight'] for e in G.edges]
+    max_ew = max(edge_weights) if edge_weights else 1
+    edge_widths = [1 + 5 * (w / max_ew) for w in edge_weights]
+    
     nx.draw_networkx_edges(
-        G,
-        pos,
-        edge_color=edge_colors,
+        G, pos, ax=ax,
+        width=edge_widths,
+        edge_color="#A9A9A9",
+        alpha=0.4,
         arrows=True,
-        arrowsize=20,
-        width=2.0,
-        connectionstyle="arc3,rad=0.05",
+        arrowsize=15,
+        connectionstyle="arc3,rad=0.1"
     )
+
+    # Draw Nodes with a lush color map (Viridis or Plasma)
+    nodes = nx.draw_networkx_nodes(
+        G, pos, ax=ax,
+        node_size=node_sizes,
+        node_color=colors,
+        cmap=plt.cm.Spectral_r,
+        alpha=0.9,
+        edgecolors="white",
+        linewidths=1.5
+    )
+
+    # Draw Labels
     nx.draw_networkx_labels(
-        G,
-        pos,
-        labels=labels,
-        font_size=8,
-        font_weight="bold",
+        G, pos, ax=ax,
+        labels={n: G.nodes[n]['label'] for n in G.nodes},
+        font_size=7,
+        font_weight="bold"
     )
 
-    if with_edge_labels and len(G.edges) > 0:
-        nx.draw_networkx_edge_labels(
-            G,
-            pos,
-            edge_labels=edge_labels,
-            font_size=8,
-        )
+    ax.set_title(title, fontsize=16, fontweight="bold", pad=20)
+    ax.axis("off")
 
-    plt.title(title, fontsize=14, fontweight="bold")
-    plt.axis("off")
-    plt.tight_layout()
-    plt.savefig("sample_reasoning_graph.png", dpi=300, bbox_inches="tight")
-
-    if save_path:
-        plt.savefig(save_path, dpi=300, bbox_inches="tight")
-
-    plt.show()
+    if save_path and ax is None:
+        plt.savefig(save_path, dpi=300, bbox_inches="tight", transparent=False)
 
 
 def draw_graph_side_by_side(
@@ -139,75 +142,19 @@ def draw_graph_side_by_side(
     graph_b: Graph,
     title_a: str = "Graph A",
     title_b: str = "Graph B",
-    figsize: Tuple[int, int] = (16, 7),
+    figsize: Tuple[int, int] = (20, 10),
     save_path: Optional[str] = None,
 ) -> None:
     """
-    Quick comparison view for two graphs.
+    Generates a high-resolution side-by-side comparison of two strategy graphs.
     """
-    G1 = to_networkx(graph_a)
-    G2 = to_networkx(graph_b)
-
-    fig, axes = plt.subplots(1, 2, figsize=figsize)
-
-    for ax, G, title in [(axes[0], G1, title_a), (axes[1], G2, title_b)]:
-        if len(G.nodes) == 0:
-            ax.set_title(f"{title} (empty)")
-            ax.axis("off")
-            continue
-
-        pos = nx.spring_layout(G, seed=42)
-
-        node_colors = [
-            NODE_COLOR_MAP.get(G.nodes[n].get("node_type"), "#B0B0B0")
-            for n in G.nodes
-        ]
-        edge_colors = [
-            EDGE_COLOR_MAP.get(G.edges[e].get("edge_type"), "#7F7F7F")
-            for e in G.edges
-        ]
-        labels = {n: G.nodes[n]["label"] for n in G.nodes}
-
-        nx.draw_networkx_nodes(
-            G, pos, node_color=node_colors, node_size=1800, alpha=0.95, ax=ax
-        )
-        nx.draw_networkx_edges(
-            G,
-            pos,
-            edge_color=edge_colors,
-            arrows=True,
-            arrowsize=18,
-            width=2.0,
-            connectionstyle="arc3,rad=0.05",
-            ax=ax,
-        )
-        nx.draw_networkx_labels(G, pos, labels=labels, font_size=8, ax=ax)
-
-        ax.set_title(title, fontsize=12, fontweight="bold")
-        ax.axis("off")
-
+    fig, axes = plt.subplots(1, 2, figsize=figsize, facecolor="#F8F9FA")
+    
+    draw_fancy_graph(graph_a, title=title_a, ax=axes[0])
+    draw_fancy_graph(graph_b, title=title_b, ax=axes[1])
+    
     plt.tight_layout()
-
+    
     if save_path:
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
-
-    plt.show()
-
-
-if __name__ == "__main__":
-    g = Graph()
-
-    n0 = Node("Solve the equation", node_type="question", node_id=0)
-    n1 = Node("Define variables", node_type="reasoning", node_id=1)
-    n2 = Node("Apply formula", node_type="reasoning", node_id=2)
-    n3 = Node("Compute result", node_type="result", node_id=3)
-
-    e01 = Edge(n0, n1, weight=1.0, edge_type="leads to")
-    e12 = Edge(n1, n2, weight=1.0, edge_type="leads to")
-    e23 = Edge(n2, n3, weight=1.0, edge_type="leads to")
-
-    g.add_edge(e01)
-    g.add_edge(e12)
-    g.add_edge(e23)
-
-    draw_graph(g, title="Sample Reasoning Graph")
+        print(f"Saved fancy comparison to: {save_path}")
