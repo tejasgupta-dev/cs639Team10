@@ -1,0 +1,175 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_q1",
+  "nodes": [
+    {
+      "node_id": 3267,
+      "context": "[Planning] Next, we calculate the amount of white fiber neede...",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 3268,
+      "context": "[Conclusion] **Step 2:** Calculate the amount of white fiber ne...",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 5607,
+      "context": "[Conclusion] \\[    \\boxed{\\$1}    \\]",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 3214,
+      "context": "[Conclusion] First, identify the number of blue fiber bolts req...",
+      "node_type": "Conclusion",
+      "degree": 10
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 5
+    },
+    {
+      "node_id": 5399,
+      "context": "[Conclusion] \\(\\boxed{B + 2 \\text{ and } 2B + 2}\\)",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": 3214,
+      "target": 3268,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": 3268,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": 3214,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": 5399,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3214,
+      "target": 3214,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3214,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3268,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3214,
+      "target": 3267,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3267,
+      "target": 3214,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3267,
+      "target": 3267,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3267,
+      "target": 3268,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": 3267,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": 5140,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3268,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5607,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3214,
+      "target": 5399,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3268,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3214,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3214,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5399,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

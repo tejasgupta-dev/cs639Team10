@@ -1,0 +1,847 @@
+{
+  "graph_name": "DeepSeek-depth_q1",
+  "nodes": [
+    {
+      "node_id": 3,
+      "context": "Next, determine the amount of white fiber needed.",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 651,
+      "context": "Step 1: Identify the amount of blue fiber required...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1441,
+      "context": "**Final Answer: <result>** \\boxed{0}",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 678,
+      "context": "Now, we add the bolts of blue and white fiber toge...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 679,
+      "context": "<think> First, identify the number of blue fiber b...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 680,
+      "context": "### Step 2: Determine the Amount of White Fiber Th...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 681,
+      "context": "The problem states that the robe takes half as muc...",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 1324,
+      "context": "Final Answer: 7.5",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 813,
+      "context": "Step 3: Sum the total bolts of fiber needed. Total...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 814,
+      "context": "Step 3: Add the blue and white fiber to find the t...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1591,
+      "context": "\\boxed{17}",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 708,
+      "context": "Adding the blue and white fibers together gives a ...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 202,
+      "context": "<think> First, I identify the amount of blue fiber...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 203,
+      "context": "2 bolts (blue) + 1 bolt (white) = 3 bolts in total",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 204,
+      "context": "Half of 2 bolts is calculated as:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 851,
+      "context": "Finally, I'll sum the blue and white fibers to fin...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 852,
+      "context": "Finally, to find the total number of bolts, I'll a...",
+      "node_type": null,
+      "degree": 14
+    },
+    {
+      "node_id": 597,
+      "context": "<think> First, I need to determine the number of b...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 604,
+      "context": "Step 2: Calculate the amount of white fiber needed...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 359,
+      "context": "2. The amount of white fiber needed is half the am...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 1640,
+      "context": "Step-by-step explanation:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1258,
+      "context": "\\n\\n    \\n\\n",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 493,
+      "context": "1. **Bolts of Blue Fiber:**        The robe requir...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 109,
+      "context": "To determine the total number of bolts needed for ...",
+      "node_type": null,
+      "degree": 12
+    },
+    {
+      "node_id": 1652,
+      "context": "Let's break this problem down step by step:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1141,
+      "context": "Next, determine the amount of white fiber needed. ...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1142,
+      "context": "Next, determine the amount of white fiber required...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 40
+    },
+    {
+      "node_id": 767,
+      "context": "3. **Calculate the total number of bolts:**       ...",
+      "node_type": null,
+      "degree": 7
+    }
+  ],
+  "edges": [
+    {
+      "source": 597,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 852,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 493,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 493,
+      "target": 680,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 680,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1441,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": 1142,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1142,
+      "target": 852,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 202,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": 359,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": 767,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": 767,
+      "target": 1591,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 679,
+      "target": 1142,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1142,
+      "target": 678,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 493,
+      "target": 359,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 767,
+      "target": -1,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 597,
+      "target": 1141,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1141,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 109,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": 493,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 680,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 680,
+      "target": 1441,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1142,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": 202,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 33,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 767,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1324,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1324,
+      "target": 1591,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 679,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 109,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": 651,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 651,
+      "target": 604,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 604,
+      "target": 814,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 814,
+      "target": 1441,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 597,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 597,
+      "target": 3,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3,
+      "target": 1142,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 767,
+      "target": 1441,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1142,
+      "target": 851,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 851,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 681,
+      "target": 680,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 708,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 708,
+      "target": 109,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": 680,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 679,
+      "target": 597,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 851,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 493,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 359,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1141,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1141,
+      "target": 852,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 203,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 203,
+      "target": 109,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 651,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 604,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 604,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 678,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 109,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 680,
+      "target": 767,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": 3,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3,
+      "target": 851,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 851,
+      "target": 651,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 604,
+      "target": 813,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 813,
+      "target": 1441,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 651,
+      "target": 3,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 679,
+      "target": 3,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1142,
+      "target": 708,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 203,
+      "target": 651,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 813,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 708,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 851,
+      "target": 203,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 203,
+      "target": 493,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 493,
+      "target": 604,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 708,
+      "target": 597,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 597,
+      "target": 1652,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1652,
+      "target": 493,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 604,
+      "target": 767,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 851,
+      "target": 109,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 651,
+      "target": 680,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 680,
+      "target": 814,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3,
+      "target": 678,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1591,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 597,
+      "target": 1142,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 813,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": 604,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 604,
+      "target": 852,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 1441,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3,
+      "target": 204,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 204,
+      "target": 852,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 852,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 1640,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1640,
+      "target": 493,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 851,
+      "target": 708,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 852,
+      "target": 651,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 597,
+      "target": 604,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 814,
+      "target": 1591,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 651,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1591,
+      "target": 1441,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 651,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": 597,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 109,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 651,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

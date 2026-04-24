@@ -1,0 +1,967 @@
+{
+  "graph_name": "Qwen-Instruct-depth_q2",
+  "nodes": [
+    {
+      "node_id": 1413,
+      "context": "The house's value increased by 150%. To find the i...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 1161,
+      "context": "<think> First, calculate the total initial investm...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 1162,
+      "context": "The purchase price is $80,000, and the renovation ...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 140,
+      "context": "Profit (\\(P\\)) is the difference between the selli...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 141,
+      "context": "Josh's profit is the difference between the new va...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 912,
+      "context": "Josh spent an additional $50,000 on repairs.",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 913,
+      "context": "<think> First, I need to determine the total cost ...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 790,
+      "context": "Value Increase Percentage = 150%",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 791,
+      "context": "Step 4: Simplify the expression to find the increa...",
+      "node_type": null,
+      "degree": 20
+    },
+    {
+      "node_id": 540,
+      "context": "Step 1: **Calculate the total investment.**    \\[ ...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 925,
+      "context": "10% of $5 is $0.5, so 60% is:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1444,
+      "context": "Final Answer: $800",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 1324,
+      "context": "Final Answer: 7.5",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 304,
+      "context": "<think> First, I need to determine the total cost ...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 819,
+      "context": "\\[ \\boxed{\\text{Total Investment} = \\$130,000} \\]",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 820,
+      "context": "Step 6: Calculate the exact profit. Profit = $200,...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 954,
+      "context": "Now, we perform the multiplication to get the prof...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1086,
+      "context": "Step 1: Calculate the total investment in the hous...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 453,
+      "context": "Finally, subtracting the total investment from the...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 1480,
+      "context": "Substituting the known values:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 715,
+      "context": "Finally, to find the profit, I'll subtract the tot...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 716,
+      "context": "Step 5: Calculate the profit. Profit = New Value o...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 1106,
+      "context": "Value After Repairs = \\(V + 1.5 \\times 52,000 = $1...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 1107,
+      "context": "Step 2: Determine the increased value of the house...",
+      "node_type": null,
+      "degree": 20
+    },
+    {
+      "node_id": 1371,
+      "context": "6. **New Value of the House:**    \\[    \\$80,000 +...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1509,
+      "context": "\\n\\n Plugging in the known values:",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 103,
+      "context": "Step 12: Identify the maximum profit scenario and ...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 104,
+      "context": "**Step 4:** Calculate the total cost based on the ...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 745,
+      "context": "3. **Calculate the Selling Price:**        - **Ori...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 1258,
+      "context": "\\n\\n    \\n\\n",
+      "node_type": null,
+      "degree": 45
+    },
+    {
+      "node_id": 244,
+      "context": "Step 3: Calculate the profit by subtracting the to...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 30
+    }
+  ],
+  "edges": [
+    {
+      "source": 913,
+      "target": 912,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 912,
+      "target": 1162,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1162,
+      "target": 1258,
+      "weight": 15,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1107,
+      "weight": 38,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 791,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1107,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1371,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": 1258,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 715,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 715,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1258,
+      "weight": 31,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1444,
+      "weight": 26,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": 1161,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1161,
+      "target": 1258,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 540,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 540,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 819,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 819,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 790,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 790,
+      "target": 1258,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1107,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": -1,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1106,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1106,
+      "target": 1107,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1480,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1480,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1258,
+      "weight": 28,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1106,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1106,
+      "target": 1106,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1106,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 103,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 103,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 820,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 820,
+      "target": 1258,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 913,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": 716,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 716,
+      "target": 1444,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": 1258,
+      "weight": 15,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1258,
+      "weight": 35,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": -1,
+      "weight": 29,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1162,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 791,
+      "weight": 21,
+      "edge_type": "transition"
+    },
+    {
+      "source": 715,
+      "target": 1258,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 140,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 140,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1413,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": 1258,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1371,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 716,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 716,
+      "target": 1258,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 141,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 820,
+      "target": 1444,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1413,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": 791,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 925,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 925,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 954,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 954,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 791,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": 1086,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1086,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 819,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 819,
+      "target": 715,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1444,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": 1444,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": 715,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1161,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1161,
+      "target": 1086,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1086,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1371,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": 716,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1107,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1413,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": 540,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 540,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 820,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 790,
+      "target": 1371,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": 820,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 453,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1413,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1371,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": 453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 453,
+      "target": 819,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 819,
+      "target": 1444,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 790,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": 1480,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1480,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 925,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 925,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 141,
+      "target": 1258,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 913,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 716,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1162,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1162,
+      "target": 1107,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 913,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1106,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": 715,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 715,
+      "target": 791,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 791,
+      "target": 1444,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 715,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 820,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1324,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1413,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 716,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 104,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 104,
+      "target": 745,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 745,
+      "target": 1258,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 103,
+      "target": 820,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1161,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 141,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1162,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1162,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 304,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1371,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 304,
+      "target": 1162,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 745,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1162,
+      "target": 715,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 715,
+      "target": 820,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

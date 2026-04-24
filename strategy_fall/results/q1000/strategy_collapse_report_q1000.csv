@@ -1,4 +1,4 @@
-model,mean_strategy_entropy,mean_branching_factor,avg_unique_paths
-Qwen2.5-7B-Instruct-AWQ_traces-q1000,3.219,3.232,9.548
-DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000,3.313,3.483,9.955
-qwen2.5-7b-awq-4bit_traces-q1000,1.904,1.8,5.183
+model,mean_strategy_entropy,mean_branching_factor,planning_intensity,uncertainty_intensity,avg_unique_paths
+Qwen2.5-7B-Instruct-AWQ_traces-q1000,3.213,3.239,0.0564,0.137,9.521
+DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000,3.313,3.541,0.0731,0.1663,9.956
+qwen2.5-7b-awq-4bit_traces-q1000,1.749,1.625,0.051,0.1592,4.795

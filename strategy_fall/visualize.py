@@ -13,10 +13,12 @@ def to_networkx(graph: Graph) -> nx.DiGraph:
     G = nx.DiGraph()
 
     for node in graph.nodes:
+        node_tag = getattr(node, "node_type", "Other")
         G.add_node(
             node.node_id,
             label=_node_label(node),
             context=getattr(node, "context", ""),
+            tag=node_tag
         )
 
     for edge in graph.edges:
@@ -85,18 +87,21 @@ def draw_fancy_graph(
     else:
         node_sizes = [1500] * len(G.nodes)
 
-    # Node color: distance from start (Topological level)
-    levels = {n: pos[n][1] for n in G.nodes}
-    min_l, max_l = min(levels.values()), max(levels.values())
-    if max_l != min_l:
-        colors = [(levels[n] - min_l) / (max_l - min_l) for n in G.nodes]
-    else:
-        colors = [0.5] * len(G.nodes)
+    # 3. Node Colors based on Tags (Thought Anchors)
+    TAG_COLORS = {
+        "Planning": "#87CEEB",               # Sky Blue
+        "Uncertainty Management": "#FFA500",  # Orange
+        "Conclusion": "#90EE90",              # Light Green
+        "Active Computation": "#D3D3D3",      # Light Gray
+        "Other": "#FFFFFF"                    # White
+    }
+    
+    node_colors = [TAG_COLORS.get(G.nodes[n].get('tag', 'Other'), "#FFFFFF") for n in G.nodes]
 
     if ax is None:
         fig, ax = plt.subplots(figsize=(12, 10))
         
-    # Draw Edges with varying thickness and transparency
+    # Draw Edges
     edge_weights = [G.edges[e]['weight'] for e in G.edges]
     max_ew = max(edge_weights) if edge_weights else 1
     edge_widths = [1 + 5 * (w / max_ew) for w in edge_weights]
@@ -111,15 +116,14 @@ def draw_fancy_graph(
         connectionstyle="arc3,rad=0.1"
     )
 
-    # Draw Nodes with a lush color map (Viridis or Plasma)
+    # Draw Nodes
     nodes = nx.draw_networkx_nodes(
         G, pos, ax=ax,
         node_size=node_sizes,
-        node_color=colors,
-        cmap=plt.cm.Spectral_r,
+        node_color=node_colors,
         alpha=0.9,
-        edgecolors="white",
-        linewidths=1.5
+        edgecolors="black",
+        linewidths=1.2
     )
 
     # Draw Labels
@@ -129,6 +133,13 @@ def draw_fancy_graph(
         font_size=7,
         font_weight="bold"
     )
+
+    # Add Legend for Thought Anchors
+    from matplotlib.lines import Line2D
+    legend_elements = [Line2D([0], [0], marker='o', color='w', label=tag,
+                              markerfacecolor=color, markersize=10, markeredgecolor='black')
+                       for tag, color in TAG_COLORS.items()]
+    ax.legend(handles=legend_elements, loc='upper right', title="Thought Anchors", frameon=True, fontsize=8)
 
     ax.set_title(title, fontsize=16, fontweight="bold", pad=20)
     ax.axis("off")
@@ -146,7 +157,7 @@ def draw_graph_side_by_side(
     save_path: Optional[str] = None,
 ) -> None:
     """
-    Generates a high-resolution side-by-side comparison of two strategy graphs.
+    Generates a side-by-side comparison of two strategy graphs.
     """
     fig, axes = plt.subplots(1, 2, figsize=figsize, facecolor="#F8F9FA")
     

@@ -1,0 +1,157 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_q3",
+  "nodes": [
+    {
+      "node_id": 416,
+      "context": "Next, I'll identify the distance of each sprint, w...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 417,
+      "context": "\\n\\n Step 3: Calculate the total distance for one ...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 329,
+      "context": "Step 1: James runs 3 sprints each time he exercise...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 17,
+      "context": "Final Answer: 600 feet",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 409,
+      "context": "Step 4: Calculate the total distance James runs in...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 10
+    }
+  ],
+  "edges": [
+    {
+      "source": 409,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 329,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 409,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 409,
+      "target": 17,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 409,
+      "target": 417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": 416,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 416,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 17,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 409,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": 17,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 17,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 329,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

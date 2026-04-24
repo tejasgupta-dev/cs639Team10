@@ -38,12 +38,7 @@ Thumbs.db
 # Project-specific folders
 strategy fall/__pycache__/
 
-# Generated graph outputs
-outputs/
-graphs/
-*.png
-*.dot
-
 # Misc
 *.tmp
-*.swpINSTRUCTIONS.md
+*.swp
+INSTRUCTIONS.md

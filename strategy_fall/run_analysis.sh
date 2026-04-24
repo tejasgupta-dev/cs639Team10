@@ -8,6 +8,7 @@ DATA_DIR="strategy_fall/data"
 CLUSTERED_DIR="strategy_fall/data/clustered_$VERSION"
 RESULTS_DIR="strategy_fall/results/$VERSION"
 PATTERN="*-$VERSION.json"
+PYTHON_BIN="/Users/arushitaneja/anaconda3/envs/cs639-assignments/bin/python3"
 
 echo "========================================"
 echo "Starting Strategy Collapse Analysis: $VERSION"
@@ -20,8 +21,8 @@ mkdir -p "$CLUSTERED_DIR"
 mkdir -p "$RESULTS_DIR"
 
 # 1. Clustering
-echo "[1/2] Running semantic clustering for $VERSION..."
-python strategy_fall/clustering.py \
+echo "[1/3] Running semantic clustering for $VERSION..."
+$PYTHON_BIN strategy_fall/clustering.py \
     --data_dir "$DATA_DIR" \
     --file_pattern "$PATTERN" \
     --output_dir "$CLUSTERED_DIR" \
@@ -32,11 +33,23 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# 2. Graph Building & Metrics
-echo "[2/2] Building reasoning graphs and computing metrics for $VERSION..."
-python strategy_fall/build_graph.py \
+# 2. Thought Anchor Tagging
+echo "[2/3] Tagging clusters with functional intent (Planning, Uncertainty, etc.)..."
+$PYTHON_BIN strategy_fall/tag_anchors.py \
+    --cluster_map "$CLUSTERED_DIR/cluster_map.json" \
+    --output_file "$CLUSTERED_DIR/cluster_tags.json"
+
+if [ $? -ne 0 ]; then
+    echo "Error: Tagging failed."
+    exit 1
+fi
+
+# 3. Graph Building & Metrics
+echo "[3/3] Building reasoning graphs and computing metrics for $VERSION..."
+$PYTHON_BIN strategy_fall/build_graph.py \
     --cluster_data_dir "$CLUSTERED_DIR" \
     --cluster_map "$CLUSTERED_DIR/cluster_map.json" \
+    --cluster_tags "$CLUSTERED_DIR/cluster_tags.json" \
     --output_dir "$RESULTS_DIR" \
     --report_name "strategy_collapse_report_$VERSION.csv"
 

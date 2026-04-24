@@ -1,0 +1,229 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_q2",
+  "nodes": [
+    {
+      "node_id": 169,
+      "context": "Add the increase to the original purchase price.",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 170,
+      "context": "\\[ \\text{Final Value} = \\text{Total Cost} + \\text{...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 366,
+      "context": "Step 4: Calculate the profit made. - Profit: New v...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 367,
+      "context": "1. **Calculate the Total Investment in the House:*...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 341,
+      "context": "Step 8: Calculate the profit. Profit = Final Marke...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 13
+    },
+    {
+      "node_id": 343,
+      "context": "**Step 4: Determine the net profit.**",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 150,
+      "context": "\\n\\nNow, let's subtract the total investment from ...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 94,
+      "context": "Final Answer: \\$20.00",
+      "node_type": null,
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 367,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 366,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 366,
+      "target": -1,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 170,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 170,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 94,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 367,
+      "target": 341,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 341,
+      "target": 366,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 366,
+      "target": 169,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 169,
+      "target": 366,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 366,
+      "target": 366,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 366,
+      "target": 367,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 367,
+      "target": 170,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 170,
+      "target": 94,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 367,
+      "target": 367,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 169,
+      "target": 169,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 169,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 343,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 343,
+      "target": 366,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 366,
+      "target": 150,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 150,
+      "target": 170,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 169,
+      "target": 150,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 169,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 169,
+      "target": 341,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 341,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 341,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 341,
+      "target": 170,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

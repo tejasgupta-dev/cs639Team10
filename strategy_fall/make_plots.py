@@ -11,6 +11,7 @@ def generate_comparison(question_idx=0, version="q1000"):
     base_path = f"strategy_fall/data/clustered_{version}"
     results_path = f"strategy_fall/results/{version}"
     cluster_map_path = os.path.join(base_path, "cluster_map.json")
+    cluster_tags_path = os.path.join(base_path, "cluster_tags.json")
     
     sft_file = os.path.join(base_path, f"Qwen2.5-7B-Instruct-AWQ_traces-{version}_clustered.json")
     rl_file = os.path.join(base_path, f"DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-{version}_clustered.json")
@@ -25,7 +26,7 @@ def generate_comparison(question_idx=0, version="q1000"):
         print(f"Looked for:\n  - {sft_file}\n  - {rl_file}")
         return
 
-    analyzer = StrategyAnalyzer(cluster_map_path)
+    analyzer = StrategyAnalyzer(cluster_map_path, cluster_tags_path)
     
     with open(sft_file, 'r') as f:
         sft_data = json.load(f)
@@ -40,14 +41,19 @@ def generate_comparison(question_idx=0, version="q1000"):
     q_text = sft_data[question_idx]['question'][:100] + "..."
     print(f"Question: {q_text}")
     
-    graph_sft = analyzer.build_question_graph(sft_data[question_idx]['trajectories'])
-    graph_rl = analyzer.build_question_graph(rl_data[question_idx]['trajectories'])
+    graph_sft, node_map_sft = analyzer.build_question_graph(sft_data[question_idx]['trajectories'])
+    graph_rl, node_map_rl = analyzer.build_question_graph(rl_data[question_idx]['trajectories'])
     
-    # Create output dir if needed
+    # Apply tags to nodes for visualization
+    for cid, node in node_map_sft.items():
+        node.node_type = analyzer.cluster_tags.get(str(cid), "Other")
+    for cid, node in node_map_rl.items():
+        node.node_type = analyzer.cluster_tags.get(str(cid), "Other")
+
     os.makedirs(results_path, exist_ok=True)
     save_path = os.path.join(results_path, f"comparison_q{question_idx}.png")
     
-    print(f"Generating fancy side-by-side plot: {save_path}")
+    print(f"Generating side-by-side plot: {save_path}")
     
     draw_graph_side_by_side(
         graph_sft, 

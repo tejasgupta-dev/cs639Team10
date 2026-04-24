@@ -1,0 +1,349 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_q4",
+  "nodes": [
+    {
+      "node_id": 35,
+      "context": "Now, we determine how much more feed is needed for...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 5,
+      "context": "**Step 2: Calculate Total Feed for 20 Chickens**",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 6,
+      "context": "**Step 2: Determine the total daily feed requireme...",
+      "node_type": null,
+      "degree": 14
+    },
+    {
+      "node_id": 392,
+      "context": "**Step 1: Analyze the problem**",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 299,
+      "context": "To solve this problem, we need to follow these ste...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 144,
+      "context": "Subtracting the already given 120 cups from the to...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 145,
+      "context": "\\[ \\text{Total fed in morning and afternoon} = 15 ...",
+      "node_type": null,
+      "degree": 12
+    },
+    {
+      "node_id": 304,
+      "context": "The final answers are:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 401,
+      "context": "**Final Answer:**   \\boxed{2}",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 337,
+      "context": "**Final Answer:** \\[ \\boxed{30} \\]",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 441,
+      "context": "**Final Answer: \\boxed{460}**",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 346,
+      "context": "Final Answer: \\boxed{20}",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 9
+    }
+  ],
+  "edges": [
+    {
+      "source": 5,
+      "target": 5,
+      "weight": 17,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 35,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 145,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 35,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 144,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 6,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 145,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 144,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 441,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 299,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 5,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 145,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 299,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 304,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 304,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 35,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 5,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 145,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 35,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 6,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 392,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 392,
+      "target": 5,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 5,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 401,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 144,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 5,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 144,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 6,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 337,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 392,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 392,
+      "target": 299,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 145,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 299,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

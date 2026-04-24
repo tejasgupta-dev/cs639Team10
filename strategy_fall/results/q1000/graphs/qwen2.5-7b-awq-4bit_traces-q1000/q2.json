@@ -1,0 +1,109 @@
+{
+  "graph_name": "qwen2.5-7b-awq-4bit_traces-q1000_q2",
+  "nodes": [
+    {
+      "node_id": 3042,
+      "context": "[Planning] Next, calculate the increased value of the house b...",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 3043,
+      "context": "[Planning] Now, we add the value increase to the original pur...",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 2383,
+      "context": "[Planning] \\n\\nTotal Cost = Purchase Price + Repairs Cost \\n\\...",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 5488,
+      "context": "[Conclusion] The maximum profit attainable is $125. </think>",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 2998,
+      "context": "[Conclusion] Josh's total investment consists of the purchase p...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    }
+  ],
+  "edges": [
+    {
+      "source": 3042,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2383,
+      "target": 5488,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5488,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 3042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3043,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3043,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2998,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2998,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

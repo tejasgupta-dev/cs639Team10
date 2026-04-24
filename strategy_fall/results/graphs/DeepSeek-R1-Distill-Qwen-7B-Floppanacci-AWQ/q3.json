@@ -1,0 +1,283 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_q3",
+  "nodes": [
+    {
+      "node_id": 416,
+      "context": "Next, I'll identify the distance of each sprint, w...",
+      "node_type": null,
+      "degree": 13
+    },
+    {
+      "node_id": 417,
+      "context": "\\n\\n Step 3: Calculate the total distance for one ...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 392,
+      "context": "**Step 1: Analyze the problem**",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 329,
+      "context": "Step 1: James runs 3 sprints each time he exercise...",
+      "node_type": null,
+      "degree": 12
+    },
+    {
+      "node_id": 426,
+      "context": "Step 7: Calculate the total distance traveled back...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 299,
+      "context": "To solve this problem, we need to follow these ste...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 441,
+      "context": "**Final Answer: \\boxed{460}**",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 428,
+      "context": "**Step 2: Calculate the Total Distance Run Each We...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 17,
+      "context": "Final Answer: 600 feet",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 275,
+      "context": "Conclusion:",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 409,
+      "context": "Step 4: Calculate the total distance James runs in...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 12
+    }
+  ],
+  "edges": [
+    {
+      "source": 329,
+      "target": 416,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 417,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": 416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 329,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 416,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 329,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 409,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 409,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 392,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 392,
+      "target": 329,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 409,
+      "target": 392,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 329,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 416,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 299,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 329,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 426,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 426,
+      "target": 441,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 409,
+      "target": 329,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 275,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 275,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 417,
+      "target": 275,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 17,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 409,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 329,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 416,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 416,
+      "target": 275,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 428,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 416,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

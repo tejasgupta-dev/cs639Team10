@@ -1,0 +1,139 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_q1",
+  "nodes": [
+    {
+      "node_id": 165,
+      "context": "The total is 2 + 1 = 3 bolts. Final",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 166,
+      "context": "Therefore, the white fiber needed is 1 bolt.",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 40,
+      "context": "\\n\\n Step 2: Calculate the amount of white fiber n...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 304,
+      "context": "The final answers are:",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 26,
+      "context": "Step 1: Identify the quantity of each type of fibe...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 8
+    }
+  ],
+  "edges": [
+    {
+      "source": 26,
+      "target": 26,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 26,
+      "target": 166,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 166,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 166,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 166,
+      "target": 165,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 165,
+      "target": 304,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 26,
+      "target": 40,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 40,
+      "target": 166,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 166,
+      "target": 166,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 166,
+      "target": 304,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 40,
+      "target": 26,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 40,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 304,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 26,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 165,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

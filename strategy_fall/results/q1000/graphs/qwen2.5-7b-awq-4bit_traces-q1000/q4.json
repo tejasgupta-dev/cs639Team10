@@ -1,0 +1,55 @@
+{
+  "graph_name": "qwen2.5-7b-awq-4bit_traces-q1000_q4",
+  "nodes": [
+    {
+      "node_id": 3977,
+      "context": "[Uncertainty Management] Now, we subtract this from the total daily require...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1330,
+      "context": "[Conclusion] This means Wendi needs to provide 20 cups of feed ...",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 1444,
+      "context": "[Conclusion] Each chicken eats a combined total of 15 + 25 = 40...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 5202,
+      "context": "[Uncertainty Management] Thus, the answer is 21.",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": 1444,
+      "target": 5202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 1444,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

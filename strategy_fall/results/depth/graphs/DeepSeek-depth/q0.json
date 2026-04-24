@@ -1,0 +1,1603 @@
+{
+  "graph_name": "DeepSeek-depth_q0",
+  "nodes": [
+    {
+      "node_id": 1419,
+      "context": "**Step 1: Calculate the total number of duck eggs ...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 787,
+      "context": "1. **Total eggs laid by Janet’s ducks per day:**  ...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 1300,
+      "context": "16 - 3 = 13 eggs remaining.",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 1301,
+      "context": "Subtract the eggs used from the total eggs: \\[ 16 ...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 661,
+      "context": "7. Multiply the number of remaining eggs by the pr...",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 1431,
+      "context": "Step 1: Calculate the total number of ducks' eggs ...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 1176,
+      "context": "\\[ \\text{Total eggs per day} = 16 \\]",
+      "node_type": null,
+      "degree": 17
+    },
+    {
+      "node_id": 1560,
+      "context": "Final Answer: \\boxed{6} </think>",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1562,
+      "context": "\\boxed{9}",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1432,
+      "context": "Step 1: Calculate the total daily egg production. ...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 159,
+      "context": "2. She eats 3 of these eggs for breakfast. \\n\\n",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 553,
+      "context": "Adding the two amounts:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1324,
+      "context": "Final Answer: 7.5",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1454,
+      "context": "**Final Answer: \\boxed{\\$26.00}**",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 1456,
+      "context": "\\n\\n Step 3: Calculate the total number of eggs Ja...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 1457,
+      "context": "**Step 4: Calculate Earnings from Selling Eggs** J...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 817,
+      "context": "2. **Determine the number of eggs Janet has left t...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 1591,
+      "context": "\\boxed{17}",
+      "node_type": null,
+      "degree": 3
+    },
+    {
+      "node_id": 1592,
+      "context": "**Final Answer: \\boxed{18}**",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 1337,
+      "context": "Subtracting the eggs she uses from the total laid,...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 958,
+      "context": "Since Janet’s ducks lay 16 eggs per day, this is t...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1474,
+      "context": "Revenue per day: 9 eggs × $2 per egg = $18. </thin...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 1475,
+      "context": "Finally, calculate the daily earnings by multiplyi...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 968,
+      "context": "**Step 3: Subtract the Eggs Used for Baking Muffin...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 712,
+      "context": "**Step 3: Find the number of eggs Janet sells at t...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 969,
+      "context": "First, we calculate the number of eggs remaining a...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 1104,
+      "context": "<think> First, I need to determine how many duck e...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 466,
+      "context": "Total cost for 30 days = $2.50/day * 30 days = $75...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 853,
+      "context": "**Step 4: Calculate the Revenue from Selling the R...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 1370,
+      "context": "Since she sells each remaining egg for $2, her dai...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 987,
+      "context": "So, the total number of eggs used for breakfast an...",
+      "node_type": null,
+      "degree": 23
+    },
+    {
+      "node_id": 477,
+      "context": "Subtract the used eggs from the total eggs to find...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 1631,
+      "context": "**Final Answer:** \\boxed{75}",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 1504,
+      "context": "Additionally, Janet bakes muffins for her friends ...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 1505,
+      "context": "First, let's determine how many eggs Janet has lef...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1381,
+      "context": "Step 2: Subtract the number of eggs Janet eats for...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1382,
+      "context": "Finally, since Janet sells each egg for $2 at the ...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 1383,
+      "context": "**Final Answer:** The amount Janet makes every day...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 1640,
+      "context": "Step-by-step explanation:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1258,
+      "context": "\\n\\n    \\n\\n",
+      "node_type": null,
+      "degree": 25
+    },
+    {
+      "node_id": 1005,
+      "context": "**Final Step 2 Answer:** 7 eggs/day\\n\\n",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1006,
+      "context": "\\[ \\text{Total eggs used} = 3 \\, \\text{eggs} + 4 \\...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 880,
+      "context": "\\n\\n Step 3: Calculate the number of eggs Janet ha...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1652,
+      "context": "Let's break this problem down step by step:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1269,
+      "context": "**Step 1:** Determine the total number of eggs Jan...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 1402,
+      "context": "After using eggs for breakfast and baking, the rem...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 1403,
+      "context": "3. **Eggs Available for Sale**:        Subtract th...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 62
+    }
+  ],
+  "edges": [
+    {
+      "source": 1104,
+      "target": -1,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 159,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 1337,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1419,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1419,
+      "target": 958,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 1176,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 1258,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 968,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": 987,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1258,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1301,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1301,
+      "target": 1258,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 39,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1474,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1474,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1324,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1324,
+      "target": 1592,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1104,
+      "target": 1504,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 1337,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1370,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1652,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1652,
+      "target": 787,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 787,
+      "target": 987,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1474,
+      "target": 1592,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1104,
+      "target": 159,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 477,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 477,
+      "target": 1370,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": -1,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1456,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 880,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 880,
+      "target": 1457,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1592,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 159,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 477,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1431,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1431,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 1403,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1403,
+      "target": 1475,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 1592,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1382,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 1269,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1269,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 159,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 817,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": 1475,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 477,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 787,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1475,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1370,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1419,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 712,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 712,
+      "target": 1301,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1301,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1592,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1104,
+      "target": 958,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 1300,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1300,
+      "target": 1504,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 1300,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1300,
+      "target": 1382,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 661,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 661,
+      "target": 1383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1383,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1381,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1381,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1504,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 987,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1337,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 987,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1005,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 958,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 1591,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1591,
+      "target": 1258,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 969,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 969,
+      "target": 987,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1560,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1560,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1005,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 1562,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1562,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 853,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 853,
+      "target": 1474,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1592,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1592,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 1640,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1640,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 553,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 553,
+      "target": 553,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 553,
+      "target": 477,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1652,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1300,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1300,
+      "target": 1474,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1337,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 1419,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 1504,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1176,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 853,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 477,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 477,
+      "target": 1382,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 1006,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1006,
+      "target": 1258,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1006,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1006,
+      "target": 1005,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 1006,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1474,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 1505,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1505,
+      "target": 1475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 987,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 477,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 987,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1631,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 661,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1403,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1403,
+      "target": 1474,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1104,
+      "target": 1381,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1381,
+      "target": 1337,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 1402,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1402,
+      "target": 1475,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1382,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 787,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1104,
+      "target": 1104,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1402,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1402,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1432,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1432,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1269,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1006,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1269,
+      "target": 1504,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1269,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 969,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 969,
+      "target": 159,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1474,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1475,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 1383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1383,
+      "target": 1419,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 969,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 1006,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 712,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 712,
+      "target": 1337,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1337,
+      "target": 1301,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1301,
+      "target": 1005,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1005,
+      "target": 853,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 853,
+      "target": 1382,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 466,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 466,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 969,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 969,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 712,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 1474,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 787,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 987,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1301,
+      "target": 1475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 1474,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1382,
+      "target": 1652,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 712,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1383,
+      "target": 1431,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1431,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1419,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 969,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1370,
+      "target": 1432,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1432,
+      "target": 1504,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 1454,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 1382,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 1591,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 969,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": 1504,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 1402,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1402,
+      "target": 1382,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 969,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1300,
+      "target": 477,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 477,
+      "target": 1475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 787,
+      "target": 159,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 159,
+      "target": 987,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1457,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1006,
+      "target": 712,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 712,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1402,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 817,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1383,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1505,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1505,
+      "target": 1337,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 1431,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1431,
+      "target": 1176,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1176,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 1006,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1006,
+      "target": 880,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 880,
+      "target": 1301,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1301,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1402,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

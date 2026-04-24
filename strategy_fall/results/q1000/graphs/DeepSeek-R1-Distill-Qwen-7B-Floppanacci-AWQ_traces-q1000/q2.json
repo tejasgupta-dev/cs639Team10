@@ -1,0 +1,415 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_q2",
+  "nodes": [
+    {
+      "node_id": 6560,
+      "context": "[Conclusion] \\[ \\text{Initial Cost} = \\$150,000 \\]",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 3042,
+      "context": "[Planning] Next, calculate the increased value of the house b...",
+      "node_type": "Planning",
+      "degree": 10
+    },
+    {
+      "node_id": 5417,
+      "context": "[Uncertainty Management] 3. **Calculate the Profit:**        The profit is ...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1547,
+      "context": "[Planning] **Step 4: Determine the Total Price of the House**",
+      "node_type": "Planning",
+      "degree": 7
+    },
+    {
+      "node_id": 2383,
+      "context": "[Planning] \\n\\nTotal Cost = Purchase Price + Repairs Cost \\n\\...",
+      "node_type": "Planning",
+      "degree": 1
+    },
+    {
+      "node_id": 5808,
+      "context": "[Planning] To solve this, we need to follow a few steps:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 5489,
+      "context": "[Conclusion] Subtracting the initial cost of $5400 from the rev...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 6386,
+      "context": "[Planning] First, we need to determine the value after the 50...",
+      "node_type": "Planning",
+      "degree": 9
+    },
+    {
+      "node_id": 5042,
+      "context": "[Conclusion] **Final Answer:** \\boxed{19040}",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 11
+    },
+    {
+      "node_id": 2998,
+      "context": "[Conclusion] Josh's total investment consists of the purchase p...",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 5431,
+      "context": "[Planning] The profit Sasha will make is the difference betwe...",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 5400,
+      "context": "[Uncertainty Management] **Step-by-step Solution:**",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 5626,
+      "context": "[Planning] **Step 1: Determine the total amount invested.**",
+      "node_type": "Planning",
+      "degree": 3
+    },
+    {
+      "node_id": 5979,
+      "context": "[Conclusion] Final Answer: \\boxed{6000}",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 5304,
+      "context": "[Planning] **Step 4: Determine the Profit**",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 20
+    }
+  ],
+  "edges": [
+    {
+      "source": 2998,
+      "target": 2998,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2998,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5431,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5431,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5140,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5417,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2998,
+      "target": 3042,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 5431,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5431,
+      "target": 5400,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5400,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3042,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2998,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 5417,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5626,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5626,
+      "target": 2998,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1547,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1547,
+      "target": 3042,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 6386,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6386,
+      "target": 6386,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6386,
+      "target": 5304,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5304,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5417,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3042,
+      "target": 2998,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2998,
+      "target": 5626,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6386,
+      "target": 1547,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1547,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 6386,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5417,
+      "target": 5417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2383,
+      "target": 6386,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6386,
+      "target": 5417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5417,
+      "target": 5808,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5431,
+      "target": 2998,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5417,
+      "target": 5979,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5431,
+      "target": 1547,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1547,
+      "target": 2998,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2998,
+      "target": 6560,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6560,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 1547,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6386,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5304,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5304,
+      "target": 5489,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5489,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5400,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

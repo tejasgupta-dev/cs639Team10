@@ -1,0 +1,223 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_q4",
+  "nodes": [
+    {
+      "node_id": 35,
+      "context": "Now, we determine how much more feed is needed for...",
+      "node_type": null,
+      "degree": 6
+    },
+    {
+      "node_id": 5,
+      "context": "**Step 2: Calculate Total Feed for 20 Chickens**",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 6,
+      "context": "**Step 2: Determine the total daily feed requireme...",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 299,
+      "context": "To solve this problem, we need to follow these ste...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 144,
+      "context": "Subtracting the already given 120 cups from the to...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 145,
+      "context": "\\[ \\text{Total fed in morning and afternoon} = 15 ...",
+      "node_type": null,
+      "degree": 8
+    },
+    {
+      "node_id": 156,
+      "context": "Final Answer: 70",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 348,
+      "context": "Final Answer: 26",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 349,
+      "context": "\\n\\nFinal Answer: 18",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 9
+    }
+  ],
+  "edges": [
+    {
+      "source": 5,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 145,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 5,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 5,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 35,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 35,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 144,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 145,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 35,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 145,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 349,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 144,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": 145,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 6,
+      "target": 6,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 144,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 145,
+      "target": 156,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}
