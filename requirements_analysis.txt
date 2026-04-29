@@ -1,0 +1,16 @@
+# For clustering and semantic analysis
+sentence-transformers
+umap-learn
+hdbscan
+pandas
+numpy
+scikit-learn
+tqdm
+
+# For graph building and visualization
+networkx
+matplotlib
+graphviz
+
+# Interactive demo dashboard
+streamlit>=1.28.0
