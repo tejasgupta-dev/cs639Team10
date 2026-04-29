@@ -71,6 +71,7 @@ def draw_fancy_graph(
     title: str = "Reasoning Strategy Map",
     ax=None,
     save_path: Optional[str] = None,
+    highlight_tag: Optional[str] = None,
 ) -> None:
     """
     A lush, colorful version of the reasoning graph.
@@ -116,14 +117,30 @@ def draw_fancy_graph(
         connectionstyle="arc3,rad=0.1"
     )
 
-    # Draw Nodes
+    # Draw Nodes (thicker outline on nodes matching causal / focus tag)
+    nodelist = list(G.nodes())
+    if highlight_tag:
+        ecols = []
+        lws = []
+        for n in nodelist:
+            if G.nodes[n].get("tag", "Other") == highlight_tag:
+                ecols.append("#E63946")
+                lws.append(3.8)
+            else:
+                ecols.append("black")
+                lws.append(1.2)
+    else:
+        ecols = "black"
+        lws = 1.2
+
     nodes = nx.draw_networkx_nodes(
         G, pos, ax=ax,
+        nodelist=nodelist,
         node_size=node_sizes,
         node_color=node_colors,
         alpha=0.9,
-        edgecolors="black",
-        linewidths=1.2
+        edgecolors=ecols,
+        linewidths=lws,
     )
 
     # Draw Labels
@@ -155,17 +172,21 @@ def draw_graph_side_by_side(
     title_b: str = "Graph B",
     figsize: Tuple[int, int] = (20, 10),
     save_path: Optional[str] = None,
-) -> None:
+    highlight_tag_a: Optional[str] = None,
+    highlight_tag_b: Optional[str] = None,
+):
     """
     Generates a side-by-side comparison of two strategy graphs.
+    Optional highlight_tag_* outlines nodes whose anchor tag matches (e.g. causal mask).
     """
     fig, axes = plt.subplots(1, 2, figsize=figsize, facecolor="#F8F9FA")
-    
-    draw_fancy_graph(graph_a, title=title_a, ax=axes[0])
-    draw_fancy_graph(graph_b, title=title_b, ax=axes[1])
-    
+
+    draw_fancy_graph(graph_a, title=title_a, ax=axes[0], highlight_tag=highlight_tag_a)
+    draw_fancy_graph(graph_b, title=title_b, ax=axes[1], highlight_tag=highlight_tag_b)
+
     plt.tight_layout()
-    
+
     if save_path:
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
         print(f"Saved fancy comparison to: {save_path}")
+    return fig

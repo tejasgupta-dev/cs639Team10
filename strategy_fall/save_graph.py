@@ -1,8 +1,12 @@
 import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-from graphviz import Digraph
 from utils import Node, Edge, Graph
+
+try:
+    from graphviz import Digraph
+except ImportError:  # Optional for dashboard usage; only needed for image export.
+    Digraph = None
 
 class GraphSerializer:
     @staticmethod
@@ -102,7 +106,12 @@ class GraphSerializer:
         graph_name: str = "ReasoningGraph",
         image_format: str = "png"
     ) -> None:
-        
+        if Digraph is None:
+            raise ImportError(
+                "python package 'graphviz' is required for save_graph_image(). "
+                "Install with `pip install graphviz`."
+            )
+
         path = Path(filepath)
         path.parent.mkdir(parents=True, exist_ok=True)
 
