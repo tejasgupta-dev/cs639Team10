@@ -41,9 +41,10 @@ def main():
         ground_truths = ds["answer"][:args.num_questions]
     else:
         # Load MATH dataset and filter by level
-        ds = load_dataset("lighteval/MATH", "all", split="test", trust_remote_code=True)
+        # Note: 'hendrycks/competition_math' is the standard source
+        ds = load_dataset("hendrycks/competition_math", "all", split="test")
         # Filter for level
-        filtered = [item for item in ds if str(item['level']) == f"Level {args.math_level}"]
+        filtered = [item for item in ds if str(item['level']) == f"{args.math_level}"]
         questions = [item['problem'] for item in filtered[:args.num_questions]]
         ground_truths = [item['solution'] for item in filtered[:args.num_questions]]
 
