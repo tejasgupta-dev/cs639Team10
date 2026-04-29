@@ -8,7 +8,9 @@ from transformers import AutoTokenizer
 def parse_args():
     parser = argparse.ArgumentParser(description="Generate reasoning traces using local GPU.")
     parser.add_argument("--model", type=str, required=True, help="Hugging Face model path (e.g. Qwen/Qwen2.5-7B-Instruct-AWQ)")
-    parser.add_argument("--num_questions", type=int, default=50, help="Number of GSM8K questions to process")
+    parser.add_argument("--num_questions", type=int, default=50, help="Number of questions to process")
+    parser.add_argument("--dataset", type=str, default="gsm8k", choices=["gsm8k", "math"], help="Dataset to use")
+    parser.add_argument("--math_level", type=int, default=5, help="Difficulty level for MATH dataset (1-5)")
     parser.add_argument("--n_samples", type=int, default=10, help="Number of trajectories per question")
     parser.add_argument("--temp", type=float, default=0.8, help="Sampling temperature")
     # Memory management
@@ -25,17 +27,27 @@ Answer: Janet started with 3 rabbits. \nShe got 2 more. \n3 + 2 = 5.\nFinal Answ
 def get_instruct_prompt(question, model_id):
     """Prompt format for Instruct models using chat templates."""
     messages = [
-        {"role": "user", "content": f"Solve the following math problem step-by-step. End each step with two newlines (\\n\\n). Provide the final answer as 'Final Answer: <result>'.\n\nQuestion: {question}"}
+        {"role": "user", "content": f"Solve the following math problem step-by-step. End each step with two newlines (\\n\\n). Provide the final answer as 'Final Answer: #### <result>' or '\\boxed{{<result>}}'.\n\nQuestion: {question}"}
     ]
     return messages
 
 def main():
     args = parse_args()
     
-    print(f"Loading dataset...")
-    gsm8k = load_dataset("openai/gsm8k", "main", split="test", trust_remote_code=True)
-    questions = gsm8k["question"][:args.num_questions]
-    ground_truths = gsm8k["answer"][:args.num_questions]
+    print(f"Loading dataset {args.dataset}...")
+    if args.dataset == "gsm8k":
+        ds = load_dataset("openai/gsm8k", "main", split="test", trust_remote_code=True)
+        questions = ds["question"][:args.num_questions]
+        ground_truths = ds["answer"][:args.num_questions]
+    else:
+        # Load MATH dataset and filter by level
+        ds = load_dataset("lighteval/MATH", "all", split="test", trust_remote_code=True)
+        # Filter for level
+        filtered = [item for item in ds if str(item['level']) == f"Level {args.math_level}"]
+        questions = [item['problem'] for item in filtered[:args.num_questions]]
+        ground_truths = [item['solution'] for item in filtered[:args.num_questions]]
+
+    print(f"Loaded {len(questions)} questions.")
 
     print(f"Initializing vLLM for {args.model}...")
     llm = LLM(
@@ -87,7 +99,7 @@ def main():
     model_basename = args.model.split("/")[-1]
     output_dir = "strategy_fall/data"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{model_basename}_traces.json")
+    output_path = os.path.join(output_dir, f"{model_basename}_traces-{args.dataset}.json")
     
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2)

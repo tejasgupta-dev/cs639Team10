@@ -27,6 +27,53 @@ def get_analyzer(cluster_map: str, cluster_tags: str) -> StrategyAnalyzer:
     return StrategyAnalyzer(cluster_map, cluster_tags)
 
 
+def clean_trajectory(steps: List[str]) -> str:
+    """Removes thinking tags and cleans up raw artifacts."""
+    cleaned = []
+    for s in steps:
+        # Remove tags and normalize whitespace
+        s = s.replace("<think>", "").replace("</think>", "").strip()
+        # Escape dollar signs for currency to prevent incorrect LaTeX rendering
+        s = s.replace("$", "\\$")
+        if s:
+            cleaned.append(s)
+    return "\n\n---\n\n".join(cleaned)
+
+
+def render_step_card(step_text: str, node_id: int, tag: str) -> None:
+    """Renders a single reasoning step with a colored badge and node ID."""
+    TAG_COLORS = {
+        "Planning": "#87CEEB",                # Sky Blue
+        "Uncertainty Management": "#FFA500",   # Orange
+        "Conclusion": "#90EE90",               # Light Green
+        "Active Computation": "#D3D3D3",       # Light Gray
+        "Other": "#F0F2F6"                     # Light Sidebar Gray
+    }
+    color = TAG_COLORS.get(tag, "#F0F2F6")
+    
+    # Clean text
+    step_text = step_text.replace("<think>", "").replace("</think>", "").strip().replace("$", "\\$")
+    
+    if not step_text:
+        return
+
+    st.markdown(f"""
+        <div style="border-left: 5px solid {color}; padding: 10px; margin-bottom: 10px; background-color: rgba(255,255,255,0.05); border-radius: 5px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <span style="background-color: {color}; color: black; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: bold;">
+                    {tag}
+                </span>
+                <span style="font-family: monospace; font-size: 0.8rem; color: #888;">
+                    #Node {node_id}
+                </span>
+            </div>
+            <div style="font-size: 0.95rem;">
+                {step_text}
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+
 def _clustered_paths(version: str) -> Tuple[Path, Path, Path, Path]:
     """cluster_map, cluster_tags, sft traces, rl traces."""
     base = STRATEGY_FALL / "data" / f"clustered_{version}"
@@ -93,6 +140,9 @@ def main() -> None:
         version = st.selectbox("Trace set", options=["q1000", "q50"], index=0)
         cmap, ctags, sft_path, rl_path = _clustered_paths(version)
 
+        st.header("Mode")
+        mode = st.radio("Analysis Mode", ["Deep-Dive (Question View)", "Global Statistics"], index=0)
+
         st.header("View")
         layout = st.radio("Layout", ["Side-by-side", "Single model"], horizontal=False)
         single_model = st.radio("Model (single view)", ["SFT (Instruct)", "RL (DeepSeek-R1)"], horizontal=True) if layout == "Single model" else None
@@ -110,6 +160,10 @@ def main() -> None:
         for p in missing:
             st.code(str(p))
         st.info("Run clustering + tagging + graph pipeline for this version, or pick another trace set.")
+        return
+
+    if mode == "Global Statistics":
+        render_global_stats()
         return
 
     causal_rl_path = STRATEGY_FALL / "results" / "causal" / "causal_details.csv"
@@ -166,29 +220,118 @@ def main() -> None:
         st.pyplot(fig)
         plt.close(fig)
 
+    with st.expander("Live Reasoning Transcripts (Tagged Steps)", expanded=False):
+        t1, t2 = st.columns(2)
+        with t1:
+            st.markdown("**SFT (Instruct)**")
+            for i, traj in enumerate(sft_data[q_idx].get("trajectories", [])):
+                with st.container(height=450):
+                    st.caption(f"Trajectory {i}")
+                    cids = traj.get("cluster_ids", [])
+                    steps = traj.get("text_steps", [])
+                    for cid, step_txt in zip(cids, steps):
+                        tag = analyzer.cluster_tags.get(str(cid), "Other")
+                        render_step_card(step_txt, cid, tag)
+        with t2:
+            st.markdown("**RL (DeepSeek-R1)**")
+            for i, traj in enumerate(rl_data[q_idx].get("trajectories", [])):
+                with st.container(height=450):
+                    st.caption(f"Trajectory {i}")
+                    cids = traj.get("cluster_ids", [])
+                    steps = traj.get("text_steps", [])
+                    for cid, step_txt in zip(cids, steps):
+                        tag = analyzer.cluster_tags.get(str(cid), "Other")
+                        render_step_card(step_txt, cid, tag)
+
     st.divider()
-    st.subheader("Causal run (intervention row)")
+    st.subheader("Causal Verification (Control vs Intervention)")
+    st.markdown("""
+        Compare the **Control** (baseline) to the **Intervention** (where we masked the anchor).
+        - A **large accuracy drop** proves the node was a **Critical Hub**.
+        - A **small/zero drop** proves the model is **Resilient** and found an alternative path.
+    """)
     c1, c2 = st.columns(2)
     with c1:
         if causal_rl is not None:
-            sub = causal_rl[(causal_rl["qid"].astype(int) == q_idx) & (causal_rl["type"] == "intervention")]
+            sub = causal_rl[(causal_rl["qid"].astype(int) == q_idx)]
             if not sub.empty:
                 st.write("**RL**")
-                st.dataframe(sub[["qid", "type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
+                st.dataframe(sub[["type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
             else:
                 st.caption("No RL causal row for this qid.")
         else:
             st.caption("No `results/causal/causal_details.csv`")
     with c2:
         if causal_sft is not None:
-            sub = causal_sft[(causal_sft["qid"].astype(int) == q_idx) & (causal_sft["type"] == "intervention")]
+            sub = causal_sft[(causal_sft["qid"].astype(int) == q_idx)]
             if not sub.empty:
                 st.write("**SFT**")
-                st.dataframe(sub[["qid", "type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
+                st.dataframe(sub[["type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
             else:
                 st.caption("No SFT causal row for this qid.")
         else:
             st.caption("No `results/causal_sft/causal_details.csv`")
+
+
+def render_global_stats() -> None:
+    """
+    Renders high-level aggregate metrics and causal summaries.
+    """
+    st.subheader("Systemic Strategy Comparison (n=1000)")
+    st.info("""
+        **Summary**: RL-trained models (DeepSeek-R1) consistently exhibit more 'Thought Anchors' 
+        than their SFT counterparts. This is visible in higher Planning and Uncertainty 
+        Management intensities, suggesting that RL incentivizes meta-cognitive verification.
+    """)
+    
+    report_path = STRATEGY_FALL / "results" / "q1000" / "strategy_collapse_report_q1000.csv"
+    if report_path.exists():
+        df = pd.read_csv(report_path)
+        # Rename for readability
+        df['model_short'] = df['model'].apply(lambda x: "RL (R1)" if "DeepSeek" in x else ("SFT (Instruct)" if "Instruct" in x else "Base"))
+        
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown("**Planning Intensity**")
+            st.bar_chart(df.set_index('model_short')[['planning_intensity']])
+        with c2:
+            st.markdown("**Uncertainty Management Intensity**")
+            st.bar_chart(df.set_index('model_short')[['uncertainty_intensity']])
+            
+        st.markdown("**Structural Diversity (Entropy & Branching)**")
+        st.line_chart(df.set_index('model_short')[['mean_strategy_entropy', 'mean_branching_factor']])
+        st.caption("Higher entropy and branching indicate a 'Reasoning Web' with multiple redundant paths to the solution.")
+    else:
+        st.info("Global report not found at `results/q1000/strategy_collapse_report_q1000.csv`")
+
+    st.divider()
+    st.subheader("Causal Anchor Impact (Avg Accuracy Drop)")
+    st.markdown("""
+        **How to read this chart**:
+        - **Positive Drop**: Removing the 'Thought Anchor' caused accuracy to fall. This proves the node is a **Causal Hub**.
+        - **Negative Drop**: Forcing the model to rethink actually *improved* accuracy. This is common in **Brittle SFT** models that get stuck in loops.
+    """)
+    
+    crl_path = STRATEGY_FALL / "results" / "causal" / "causal_summary.csv"
+    csft_path = STRATEGY_FALL / "results" / "causal_sft" / "causal_summary.csv"
+    
+    if crl_path.exists() and csft_path.exists():
+        crl = pd.read_csv(crl_path).set_index('type')
+        csft = pd.read_csv(csft_path).set_index('type')
+        
+        # Calculate drops (control - intervention)
+        rl_drop = crl.loc['control'] - crl.loc['intervention']
+        sft_drop = csft.loc['control'] - csft.loc['intervention']
+        
+        drop_df = pd.DataFrame({
+            "RL (R1) Drop": rl_drop,
+            "SFT (Instruct) Drop": sft_drop
+        })
+        
+        st.bar_chart(drop_df)
+        st.caption("Positive values indicate accuracy LOSS when anchor is removed. Negative values indicate accuracy GAIN (brittle logic).")
+    else:
+        st.info("Causal summaries not found in `results/causal/` or `results/causal_sft/`.")
 
 
 if __name__ == "__main__":
