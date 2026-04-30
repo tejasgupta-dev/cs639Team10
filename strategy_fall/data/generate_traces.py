@@ -40,9 +40,8 @@ def main():
         questions = ds["question"][:args.num_questions]
         ground_truths = ds["answer"][:args.num_questions]
     else:
-        # Load MATH dataset and filter by level
-        # Note: 'hendrycks/competition_math' is the standard source
-        ds = load_dataset("hendrycks/competition_math", "all", split="test")
+        # Load MATH-500 dataset (reliable subset used for R1 evaluation)
+        ds = load_dataset("HuggingFaceH4/MATH-500", split="test")
         # Filter for level
         filtered = [item for item in ds if str(item['level']) == f"{args.math_level}"]
         questions = [item['problem'] for item in filtered[:args.num_questions]]
