@@ -31,13 +31,17 @@ def clean_trajectory(steps: List[str]) -> str:
     """Removes thinking tags and cleans up raw artifacts."""
     cleaned = []
     for s in steps:
-        # Remove tags and normalize whitespace
         s = s.replace("<think>", "").replace("</think>", "").strip()
-        # Escape dollar signs for currency to prevent incorrect LaTeX rendering
         s = s.replace("$", "\\$")
         if s:
             cleaned.append(s)
     return "\n\n---\n\n".join(cleaned)
+
+def clean_label(text: str) -> str:
+    """Very short hint for selectbox."""
+    if not text: return "Empty Question"
+    clean = text.replace("\\[", "").replace("\\]", "").replace("\\(", "").replace("\\)", "").replace("\\", "")
+    return clean[:40] + "..." if len(clean) > 40 else clean
 
 
 def render_step_card(step_text: str, node_id: int, tag: str) -> None:
@@ -51,27 +55,28 @@ def render_step_card(step_text: str, node_id: int, tag: str) -> None:
     }
     color = TAG_COLORS.get(tag, "#F0F2F6")
     
-    # Clean text
-    step_text = step_text.replace("<think>", "").replace("</think>", "").strip().replace("$", "\\$")
+    # 1. Clean thinking tags and normalize whitespace
+    step_text = step_text.replace("<think>", "").replace("</think>", "").strip()
+    
+    # 2. Convert LaTeX block markers to Streamlit-friendly ones
+    step_text = step_text.replace("\\[", "$$").replace("\\]", "$$").replace("\\(", "$").replace("\\)", "$")
+    
+    # 3. If there are no math markers but raw LaTeX-like commands (like \sum), 
+    # we might need to wrap them, but usually the models use $ or \[.
     
     if not step_text:
         return
 
-    st.markdown(f"""
-        <div style="border-left: 5px solid {color}; padding: 10px; margin-bottom: 10px; background-color: rgba(255,255,255,0.05); border-radius: 5px;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-                <span style="background-color: {color}; color: black; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: bold;">
-                    {tag}
-                </span>
-                <span style="font-family: monospace; font-size: 0.8rem; color: #888;">
-                    #Node {node_id}
-                </span>
-            </div>
-            <div style="font-size: 0.95rem;">
-                {step_text}
-            </div>
-        </div>
-    """, unsafe_allow_html=True)
+    with st.container(border=True):
+        # Header Row
+        h1, h2 = st.columns([1, 1])
+        with h1:
+            st.markdown(f'<span style="background-color: {color}; color: black; padding: 2px 8px; border-radius: 10px; font-size: 0.75rem; font-weight: bold;">{tag}</span>', unsafe_allow_html=True)
+        with h2:
+            st.markdown(f'<div style="text-align: right; font-family: monospace; font-size: 0.8rem; color: #888;">#Node {node_id}</div>', unsafe_allow_html=True)
+        
+        # Body Row (Pure Markdown for reliable Math)
+        st.markdown(step_text)
 
 
 def _clustered_paths(version: str) -> Tuple[Path, Path, Path, Path]:
@@ -154,11 +159,16 @@ def main() -> None:
 
     with st.sidebar:
         st.header("Data")
+        version_labels = {
+            "q1000": "GSM8K (Baseline)",
+            "math_l5": "MATH Level 5"
+        }
         version = st.selectbox(
             "Trace set",
-            options=["q1000", "math_l5"],
+            options=list(version_labels.keys()),
+            format_func=lambda x: version_labels[x],
             index=0,
-            help="math_l5 = MATH-500 Level 5 | q1000 = GSM8K (1000 questions)",
+            help="Compare simple math (GSM8K) vs. high-complexity reasoning (MATH L5).",
         )
         cmap, ctags, sft_path, rl_path = _clustered_paths(version)
 
@@ -188,8 +198,14 @@ def main() -> None:
         render_global_stats()
         return
 
-    causal_rl_path = STRATEGY_FALL / "results" / "causal" / "causal_details.csv"
-    causal_sft_path = STRATEGY_FALL / "results" / "causal_sft" / "causal_details.csv"
+    # Dynamic paths based on version
+    if version == "math_l5":
+        causal_rl_path = STRATEGY_FALL / "results" / "causal_math_l5" / "causal_details.csv"
+        causal_sft_path = STRATEGY_FALL / "results" / "causal_math_l5_sft" / "causal_details.csv"
+    else:
+        causal_rl_path = STRATEGY_FALL / "results" / "causal" / "causal_details.csv"
+        causal_sft_path = STRATEGY_FALL / "results" / "causal_sft" / "causal_details.csv"
+
     causal_rl = load_causal_csv(str(causal_rl_path)) if causal_rl_path.exists() else None
     causal_sft = load_causal_csv(str(causal_sft_path)) if causal_sft_path.exists() else None
 
@@ -201,8 +217,16 @@ def main() -> None:
         st.warning("No questions in trace JSON.")
         return
 
-    labels = [f"Q{i}: {(sft_data[i].get('question') or '')[:90]}…" for i in range(n)]
-    q_idx = st.selectbox("Question", options=list(range(n)), format_func=lambda i: labels[i])
+    labels = [f"Question {i}" for i in range(n)]
+    q_idx = st.selectbox("Select a Reasoning Trace:", options=list(range(n)), format_func=lambda i: labels[i])
+
+    # Show Question Prompt clearly at the top
+    q_text = sft_data[q_idx].get("question", "")
+    st.markdown(f"### 📝 Question {q_idx}")
+    
+    # Convert LaTeX delimiters for Streamlit
+    rendered_text = q_text.replace("\\[", "$$").replace("\\]", "$$").replace("\\(", "$").replace("\\)", "$")
+    st.markdown(f"> {rendered_text}")
 
     if not ctags.exists():
         st.warning(f"Cluster tags missing for '{version}'. Showing nodes as 'Other'.")
@@ -211,12 +235,8 @@ def main() -> None:
         analyzer = get_analyzer(str(cmap), str(ctags))
         
     g_sft, g_rl, _, _ = build_pair(analyzer, sft_data[q_idx], rl_data[q_idx])
-
     tag_rl = intervention_tag_for_q(causal_rl, q_idx) if highlight_causal else None
     tag_sft = intervention_tag_for_q(causal_sft, q_idx) if highlight_causal else None
-
-    with st.expander("Question text", expanded=False):
-        st.write(sft_data[q_idx].get("question", ""))
 
     cols = st.columns(2)
     with cols[0]:
@@ -277,23 +297,46 @@ def main() -> None:
         - A **large accuracy drop** proves the node was a **Critical Hub**.
         - A **small/zero drop** proves the model is **Resilient** and found an alternative path.
     """)
+    # Symmetric Column Configuration
+    col_config = {
+        "type": st.column_config.TextColumn("Type", width="small"),
+        "tag": st.column_config.TextColumn("Step Tag", width="medium"),
+        "accuracy": st.column_config.NumberColumn(
+            "Accuracy", 
+            format="%.2f",
+            width="small",
+            help="Fraction of correct samples in this arm.",
+        )
+    }
+
     c1, c2 = st.columns(2)
     with c1:
         if causal_rl is not None:
             sub = causal_rl[(causal_rl["qid"].astype(int) == q_idx)]
             if not sub.empty:
-                st.write("**RL**")
-                st.dataframe(sub[["type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
+                st.markdown("**DeepSeek (RL)**")
+                st.dataframe(
+                    sub[["type", "tag", "accuracy"]].style.background_gradient(cmap="RdYlGn", subset=["accuracy"], vmin=0, vmax=1),
+                    column_config=col_config,
+                    use_container_width=True,
+                    hide_index=True
+                )
             else:
                 st.caption("No RL causal row for this qid.")
         else:
             st.caption("No `results/causal/causal_details.csv`")
+            
     with c2:
         if causal_sft is not None:
             sub = causal_sft[(causal_sft["qid"].astype(int) == q_idx)]
             if not sub.empty:
-                st.write("**SFT**")
-                st.dataframe(sub[["type", "tag", "accuracy"]], use_container_width=True, hide_index=True)
+                st.markdown("**Qwen (SFT)**")
+                st.dataframe(
+                    sub[["type", "tag", "accuracy"]].style.background_gradient(cmap="RdYlGn", subset=["accuracy"], vmin=0, vmax=1),
+                    column_config=col_config,
+                    use_container_width=True,
+                    hide_index=True
+                )
             else:
                 st.caption("No SFT causal row for this qid.")
         else:
