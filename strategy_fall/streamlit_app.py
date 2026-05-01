@@ -92,7 +92,11 @@ def _clustered_paths(version: str) -> Tuple[Path, Path, Path, Path]:
     sft = base / f"{SFT_MODEL}_traces-{version}_clustered.json"
     rl  = base / f"{RL_MODEL}_traces-{version}_clustered.json"
 
-    # Fallback: legacy filenames without the version infix
+    # Fallback: legacy or depth-specific filenames
+    if version == "depth":
+        sft = base / "Qwen-Instruct-depth_clustered.json"
+        rl  = base / "DeepSeek-depth_clustered.json"
+
     if not sft.exists():
         sft = base / f"{SFT_MODEL}_clustered.json"
     if not rl.exists():
@@ -152,9 +156,9 @@ def main() -> None:
         st.header("Data")
         version = st.selectbox(
             "Trace set",
-            options=["q1000", "q50", "math_l5", "math_l1", "math_l3"],
+            options=["q1000", "math_l5"],
             index=0,
-            help="math_l5 = MATH-500 Level 5 (hardest) | q1000/q50 = GSM8K",
+            help="math_l5 = MATH-500 Level 5 | q1000 = GSM8K (1000 questions)",
         )
         cmap, ctags, sft_path, rl_path = _clustered_paths(version)
 
@@ -200,7 +204,12 @@ def main() -> None:
     labels = [f"Q{i}: {(sft_data[i].get('question') or '')[:90]}…" for i in range(n)]
     q_idx = st.selectbox("Question", options=list(range(n)), format_func=lambda i: labels[i])
 
-    analyzer = get_analyzer(str(cmap), str(ctags))
+    if not ctags.exists():
+        st.warning(f"Cluster tags missing for '{version}'. Showing nodes as 'Other'.")
+        analyzer = get_analyzer(str(cmap), None)
+    else:
+        analyzer = get_analyzer(str(cmap), str(ctags))
+        
     g_sft, g_rl, _, _ = build_pair(analyzer, sft_data[q_idx], rl_data[q_idx])
 
     tag_rl = intervention_tag_for_q(causal_rl, q_idx) if highlight_causal else None

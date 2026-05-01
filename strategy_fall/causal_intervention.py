@@ -110,15 +110,35 @@ def main():
 
     print("\n[📊] Analyzing accuracy drops...")
     for meta, output in tqdm(zip(prompt_metadata, outputs), total=len(all_prompts), desc="Scoring"):
-        gt_text = meta['gt']
-        gt_number = gt_text.split("####")[-1].strip() if "####" in gt_text else gt_text.strip()
+        # MATH-aware answer extraction
+        def extract_answer(text):
+            if "\\boxed{" in text:
+                # Find the last \boxed{
+                parts = text.split("\\boxed{")
+                last_part = parts[-1]
+                # Match braces
+                count = 1
+                res = ""
+                for char in last_part:
+                    if char == "{": count += 1
+                    elif char == "}": count -= 1
+                    if count == 0: break
+                    res += char
+                return res.strip().lower().replace(" ", "")
+            # Fallback to #### for GSM8K
+            if "####" in text:
+                return text.split("####")[-1].strip().lower().replace(" ", "")
+            return text.strip().lower().replace(" ", "")
+
+        gt_val = extract_answer(meta['gt'])
         
         correct_count = 0
         for res in output.outputs:
-            model_text = res.text
-            if f"#### {gt_number}" in model_text or f"boxed{{{gt_number}}}" in model_text or f"The answer is {gt_number}" in model_text:
+            model_val = extract_answer(res.text)
+            if gt_val == model_val:
                 correct_count += 1
-            elif model_text.strip().endswith(gt_number):
+            # Loose match as fallback
+            elif len(gt_val) > 1 and gt_val in model_val:
                 correct_count += 1
         
         meta['accuracy'] = correct_count / args.n_samples
