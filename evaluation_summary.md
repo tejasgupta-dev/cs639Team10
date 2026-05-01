@@ -1,6 +1,6 @@
 # Evaluation Summary
 
-_Generated: 2026-05-01 15:17_
+_Generated: 2026-05-01 15:18_
 
 ## Structural metrics — GSM8K (q1000)
 
@@ -85,3 +85,10 @@ _n_questions = 50_
 _n_questions = 50_
 
 **Note:** all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.
+
+## Files skipped (legacy / superseded)
+
+- `strategy_fall/results/strategy_collapse_report.csv` — older 4-col schema; superseded by q1000/strategy_collapse_report_q1000.csv
+- `strategy_fall/results/Qwen2.5-7B-Instruct-AWQ_details.csv` — 50-row precursor; superseded by q1000/Qwen2.5-7B-Instruct-AWQ_traces-q1000_details.csv
+- `strategy_fall/results/DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_details.csv` — 50-row precursor; superseded by q1000/DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_details.csv
+- `strategy_fall/results/qwen2.5-7b-awq-4bit_details.csv` — 50-row precursor with empty migration cols; superseded by q1000/qwen2.5-7b-awq-4bit_traces-q1000_details.csv

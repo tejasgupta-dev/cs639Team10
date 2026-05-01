@@ -31,6 +31,17 @@ CAUSAL_CAVEATS = {
     'MATH L5, SFT': 'all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.',
 }
 
+LEGACY_CSVS = [
+    (RESULTS_DIR / 'strategy_collapse_report.csv',
+     'older 4-col schema; superseded by q1000/strategy_collapse_report_q1000.csv'),
+    (RESULTS_DIR / 'Qwen2.5-7B-Instruct-AWQ_details.csv',
+     '50-row precursor; superseded by q1000/Qwen2.5-7B-Instruct-AWQ_traces-q1000_details.csv'),
+    (RESULTS_DIR / 'DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_details.csv',
+     '50-row precursor; superseded by q1000/DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_details.csv'),
+    (RESULTS_DIR / 'qwen2.5-7b-awq-4bit_details.csv',
+     '50-row precursor with empty migration cols; superseded by q1000/qwen2.5-7b-awq-4bit_traces-q1000_details.csv'),
+]
+
 
 def read_csv_or_none(path):
     try:
@@ -158,6 +169,20 @@ def main():
             text.append(f'note: {caveat}')
             md.append('')
             md.append(f'**Note:** {caveat}')
+
+    text.append('')
+    text.append('-' * 64)
+    text.append('Files skipped (legacy / superseded)')
+    text.append('-' * 64)
+    md.append('')
+    md.append('## Files skipped (legacy / superseded)')
+    md.append('')
+    for path, reason in LEGACY_CSVS:
+        if not path.exists():
+            continue
+        rel = path.relative_to(REPO_ROOT)
+        text.append(f'  {rel}  — {reason}')
+        md.append(f'- `{rel}` — {reason}')
 
     print('\n'.join(text))
     OUT_MD.write_text('\n'.join(md) + '\n')
