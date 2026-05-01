@@ -27,6 +27,29 @@ def read_csv_or_none(path):
         return None
 
 
+def deltas_pairwise(df, metric_cols):
+    roles = {}
+    for _, row in df.iterrows():
+        n = str(row['model']).lower()
+        if 'deepseek' in n or 'floppanacci' in n:
+            roles['RL'] = row
+        elif '4bit' in n:
+            roles['base'] = row
+        elif 'instruct' in n:
+            roles['SFT'] = row
+    out = []
+    for a, b in [('RL', 'SFT'), ('RL', 'base'), ('SFT', 'base')]:
+        if a not in roles or b not in roles:
+            continue
+        parts = [f'{a} - {b}:']
+        for col in metric_cols:
+            d = float(roles[a][col]) - float(roles[b][col])
+            sign = '+' if d >= 0 else '-'
+            parts.append(f'{col} {sign}{abs(d):.4f}')
+        out.append('  '.join(parts))
+    return out
+
+
 def df_to_md(df):
     headers = list(df.columns)
     lines = ['| ' + ' | '.join(str(h) for h in headers) + ' |']
@@ -64,6 +87,17 @@ def main():
             continue
         text.append(df.to_string(index=False))
         md.append(df_to_md(df))
+        metric_cols = [c for c in df.columns if c != 'model']
+        delta_lines = deltas_pairwise(df, metric_cols)
+        if delta_lines:
+            text.append('')
+            text.append('Deltas:')
+            md.append('')
+            md.append('**Deltas:**')
+            md.append('')
+            for line in delta_lines:
+                text.append('  ' + line)
+                md.append(f'- {line}')
         if label == 'Depth experiment':
             note = '(different cluster config — values not comparable to q1000/math_l5)'
             text.append('')
