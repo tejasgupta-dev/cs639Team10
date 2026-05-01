@@ -18,6 +18,19 @@ STRUCTURAL = [
     ('Depth experiment', RESULTS_DIR / 'depth'   / 'strategy_collapse_report_depth.csv'),
 ]
 
+CAUSAL_CONDITIONS = [
+    ('GSM8K, RL',    RESULTS_DIR / 'causal'),
+    ('GSM8K, SFT',   RESULTS_DIR / 'causal_sft'),
+    ('MATH L5, RL',  RESULTS_DIR / 'causal_math_l5'),
+    ('MATH L5, SFT', RESULTS_DIR / 'causal_math_l5_sft'),
+]
+
+CAUSAL_CAVEATS = {
+    'GSM8K, SFT':   "SFT-GSM8K outputs use 'Final Answer:' without '####' / '\\boxed{}'; absolute accuracies reflect parser limitation, drops still informative.",
+    'MATH L5, RL':  'all accuracies = 0.000; likely max_model_len truncation on Level-5 prompts. Drops not interpretable.',
+    'MATH L5, SFT': 'all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.',
+}
+
 
 def read_csv_or_none(path):
     try:
@@ -48,6 +61,22 @@ def deltas_pairwise(df, metric_cols):
             parts.append(f'{col} {sign}{abs(d):.4f}')
         out.append('  '.join(parts))
     return out
+
+
+def causal_block(directory):
+    summary = read_csv_or_none(directory / 'causal_summary.csv')
+    details = read_csv_or_none(directory / 'causal_details.csv')
+    if summary is None or details is None:
+        return None
+    tags = [c for c in summary.columns if c != 'type']
+    ctrl = summary[summary['type'] == 'control'].iloc[0]
+    intv = summary[summary['type'] == 'intervention'].iloc[0]
+    rows = []
+    for t in tags:
+        c = float(ctrl[t])
+        i = float(intv[t])
+        rows.append({'tag': t, 'control': round(c, 4), 'intervention': round(i, 4), 'drop': round(c - i, 4)})
+    return pd.DataFrame(rows), int(details['qid'].nunique())
 
 
 def df_to_md(df):
