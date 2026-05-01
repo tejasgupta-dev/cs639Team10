@@ -1,0 +1,385 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-math_l5_q1",
+  "nodes": [
+    {
+      "node_id": 675,
+      "context": "[Uncertainty Management] So all these groupings give 121.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1124,
+      "context": "[Conclusion] Thus, the final answer is: \\[ \\boxed{10} \\]",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 167,
+      "context": "[Active Computation] 16. \\((2 \\cdot (3 \\cdot 4 \\cdot 5 \\cdot 1)) + 1 = ...",
+      "node_type": "Active Computation",
+      "degree": 9
+    },
+    {
+      "node_id": 75,
+      "context": "[Conclusion] 6. \\((2 \\cdot 3 + 5) \\cdot (4 + 1)\\): \\[2 \\cdot 3 ...",
+      "node_type": "Conclusion",
+      "degree": 6
+    },
+    {
+      "node_id": 175,
+      "context": "[Conclusion] 4. \\(\\left(2 \\cdot 3 \\cdot (5 + 1)\\right) \\cdot 4\\...",
+      "node_type": "Conclusion",
+      "degree": 10
+    },
+    {
+      "node_id": 47,
+      "context": "[Uncertainty Management] Wait, are there any other groupings?",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 50,
+      "context": "[Conclusion] To solve the problem, we need to explore all possi...",
+      "node_type": "Conclusion",
+      "degree": 12
+    },
+    {
+      "node_id": 1268,
+      "context": "[Conclusion] Final Answer: \\(\\boxed{2.0}\\)",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 1269,
+      "context": "[Conclusion] Final Answer: \\(\\boxed{1}\\)",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 663,
+      "context": "[Active Computation] Let's list all the distinct values we have obtaine...",
+      "node_type": "Active Computation",
+      "degree": 9
+    },
+    {
+      "node_id": 1016,
+      "context": "[Uncertainty Management] Wait, but the problem in the example changes the a...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 188,
+      "context": "[Conclusion] 10. \\((2 \\cdot 3 \\cdot 4 \\cdot (5 + 1)) = 2 \\cdot ...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": 189,
+      "context": "[Active Computation] 9. \\(2 \\cdot (3 \\cdot (4 \\cdot 5)) + 1 = 2 \\cdot (...",
+      "node_type": "Active Computation",
+      "degree": 7
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 18
+    },
+    {
+      "node_id": 1503,
+      "context": "[Planning] Now, let's consider the other case:",
+      "node_type": "Planning",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 50,
+      "target": 50,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": 1016,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1016,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 675,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 675,
+      "target": 50,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": 175,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 175,
+      "target": 175,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 175,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 175,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 50,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": 1268,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 75,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 75,
+      "target": 75,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 75,
+      "target": 663,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 663,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1124,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 663,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": 1269,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 663,
+      "target": 50,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 50,
+      "target": 188,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 188,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 189,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 189,
+      "target": 167,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 167,
+      "target": 167,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 167,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 167,
+      "target": 189,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 189,
+      "target": 188,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 188,
+      "target": 167,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 189,
+      "target": 189,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 167,
+      "target": 663,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1269,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 188,
+      "target": 175,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 175,
+      "target": 75,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 75,
+      "target": 175,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 175,
+      "target": 663,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 663,
+      "target": 1268,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 167,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 188,
+      "target": 188,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 167,
+      "target": 188,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 189,
+      "target": 663,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 663,
+      "target": 1269,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1016,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1016,
+      "target": 47,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 47,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1503,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1503,
+      "target": 188,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 175,
+      "target": 50,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

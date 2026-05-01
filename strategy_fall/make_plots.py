@@ -7,23 +7,34 @@ import matplotlib.pyplot as plt
 from build_graph import StrategyAnalyzer
 from visualize import draw_graph_side_by_side
 
+SFT_MODEL = "Qwen2.5-7B-Instruct-AWQ"
+RL_MODEL  = "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ"
+
+
+def _find_clustered(base_path: str, model: str, version: str) -> str:
+    """Return the clustered JSON path, trying version-infix then legacy name."""
+    primary  = os.path.join(base_path, f"{model}_traces-{version}_clustered.json")
+    fallback = os.path.join(base_path, f"{model}_clustered.json")
+    if os.path.exists(primary):
+        return primary
+    if os.path.exists(fallback):
+        return fallback
+    return primary  # return primary so the missing-file error is descriptive
+
+
 def generate_comparison(question_idx=0, version="q1000"):
     base_path = f"strategy_fall/data/clustered_{version}"
     results_path = f"strategy_fall/results/{version}"
     cluster_map_path = os.path.join(base_path, "cluster_map.json")
     cluster_tags_path = os.path.join(base_path, "cluster_tags.json")
-    
-    sft_file = os.path.join(base_path, f"Qwen2.5-7B-Instruct-AWQ_traces-{version}_clustered.json")
-    rl_file = os.path.join(base_path, f"DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-{version}_clustered.json")
-    
-    if not os.path.exists(sft_file):
-        sft_file = os.path.join(base_path, "Qwen2.5-7B-Instruct-AWQ_clustered.json")
-    if not os.path.exists(rl_file):
-        rl_file = os.path.join(base_path, "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_clustered.json")
+
+    sft_file = _find_clustered(base_path, SFT_MODEL, version)
+    rl_file  = _find_clustered(base_path, RL_MODEL,  version)
     
     if not os.path.exists(sft_file) or not os.path.exists(rl_file):
         print(f"Error: Clustered JSON files not found in {base_path}")
         print(f"Looked for:\n  - {sft_file}\n  - {rl_file}")
+        print("Tip: run 'bash strategy_fall/run_analysis.sh {version}' first.".format(version=version))
         return
 
     analyzer = StrategyAnalyzer(cluster_map_path, cluster_tags_path)

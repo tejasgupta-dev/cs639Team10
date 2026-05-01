@@ -1,0 +1,439 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-math_l5_q0",
+  "nodes": [
+    {
+      "node_id": 1416,
+      "context": "[Uncertainty Management] So, we had:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1418,
+      "context": "[Other] Putting it all together:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 784,
+      "context": "[Conclusion] First, we change the variables by setting \\( n = j...",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 785,
+      "context": "[Uncertainty Management] Here, \\(n\\) starts from 2 because \\(j + k \\geq 2\\)...",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 667,
+      "context": "[Conclusion] Thus, the sum is: \\[\\sum_{n=2}^\\infty \\sum_{m=1}^{...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": 415,
+      "context": "[Conclusion] Is this the final answer?",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 1317,
+      "context": "[Planning] Simplifying the above expression, we get:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 946,
+      "context": "[Uncertainty Management] So substituting back, the double sum is:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 63,
+      "context": "[Conclusion] Thus, the final answer is: \\[\\boxed{p - q}\\]",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 452,
+      "context": "[Active Computation] So substituting back, we have: \\[(p - 1) - (q - 1)...",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 843,
+      "context": "[Uncertainty Management] So, if I fix n, the inner sum becomes the sum over...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 206,
+      "context": "[Active Computation] Because \\(\\frac{n - 1}{n^3} = \\frac{n}{n^3} - \\fra...",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 982,
+      "context": "[Uncertainty Management] We know that: \\[ \\sum_{n = 1}^\\infty \\frac{1}{n^2}...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 983,
+      "context": "[Conclusion] Similarly, \\(q = \\sum_{k=1}^\\infty \\frac{1}{k^3}\\)...",
+      "node_type": "Conclusion",
+      "degree": 7
+    },
+    {
+      "node_id": 1367,
+      "context": "[Uncertainty Management] Let me break it down step by step.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 875,
+      "context": "[Uncertainty Management] Let's denote \\(n = j + k\\). Then, for each fixed \\...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 876,
+      "context": "[Uncertainty Management] Which is symmetric in j and k, so perhaps we can e...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 498,
+      "context": "[Uncertainty Management] Now, the main task is to consider the double sum: ...",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 374,
+      "context": "[Conclusion] \\[ \\sum_{n=2}^\\infty \\frac{1}{n^2} - \\sum_{n=2}^\\i...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": 633,
+      "context": "[Uncertainty Management] We need to evaluate: \\[ \\sum_{j = 1}^\\infty \\sum_{...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 20
+    }
+  ],
+  "edges": [
+    {
+      "source": 498,
+      "target": 633,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 875,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 374,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 982,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 982,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 63,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 784,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 784,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 206,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 206,
+      "target": 374,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 374,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 983,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": 452,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 452,
+      "target": 63,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1367,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1367,
+      "target": 785,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 785,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 667,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 206,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 374,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 982,
+      "target": 983,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 785,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 1317,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 374,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 983,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 982,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": 1418,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1418,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 415,
+      "target": 63,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 784,
+      "target": 785,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 206,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

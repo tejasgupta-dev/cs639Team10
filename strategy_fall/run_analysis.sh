@@ -1,6 +1,24 @@
 #!/usr/bin/env bash
+#
+# Strategy Collapse Analysis Pipeline
+#
+# Usage:
+#   bash strategy_fall/run_analysis.sh <version>
+#
+# Version examples:
+#   q50        — 50 GSM8K questions (quick test)
+#   q1000      — 1000 GSM8K questions (full run)
+#   math_l5    — MATH-500 Level 5 (complexity threshold experiment)
+#   math_l1    — MATH-500 Level 1 (baseline for RL-scaling comparison)
+#
+# The version string must match the suffix used when generating traces, e.g.:
+#   python strategy_fall/data/generate_traces.py \
+#       --model Qwen/Qwen2.5-7B-Instruct-AWQ \
+#       --dataset math --math_level 5 --num_questions 50
+#   → produces  strategy_fall/data/Qwen2.5-7B-Instruct-AWQ_traces-math_l5.json
+#   → run with: bash strategy_fall/run_analysis.sh math_l5
 
-# Check for version argument (e.g., q1000 or q50)
+# Check for version argument (e.g., q1000 or math_l5)
 VERSION=${1:-"q1000"}
 
 # Configuration
@@ -8,7 +26,16 @@ DATA_DIR="strategy_fall/data"
 CLUSTERED_DIR="strategy_fall/data/clustered_$VERSION"
 RESULTS_DIR="strategy_fall/results/$VERSION"
 PATTERN="*-$VERSION.json"
-PYTHON_BIN="/Users/arushitaneja/anaconda3/envs/cs639-assignments/bin/python3"
+
+# Auto-detect Python: prefer the active conda/venv env, fall back to system python3
+if [ -n "$CONDA_PREFIX" ]; then
+    PYTHON_BIN="$CONDA_PREFIX/bin/python3"
+elif [ -n "$VIRTUAL_ENV" ]; then
+    PYTHON_BIN="$VIRTUAL_ENV/bin/python3"
+else
+    PYTHON_BIN=$(command -v python3)
+fi
+echo "Using Python: $PYTHON_BIN"
 
 echo "========================================"
 echo "Starting Strategy Collapse Analysis: $VERSION"

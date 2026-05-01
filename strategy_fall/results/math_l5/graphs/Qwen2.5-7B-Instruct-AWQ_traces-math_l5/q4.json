@@ -1,0 +1,505 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-math_l5_q4",
+  "nodes": [
+    {
+      "node_id": 510,
+      "context": "[Uncertainty Management] \\boxed{-256}",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    },
+    {
+      "node_id": 1289,
+      "context": "[Uncertainty Management] Let me expand each term:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 270,
+      "context": "[Planning] 2. Calculate $z - c$:    \\[    z - c = (2 + \\sqrt{...",
+      "node_type": "Planning",
+      "degree": 7
+    },
+    {
+      "node_id": 271,
+      "context": "[Uncertainty Management] So, z - c = √2 - 3√2 i.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 415,
+      "context": "[Conclusion] Is this the final answer?",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 682,
+      "context": "[Uncertainty Management] Now, we need to multiply this by e^{iπ/4}, which i...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 173,
+      "context": "[Conclusion] - Use the distributive property to expand:      \\[...",
+      "node_type": "Conclusion",
+      "degree": 12
+    },
+    {
+      "node_id": 181,
+      "context": "[Conclusion] **Final Answer** The result is \\boxed{6 -5i}. </th...",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 698,
+      "context": "[Uncertainty Management] Now, when we rotate this vector by π/4 radians cou...",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 958,
+      "context": "[Uncertainty Management] Wait, let me confirm: when you rotate around a poi...",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 959,
+      "context": "[Uncertainty Management] To solve for \\( w \\), the result of rotating \\( z ...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1344,
+      "context": "[Uncertainty Management] **Step 2: Consider the First Scenario**",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 210,
+      "context": "[Conclusion] So, w' = A * B = 4 - 2i.",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 85,
+      "context": "[Planning] **Step 1: Translate $z$ and $c$**",
+      "node_type": "Planning",
+      "degree": 5
+    },
+    {
+      "node_id": 225,
+      "context": "[Conclusion] So, putting it all together, w = c + (z - c) * e^{...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 101,
+      "context": "[Active Computation] \\[    z'' = z' \\left( \\frac{\\sqrt{2}}{2} + i\\frac{...",
+      "node_type": "Active Computation",
+      "degree": 10
+    },
+    {
+      "node_id": 102,
+      "context": "[Active Computation] 14. **Simplify the trigonometric terms:**    \\[   ...",
+      "node_type": "Active Computation",
+      "degree": 8
+    },
+    {
+      "node_id": 359,
+      "context": "[Conclusion] 3. **Rotate \\( z' \\) by \\( \\frac{\\pi}{4} \\) counte...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 27
+    },
+    {
+      "node_id": 124,
+      "context": "[Active Computation] So, with θ = π/4, cosθ = sinθ = sqrt(2)/2.",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 125,
+      "context": "[Planning] \\[ e^{i\\pi/4} = \\cos\\left(\\frac{\\pi}{4}\\right) + i...",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 126,
+      "context": "[Uncertainty Management] So, the vector from c to z is (2 + sqrt(2) - 2, -3...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": 959,
+      "target": 270,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 101,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 359,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": 101,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 101,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 270,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 173,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 173,
+      "weight": 15,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 225,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 102,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 102,
+      "target": 102,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 102,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 125,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 270,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 181,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 102,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 102,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": 698,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 698,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 359,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": 1344,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1344,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 510,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 359,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 359,
+      "target": 359,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 102,
+      "target": 124,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 124,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 102,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1344,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1344,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 415,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-math_l5_q2",
+  "nodes": [
+    {
+      "node_id": 0,
+      "context": "[Active Computation] 1. For \\( i = 2 \\): \\[ \\ell_2(x) = \\frac{(x-3)(x-4...",
+      "node_type": "Active Computation",
+      "degree": 5
+    },
+    {
+      "node_id": 1377,
+      "context": "[Uncertainty Management] Wait, but wait, q(x) has roots at x=2,3,4,5,6,7, a...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 962,
+      "context": "[Active Computation] So, from x=0: Q(0) = 5040b = -p(0) → p(0) = -5040b...",
+      "node_type": "Active Computation",
+      "degree": 11
+    },
+    {
+      "node_id": 1348,
+      "context": "[Uncertainty Management] Let me define Q(x) = (x² - 1)p(x) - x. Then, Q(x) ...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1094,
+      "context": "[Uncertainty Management] But when we plug n=0, we have a conflict because q...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 1195,
+      "context": "[Conclusion] Alternatively, maybe I can evaluate Q(x) at anothe...",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 1101,
+      "context": "[Uncertainty Management] Wait, I recall something about polynomials and the...",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1166,
+      "context": "[Planning] <think> Alright, so I've got this problem here: Th...",
+      "node_type": "Planning",
+      "degree": 3
+    },
+    {
+      "node_id": 1167,
+      "context": "[Uncertainty Management] First, I remember that if a polynomial passes thro...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1326,
+      "context": "[Uncertainty Management] Wait, but I just thought of something. When we def...",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 1138,
+      "context": "[Conclusion] Solving for \\( p(8) \\): \\[ 720 = 63 p(8) - 8, \\] \\...",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 22
+    },
+    {
+      "node_id": 671,
+      "context": "[Conclusion] Assume \\(f(k) = \\frac{k(k+1)}{2} - 1\\) holds for s...",
+      "node_type": "Conclusion",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 1166,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": 1377,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 962,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1167,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 0,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 0,
+      "target": 0,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 0,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 671,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 671,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 0,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1138,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1377,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 962,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": 1195,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": 1195,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1166,
+      "target": 1094,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 1138,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": 1138,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1326,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1377,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 962,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": 962,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": 962,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": 1377,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1166,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1377,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

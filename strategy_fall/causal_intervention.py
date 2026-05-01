@@ -41,7 +41,12 @@ def main():
     parser.add_argument("--cluster_tags", type=str, required=True)
     parser.add_argument("--num_questions", type=int, default=50)
     parser.add_argument("--n_samples", type=int, default=16, help="Samples per intervention arm")
-    parser.add_argument("--gpu_memory_utilization", type=float, default=0.8, help="Fraction of GPU memory to use")
+    parser.add_argument("--gpu_memory_utilization", type=float, default=0.85, help="Fraction of GPU memory to use")
+    parser.add_argument("--max_model_len", type=int, default=4096,
+                        help="Max context length; raise for MATH Level 5 (long solutions)")
+    parser.add_argument("--quantization", type=str, default=None,
+                        choices=["awq", "gptq", "squeezellm", "compressed-tensors", None],
+                        help="Quantization method (required for AWQ/GPTQ models)")
     parser.add_argument("--output_dir", type=str, default="strategy_fall/results/causal")
     
     args = parser.parse_args()
@@ -54,10 +59,13 @@ def main():
 
     print(f"Initializing vLLM for {args.model}...")
     llm = LLM(
-        model=args.model, 
-        trust_remote_code=True, 
-        gpu_memory_utilization=args.gpu_memory_utilization, 
-        max_model_len=2048
+        model=args.model,
+        trust_remote_code=True,
+        gpu_memory_utilization=args.gpu_memory_utilization,
+        max_model_len=args.max_model_len,
+        quantization=args.quantization,
+        dtype="float16",   # RTX 2080 Ti does not support bfloat16
+        enforce_eager=True,
     )
     tokenizer = AutoTokenizer.from_pretrained(args.model)
     

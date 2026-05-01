@@ -1,0 +1,4243 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-math_l5_q4",
+  "nodes": [
+    {
+      "node_id": 512,
+      "context": "[Active Computation] (√2 - 3√2 i) * (√2/2 + i√2/2)",
+      "node_type": "Active Computation",
+      "degree": 13
+    },
+    {
+      "node_id": 1538,
+      "context": "[Other] Hmm.",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 1539,
+      "context": "[Uncertainty Management] Wait, let me verify:",
+      "node_type": "Uncertainty Management",
+      "degree": 15
+    },
+    {
+      "node_id": 1541,
+      "context": "[Planning] Let me try that approach.",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1542,
+      "context": "[Uncertainty Management] But let me double-check with another method.",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": 1543,
+      "context": "[Uncertainty Management] Wait, that can't be right. Let me check my steps b...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1544,
+      "context": "[Uncertainty Management] Wait, but that seems too straightforward. Let me c...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1545,
+      "context": "[Uncertainty Management] Wait, let's see:",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 1548,
+      "context": "[Uncertainty Management] Yes, that makes sense.",
+      "node_type": "Uncertainty Management",
+      "degree": 24
+    },
+    {
+      "node_id": 16,
+      "context": "[Uncertainty Management] So, real part: (2 + sqrt(2)) - 2 = sqrt(2).",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 1022,
+      "context": "[Uncertainty Management] [2 0 3 -2]",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 34,
+      "context": "[Uncertainty Management] So, result is 4.0 - 2.0i, which matches the previo...",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 35,
+      "context": "[Active Computation] 4 -2i + 2 -3i = (4 + 2) + (-2i -3i) = 6 -5i",
+      "node_type": "Active Computation",
+      "degree": 11
+    },
+    {
+      "node_id": 36,
+      "context": "[Uncertainty Management] 2. c = 2 - 3i",
+      "node_type": "Uncertainty Management",
+      "degree": 21
+    },
+    {
+      "node_id": 37,
+      "context": "[Uncertainty Management] Then, adding c: 4 - 2i + 2 - 3i = 6 - 5i.",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 563,
+      "context": "[Uncertainty Management] From equation 2, since a + c = 0, we can let c = -...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 566,
+      "context": "[Uncertainty Management] A * B = (sqrt(2) - 3 sqrt(2) i)(sqrt(2)/2 + i sqrt...",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 84,
+      "context": "[Uncertainty Management] So, subtracting c from z:",
+      "node_type": "Uncertainty Management",
+      "degree": 19
+    },
+    {
+      "node_id": 85,
+      "context": "[Planning] **Step 1: Translate $z$ and $c$**",
+      "node_type": "Planning",
+      "degree": 13
+    },
+    {
+      "node_id": 1113,
+      "context": "[Uncertainty Management] This seems really messy, but perhaps I can make an...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1121,
+      "context": "[Active Computation] So x=(4+8)/2=12/2=6, and x=(4-8)/2= -4/2=-2",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 101,
+      "context": "[Active Computation] \\[    z'' = z' \\left( \\frac{\\sqrt{2}}{2} + i\\frac{...",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 1128,
+      "context": "[Uncertainty Management] The formula is:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 617,
+      "context": "[Planning] So, let's compute y for each x:",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 619,
+      "context": "[Uncertainty Management] Which factors as sqrt(2)(1 - 3i), so correct.",
+      "node_type": "Uncertainty Management",
+      "degree": 25
+    },
+    {
+      "node_id": 620,
+      "context": "[Active Computation] 1 (from A*sqrt(2)/2) + i (from A*i sqrt(2)/2) - 3i...",
+      "node_type": "Active Computation",
+      "degree": 19
+    },
+    {
+      "node_id": 1145,
+      "context": "[Uncertainty Management] Going back to the original expression:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 123,
+      "context": "[Planning] sqrt(2)/2 * (-3 sqrt(2)) = (-3*2)/2 = -3",
+      "node_type": "Planning",
+      "degree": 17
+    },
+    {
+      "node_id": 124,
+      "context": "[Active Computation] So, with θ = π/4, cosθ = sinθ = sqrt(2)/2.",
+      "node_type": "Active Computation",
+      "degree": 9
+    },
+    {
+      "node_id": 125,
+      "context": "[Planning] \\[ e^{i\\pi/4} = \\cos\\left(\\frac{\\pi}{4}\\right) + i...",
+      "node_type": "Planning",
+      "degree": 30
+    },
+    {
+      "node_id": 126,
+      "context": "[Uncertainty Management] So, the vector from c to z is (2 + sqrt(2) - 2, -3...",
+      "node_type": "Uncertainty Management",
+      "degree": 20
+    },
+    {
+      "node_id": 1165,
+      "context": "[Uncertainty Management] Wait, no, let me check the constants:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 657,
+      "context": "[Uncertainty Management] Alternatively, maybe I can represent the entire th...",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": 658,
+      "context": "[Uncertainty Management] Wait, maybe it's easier to just assign coordinates...",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 146,
+      "context": "[Uncertainty Management] In Asymptote, the rotate function rotates a point ...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 157,
+      "context": "[Active Computation] So, imaginary part is \\( 1 + (-3) = -2 \\)",
+      "node_type": "Active Computation",
+      "degree": 8
+    },
+    {
+      "node_id": 158,
+      "context": "[Active Computation] Yes, because the real part is 2 + √2, and the imag...",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 170,
+      "context": "[Uncertainty Management] Interesting. Now, let's move to i=2.",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 682,
+      "context": "[Uncertainty Management] Now, we need to multiply this by e^{iπ/4}, which i...",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 684,
+      "context": "[Uncertainty Management] Wait, but just to make sure, is there a smaller po...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 173,
+      "context": "[Conclusion] - Use the distributive property to expand:      \\[...",
+      "node_type": "Conclusion",
+      "degree": 4
+    },
+    {
+      "node_id": 171,
+      "context": "[Uncertainty Management] i=3:3,0,2,4,1.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 181,
+      "context": "[Conclusion] **Final Answer** The result is \\boxed{6 -5i}. </th...",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": 182,
+      "context": "[Uncertainty Management] Thus, w=6-5i.",
+      "node_type": "Uncertainty Management",
+      "degree": 35
+    },
+    {
+      "node_id": 697,
+      "context": "[Uncertainty Management] Alternatively, maybe I can use the rotation matrix...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 698,
+      "context": "[Uncertainty Management] Now, when we rotate this vector by π/4 radians cou...",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 195,
+      "context": "[Conclusion] So, \\( a = \\sqrt{2} \\), \\( b = -3\\sqrt{2} \\), \\( c...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 196,
+      "context": "[Active Computation] Combine imaginary parts: (1/2 - 3/2)i = (-1)i",
+      "node_type": "Active Computation",
+      "degree": 17
+    },
+    {
+      "node_id": 197,
+      "context": "[Planning] -2i -3i = -5i",
+      "node_type": "Planning",
+      "degree": 23
+    },
+    {
+      "node_id": 1228,
+      "context": "[Other] Plug this into E2:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 209,
+      "context": "[Uncertainty Management] So, \\( w = (4 - 2i) + (2 - 3i) \\)",
+      "node_type": "Uncertainty Management",
+      "degree": 16
+    },
+    {
+      "node_id": 721,
+      "context": "[Planning] Alternatively, maybe I can compute (z - c) * rotat...",
+      "node_type": "Planning",
+      "degree": 9
+    },
+    {
+      "node_id": 210,
+      "context": "[Conclusion] So, w' = A * B = 4 - 2i.",
+      "node_type": "Conclusion",
+      "degree": 24
+    },
+    {
+      "node_id": 1233,
+      "context": "[Planning] Simplify terms:",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 1242,
+      "context": "[Uncertainty Management] So, let me list the points again with their equiva...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 225,
+      "context": "[Conclusion] So, putting it all together, w = c + (z - c) * e^{...",
+      "node_type": "Conclusion",
+      "degree": 13
+    },
+    {
+      "node_id": 226,
+      "context": "[Uncertainty Management] So, when we compute z - c, we get (real: 2 + √2 -2...",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 227,
+      "context": "[Uncertainty Management] Which, for θ = 45 degrees, is:",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 1256,
+      "context": "[Planning] So, multiply them:",
+      "node_type": "Planning",
+      "degree": 8
+    },
+    {
+      "node_id": 1257,
+      "context": "[Uncertainty Management] But wait, hold on a second. Let me make sure I did...",
+      "node_type": "Uncertainty Management",
+      "degree": 22
+    },
+    {
+      "node_id": 243,
+      "context": "[Conclusion] We have \\( (z - c) \\cdot e^{i\\theta} = 4 - 2i \\), ...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": 244,
+      "context": "[Planning] Now, to compute (z - c) * e^{iπ/4}.",
+      "node_type": "Planning",
+      "degree": 13
+    },
+    {
+      "node_id": 770,
+      "context": "[Active Computation] So, a = (1 + 3)/2 = 2, and a = (1 - 3)/2 = -1.",
+      "node_type": "Active Computation",
+      "degree": 8
+    },
+    {
+      "node_id": 771,
+      "context": "[Active Computation] = -3*(1)*(-1)",
+      "node_type": "Active Computation",
+      "degree": 11
+    },
+    {
+      "node_id": 264,
+      "context": "[Uncertainty Management] So, the constants multiply to 1, so I can ignore t...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 265,
+      "context": "[Conclusion] 1 +i -3i +3 =4 -2i.",
+      "node_type": "Conclusion",
+      "degree": 26
+    },
+    {
+      "node_id": 1289,
+      "context": "[Uncertainty Management] Let me expand each term:",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 1290,
+      "context": "[Conclusion] Starting with the first term:",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": 270,
+      "context": "[Planning] 2. Calculate $z - c$:    \\[    z - c = (2 + \\sqrt{...",
+      "node_type": "Planning",
+      "degree": 11
+    },
+    {
+      "node_id": 271,
+      "context": "[Uncertainty Management] So, z - c = √2 - 3√2 i.",
+      "node_type": "Uncertainty Management",
+      "degree": 42
+    },
+    {
+      "node_id": 793,
+      "context": "[Active Computation] Calculating that: sqrt(20) is about 4.4721, sqrt(5...",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 801,
+      "context": "[Planning] (-1 -2) = -3",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1317,
+      "context": "[Planning] Simplifying the above expression, we get:",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 318,
+      "context": "[Planning] sqrt(2) * 2 sqrt(2) = 2*(sqrt(2)*sqrt(2)) = 2*2 = ...",
+      "node_type": "Planning",
+      "degree": 30
+    },
+    {
+      "node_id": 1346,
+      "context": "[Active Computation] +0.046875 = 0.245945",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 325,
+      "context": "[Conclusion] 2. **Rotate the translated point by \\( \\frac{\\pi}{...",
+      "node_type": "Conclusion",
+      "degree": 13
+    },
+    {
+      "node_id": 845,
+      "context": "[Uncertainty Management] Wait, looking back, the Asymptote code:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1360,
+      "context": "[Uncertainty Management] Multiply these terms:",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1361,
+      "context": "[Uncertainty Management] Compute that term:",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1365,
+      "context": "[Uncertainty Management] Wait, let me compute this step by step:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1366,
+      "context": "[Planning] Let's solve the problem step by step.",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1367,
+      "context": "[Uncertainty Management] Let me break it down step by step.",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 352,
+      "context": "[Planning] Expand left side:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1386,
+      "context": "[Conclusion] So, c = sqrt(s), and b = s - sqrt(s).",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 375,
+      "context": "[Active Computation] Points A(0,0), B(2b, 0), C(2c, 2d).",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 382,
+      "context": "[Planning] Alternatively, y = (x^2) / (√2)",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1416,
+      "context": "[Uncertainty Management] So, we had:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1418,
+      "context": "[Other] Putting it all together:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 1420,
+      "context": "[Uncertainty Management] So, that seems to fit.",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1424,
+      "context": "[Other] So, combining all these:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 1425,
+      "context": "[Uncertainty Management] So, add all together:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 415,
+      "context": "[Conclusion] Is this the final answer?",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 928,
+      "context": "[Uncertainty Management] Yes, that's correct. So, as I did above: w = (z - ...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 428,
+      "context": "[Uncertainty Management] Second term: sqrt(2)*i sqrt(2)/2 = i*(2)/2 = i*1 =...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 1453,
+      "context": "[Conclusion] It's:",
+      "node_type": "Conclusion",
+      "degree": 10
+    },
+    {
+      "node_id": 1452,
+      "context": "[Other] Which means:",
+      "node_type": "Other",
+      "degree": 4
+    },
+    {
+      "node_id": 1455,
+      "context": "[Uncertainty Management] Wait, so let me make a table:",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 1456,
+      "context": "[Uncertainty Management] Let's calculate each element:",
+      "node_type": "Uncertainty Management",
+      "degree": 19
+    },
+    {
+      "node_id": 1457,
+      "context": "[Uncertainty Management] But wait, maybe I made a mistake in my calculation...",
+      "node_type": "Uncertainty Management",
+      "degree": 13
+    },
+    {
+      "node_id": 1454,
+      "context": "[Planning] Let’s assign:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 958,
+      "context": "[Uncertainty Management] Wait, let me confirm: when you rotate around a poi...",
+      "node_type": "Uncertainty Management",
+      "degree": 17
+    },
+    {
+      "node_id": 959,
+      "context": "[Uncertainty Management] To solve for \\( w \\), the result of rotating \\( z ...",
+      "node_type": "Uncertainty Management",
+      "degree": 28
+    },
+    {
+      "node_id": 1475,
+      "context": "[Uncertainty Management] Wait, so that's the same as before.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1476,
+      "context": "[Uncertainty Management] Again, same result.",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 980,
+      "context": "[Active Computation] So that's 1+3=4, +1=5, +2=7, +1=8. Okay, so 2⁸.",
+      "node_type": "Active Computation",
+      "degree": 5
+    },
+    {
+      "node_id": 981,
+      "context": "[Active Computation] Add real parts: 2 + 4 = 6",
+      "node_type": "Active Computation",
+      "degree": 12
+    },
+    {
+      "node_id": 987,
+      "context": "[Uncertainty Management] Hmm, I don't see an obvious way to factor this fur...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 500,
+      "context": "[Planning] Third term: -(3√2)(√2/2)i = - (3*2)/2 i = -3i",
+      "node_type": "Planning",
+      "degree": 11
+    },
+    {
+      "node_id": 1021,
+      "context": "[Uncertainty Management] 0:0",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 129
+    },
+    {
+      "node_id": 511,
+      "context": "[Uncertainty Management] Fourth, \\( -3\\sqrt{2}i * \\frac{\\sqrt{2}}{2}i = -3 ...",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": -1,
+      "target": 271,
+      "weight": 15,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 959,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 958,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 225,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 84,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 271,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 271,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 16,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 16,
+      "target": 158,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 158,
+      "target": 271,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 1539,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 226,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 226,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 271,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 43,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 512,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1360,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1360,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 512,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 1361,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 318,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 428,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 500,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": 500,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 265,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 1289,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 981,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 981,
+      "target": 197,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 34,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 225,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 36,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 209,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 981,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 182,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 37,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 981,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1257,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 125,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 1360,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1360,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": 512,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 771,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 170,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 170,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 34,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 1548,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 37,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 84,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 16,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 1475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1475,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 1256,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1256,
+      "target": 512,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 1257,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 511,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 563,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 563,
+      "target": 35,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 182,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1542,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 959,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 271,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 928,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 928,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1361,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 428,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 512,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 500,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": 1425,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 265,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 37,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 1476,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1476,
+      "target": 182,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 697,
+      "target": 721,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 721,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 227,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 227,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 382,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 382,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 123,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 209,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 182,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": -1,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 181,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 181,
+      "target": 959,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 270,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 325,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": 210,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 181,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 959,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 271,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 16,
+      "target": 157,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 157,
+      "target": 271,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 271,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 36,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 271,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 226,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 721,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 721,
+      "target": 125,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 721,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 271,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 619,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 698,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1541,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1541,
+      "target": 1256,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1256,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 318,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 265,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 196,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 265,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 34,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 36,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 35,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 620,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 34,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 1476,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1476,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 928,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 928,
+      "target": 958,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 928,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 928,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 225,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 1128,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1128,
+      "target": 1365,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 84,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 244,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 620,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 428,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1476,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 126,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 698,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 698,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 124,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 698,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 126,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 770,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": 980,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 980,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": 801,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 801,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 375,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 375,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1476,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 181,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 181,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 325,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 16,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 682,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 1365,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 566,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 566,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 619,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 619,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1233,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1233,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 500,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": 1289,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 620,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 16,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 16,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 566,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 35,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 620,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 620,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 1233,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 265,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 37,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 182,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 658,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 125,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1233,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 959,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1542,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 126,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1548,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 697,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 697,
+      "target": 124,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 1452,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1452,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 617,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 617,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 123,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 698,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 124,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 126,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 209,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 845,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 845,
+      "target": 845,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 845,
+      "target": 325,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": 146,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 146,
+      "target": 845,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 845,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 958,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 85,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 85,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 1365,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 197,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 16,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 325,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 210,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 1256,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1256,
+      "target": 566,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 511,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": 511,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 196,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 511,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1317,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 1290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1290,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 980,
+      "target": 197,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 566,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 1361,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 1548,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 84,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 1548,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1256,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1256,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1386,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1386,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 1317,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1457,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 125,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 34,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1228,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 84,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 563,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 658,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 657,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 657,
+      "target": 126,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 980,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 37,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 1420,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1420,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 1367,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1367,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 721,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 721,
+      "target": 512,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 512,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 500,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 500,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 36,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 1544,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1544,
+      "target": 35,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 697,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 617,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 617,
+      "target": 123,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1121,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1121,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 684,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 684,
+      "target": 698,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 657,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 182,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 182,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 181,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 181,
+      "target": 325,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 124,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 124,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 271,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 195,
+      "target": 158,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 158,
+      "target": 157,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 157,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 157,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 157,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 1361,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": 1289,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 981,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 36,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 1452,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1452,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1539,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 698,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 1113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1113,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 181,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 101,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 959,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 125,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 225,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 1367,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1367,
+      "target": 226,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 226,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 16,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 1454,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1454,
+      "target": 620,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 566,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 566,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 264,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": 1456,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 264,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": 265,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 1233,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1233,
+      "target": 1022,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1022,
+      "target": 197,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 1418,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1418,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1545,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": 1022,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1022,
+      "target": 170,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 170,
+      "target": 197,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 197,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 415,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1545,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 928,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 16,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 264,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1538,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1538,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1257,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1425,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 620,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 620,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 225,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 1476,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1242,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1242,
+      "target": 697,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 1420,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1420,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 325,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": 270,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 270,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 325,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 225,
+      "target": 225,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 226,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 157,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 243,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 243,
+      "target": 318,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 770,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": 171,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 171,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 1424,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1424,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 196,
+      "target": 770,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": 196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 243,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 243,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1545,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 36,
+      "target": 226,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 987,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 987,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 657,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 657,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 37,
+      "target": 209,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 721,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 721,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 793,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 793,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 682,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 1346,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 270,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1128,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1128,
+      "target": 225,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 428,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 428,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 243,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 1165,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1165,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": 264,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 264,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 244,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 85,
+      "target": 209,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 209,
+      "target": 197,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 981,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 244,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 1022,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 563,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 35,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 682,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 318,
+      "target": 619,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 619,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 512,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 1290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1290,
+      "target": 1290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1290,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1290,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 1420,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1420,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 657,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 1145,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1145,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 158,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 158,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 226,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 85,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 959,
+      "target": 1366,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1366,
+      "target": 325,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 958,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 958,
+      "target": 682,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 84,
+      "target": 270,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 271,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 157,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1257,
+      "target": 352,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 352,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 511,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 197,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 197,
+      "target": 243,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 243,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 34,
+      "target": 928,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 928,
+      "target": 243,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 243,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1257,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 173,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 173,
+      "target": 1360,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 511,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 265,
+      "target": 36,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 657,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 657,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 126,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 271,
+      "target": 126,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 227,
+      "target": 318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 620,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 1021,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1021,
+      "target": 170,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 170,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1021,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1021,
+      "target": 265,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 84,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 182,
+      "target": 959,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 270,
+      "target": 125,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 125,
+      "target": 210,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 210,
+      "target": 182,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

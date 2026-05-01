@@ -1,0 +1,3301 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-math_l5_q2",
+  "nodes": [
+    {
+      "node_id": 1537,
+      "context": "[Uncertainty Management] Wait a second, did I make a mistake earlier?",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1539,
+      "context": "[Uncertainty Management] Wait, let me verify:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1540,
+      "context": "[Uncertainty Management] Wait, let's try that.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1030,
+      "context": "[Uncertainty Management] Thus, q(0) = (-1)*0 =0.",
+      "node_type": "Uncertainty Management",
+      "degree": 15
+    },
+    {
+      "node_id": 1031,
+      "context": "[Uncertainty Management] But also, \\( q",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    },
+    {
+      "node_id": 1032,
+      "context": "[Conclusion] 63p(8)= (-259 +448)/56= (448 -259)/56=189/56.",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 1545,
+      "context": "[Uncertainty Management] Wait, let's see:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1546,
+      "context": "[Uncertainty Management] Wait",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1547,
+      "context": "[Uncertainty Management] Wait, but I should confirm if this is correct.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1548,
+      "context": "[Uncertainty Management] Yes, that makes sense.",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1543,
+      "context": "[Uncertainty Management] Wait, that can't be right. Let me check my steps b...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1551,
+      "context": "[Uncertainty Management] I think that's the correct approach.",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1042,
+      "context": "[Uncertainty Management] But wait, q(1)= (1 -1)p(1) -1= 0 -1= -1",
+      "node_type": "Uncertainty Management",
+      "degree": 19
+    },
+    {
+      "node_id": 1052,
+      "context": "[Uncertainty Management] Simplify exponents:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1094,
+      "context": "[Uncertainty Management] But when we plug n=0, we have a conflict because q...",
+      "node_type": "Uncertainty Management",
+      "degree": 25
+    },
+    {
+      "node_id": 1095,
+      "context": "[Uncertainty Management] We can solve for p(n):",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1101,
+      "context": "[Uncertainty Management] Wait, I recall something about polynomials and the...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1107,
+      "context": "[Active Computation] a = (-29)/(2 * 20160) = -29/40320.",
+      "node_type": "Active Computation",
+      "degree": 14
+    },
+    {
+      "node_id": 1108,
+      "context": "[Uncertainty Management] -1/720 = -28/20160.",
+      "node_type": "Uncertainty Management",
+      "degree": 22
+    },
+    {
+      "node_id": 601,
+      "context": "[Uncertainty Management] We can use the Intermediate Value Theorem or analy...",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    },
+    {
+      "node_id": 611,
+      "context": "[Conclusion] Then, from equation 1: a + b = -1/720",
+      "node_type": "Conclusion",
+      "degree": 22
+    },
+    {
+      "node_id": 1138,
+      "context": "[Conclusion] Solving for \\( p(8) \\): \\[ 720 = 63 p(8) - 8, \\] \\...",
+      "node_type": "Conclusion",
+      "degree": 10
+    },
+    {
+      "node_id": 137,
+      "context": "[Uncertainty Management] (1/2)n² + (3/2)n -1 = n",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1165,
+      "context": "[Uncertainty Management] Wait, no, let me check the constants:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1166,
+      "context": "[Planning] <think> Alright, so I've got this problem here: Th...",
+      "node_type": "Planning",
+      "degree": 7
+    },
+    {
+      "node_id": 1167,
+      "context": "[Uncertainty Management] First, I remember that if a polynomial passes thro...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 660,
+      "context": "[Planning] So, LCM is 64 *9 *5 *7 = 64*45*7=64*315=20160.",
+      "node_type": "Planning",
+      "degree": 10
+    },
+    {
+      "node_id": 677,
+      "context": "[Planning] (-1)*(-2) = 2   2*(-3) = -6   -6*(-4) = 24   24*(-...",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 678,
+      "context": "[Active Computation] 24*(-5) = -120",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 1195,
+      "context": "[Conclusion] Alternatively, maybe I can evaluate Q(x) at anothe...",
+      "node_type": "Conclusion",
+      "degree": 4
+    },
+    {
+      "node_id": 1196,
+      "context": "[Uncertainty Management] From our expression: p(3)= [ (-1/720)(1)(2)(3)(4)(...",
+      "node_type": "Uncertainty Management",
+      "degree": 12
+    },
+    {
+      "node_id": 714,
+      "context": "[Uncertainty Management] For n=4:",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 202,
+      "context": "[Uncertainty Management] Which rearranges to:",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 1228,
+      "context": "[Other] Plug this into E2:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 729,
+      "context": "[Active Computation] Compute (8 - 2) = 6",
+      "node_type": "Active Computation",
+      "degree": 5
+    },
+    {
+      "node_id": 742,
+      "context": "[Uncertainty Management] Multiplying both sides by -1 to make it neater:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1256,
+      "context": "[Planning] So, multiply them:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 232,
+      "context": "[Planning] Let me set up synthetic division for root x = -1:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1258,
+      "context": "[Uncertainty Management] Let me solve these two equations. Let's subtract e...",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 249,
+      "context": "[Uncertainty Management] Alternatively, let's assume that \\(a = 1\\) without...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1281,
+      "context": "[Uncertainty Management] Wait, 3840 divided by 289: Let me see how many tim...",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    },
+    {
+      "node_id": 771,
+      "context": "[Active Computation] = -3*(1)*(-1)",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 1290,
+      "context": "[Conclusion] Starting with the first term:",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 276,
+      "context": "[Planning] Substituting back:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1307,
+      "context": "[Uncertainty Management] Let me see numerator:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 796,
+      "context": "[Uncertainty Management] b = (-56 + 29)/40320 = (-27)/40320.",
+      "node_type": "Uncertainty Management",
+      "degree": 25
+    },
+    {
+      "node_id": 795,
+      "context": "[Planning] Second, -3/4480 is -3/4480.",
+      "node_type": "Planning",
+      "degree": 22
+    },
+    {
+      "node_id": 801,
+      "context": "[Planning] (-1 -2) = -3",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 802,
+      "context": "[Active Computation] (1 - 2) = -1 (1 - 3) = -2 (1 - 4) = -3 (1 - 5) = -...",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 1317,
+      "context": "[Planning] Simplifying the above expression, we get:",
+      "node_type": "Planning",
+      "degree": 8
+    },
+    {
+      "node_id": 1318,
+      "context": "[Planning] Simplify the left side:",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 1324,
+      "context": "[Conclusion] First, compute (n² -1) when n=8: 8² -1=64 -1=63.",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 1326,
+      "context": "[Uncertainty Management] Wait, but I just thought of something. When we def...",
+      "node_type": "Uncertainty Management",
+      "degree": 21
+    },
+    {
+      "node_id": 817,
+      "context": "[Uncertainty Management] Wait, let me compute the product inside the root:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1341,
+      "context": "[Uncertainty Management] But this is a problem because k can't be two diffe...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1346,
+      "context": "[Active Computation] +0.046875 = 0.245945",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 1348,
+      "context": "[Uncertainty Management] Let me define Q(x) = (x² - 1)p(x) - x. Then, Q(x) ...",
+      "node_type": "Uncertainty Management",
+      "degree": 40
+    },
+    {
+      "node_id": 839,
+      "context": "[Uncertainty Management] Wait, but earlier we had k = -1/720 from x=1. That...",
+      "node_type": "Uncertainty Management",
+      "degree": 24
+    },
+    {
+      "node_id": 1361,
+      "context": "[Uncertainty Management] Compute that term:",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1365,
+      "context": "[Uncertainty Management] Wait, let me compute this step by step:",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 864,
+      "context": "[Planning] So, the product is (-1)*(-2)*(-3)*(-4)*(-5)*(-6). ...",
+      "node_type": "Planning",
+      "degree": 16
+    },
+    {
+      "node_id": 1377,
+      "context": "[Uncertainty Management] Wait, but wait, q(x) has roots at x=2,3,4,5,6,7, a...",
+      "node_type": "Uncertainty Management",
+      "degree": 16
+    },
+    {
+      "node_id": 1376,
+      "context": "[Conclusion] So, q(x) = (x -2)(x -3)(x -4)(x -5)(x -6)(x -7)(ax...",
+      "node_type": "Conclusion",
+      "degree": 12
+    },
+    {
+      "node_id": 865,
+      "context": "[Uncertainty Management] Great, so (x + 1) is a factor. Let's perform polyn...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1407,
+      "context": "[Uncertainty Management] Let me apply that to both numerator and denominato...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1408,
+      "context": "[Uncertainty Management] Then, the denominators become:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1416,
+      "context": "[Uncertainty Management] So, we had:",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": 905,
+      "context": "[Uncertainty Management] Wait, 63*80=5040, so 5047=5040+7, so 5047=63*80 +7...",
+      "node_type": "Uncertainty Management",
+      "degree": 12
+    },
+    {
+      "node_id": 906,
+      "context": "[Planning] = k*(1*2*3*4*5*6) +1",
+      "node_type": "Planning",
+      "degree": 16
+    },
+    {
+      "node_id": 907,
+      "context": "[Uncertainty Management] Compute the product (8-2)(8-3)...(8-7). Let's comp...",
+      "node_type": "Uncertainty Management",
+      "degree": 16
+    },
+    {
+      "node_id": 1417,
+      "context": "[Uncertainty Management] Is there any way to get a higher value? Let me thi...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1419,
+      "context": "[Uncertainty Management] Let me compute the right side:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 400,
+      "context": "[Uncertainty Management] Right side:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 917,
+      "context": "[Planning] To add them, common denominator is 20160.",
+      "node_type": "Planning",
+      "degree": 8
+    },
+    {
+      "node_id": 923,
+      "context": "[Uncertainty Management] (-1)*(-2)=2, 2*(-3)=-6, (-6)*(-4)=24, 24*(-5)=-120...",
+      "node_type": "Uncertainty Management",
+      "degree": 16
+    },
+    {
+      "node_id": 1452,
+      "context": "[Other] Which means:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 1453,
+      "context": "[Conclusion] It's:",
+      "node_type": "Conclusion",
+      "degree": 16
+    },
+    {
+      "node_id": 1455,
+      "context": "[Uncertainty Management] Wait, so let me make a table:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1456,
+      "context": "[Uncertainty Management] Let's calculate each element:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1457,
+      "context": "[Uncertainty Management] But wait, maybe I made a mistake in my calculation...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 1470,
+      "context": "[Uncertainty Management] Wait, perhaps x=3.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 449,
+      "context": "[Uncertainty Management] This is of the form (a + b)(a - b) = a² - b², so:",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 962,
+      "context": "[Active Computation] So, from x=0: Q(0) = 5040b = -p(0) → p(0) = -5040b...",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 968,
+      "context": "[Uncertainty Management] Wait, perhaps I made a mistake in the signs here. ...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 971,
+      "context": "[Conclusion] -1/20160 = -1/20160",
+      "node_type": "Conclusion",
+      "degree": 28
+    },
+    {
+      "node_id": 1483,
+      "context": "[Planning] Equation 1 simplifies to:",
+      "node_type": "Planning",
+      "degree": 5
+    },
+    {
+      "node_id": 465,
+      "context": "[Planning] Divide both sides by 6:",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 476,
+      "context": "[Uncertainty Management] f(0) = -1",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 478,
+      "context": "[Uncertainty Management] Now, we set f(f(x)) equal to x:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 480,
+      "context": "[Uncertainty Management] Now, multiply this with the first two terms: (-7) ...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 481,
+      "context": "[Uncertainty Management] 3/4480≈0.00066964",
+      "node_type": "Uncertainty Management",
+      "degree": 15
+    },
+    {
+      "node_id": 482,
+      "context": "[Planning] 3*4 = 12; 12*5=60; 60*6=360; 360*7=2520; 2520*8=20...",
+      "node_type": "Planning",
+      "degree": 13
+    },
+    {
+      "node_id": 1509,
+      "context": "[Uncertainty Management] x=-2:",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 1510,
+      "context": "[Uncertainty Management] Test x = 1:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1006,
+      "context": "[Uncertainty Management] Wait, is there another way to approach this proble...",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    },
+    {
+      "node_id": 1527,
+      "context": "[Uncertainty Management] Wait, so maybe I misread the problem again.",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 1532,
+      "context": "[Uncertainty Management] Let's add the two equations:",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 1533,
+      "context": "[Conclusion] So, we have a system of equations:",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 125
+    }
+  ],
+  "edges": [
+    {
+      "source": 1166,
+      "target": 1167,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 1167,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 1094,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 69,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1094,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1341,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 923,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 864,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 923,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 923,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1094,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1095,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1095,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1095,
+      "target": 1324,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1324,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 907,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 729,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 729,
+      "target": 729,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 729,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1228,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1107,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1196,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1196,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 864,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 660,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 660,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1545,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1042,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 817,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": 864,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 1256,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1256,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 678,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 678,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 678,
+      "target": 677,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 677,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 714,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": 923,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1095,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1095,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1095,
+      "target": 1095,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1196,
+      "target": 1095,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1095,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 137,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 137,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1166,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1348,
+      "weight": 25,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": -1,
+      "weight": 24,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1167,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1348,
+      "weight": 20,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1540,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1540,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 907,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 802,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 802,
+      "target": 864,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 1165,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1165,
+      "target": 677,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 249,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 249,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1547,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1547,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": 907,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 677,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 907,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1453,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 729,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1032,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 232,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 232,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": 1138,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1032,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": 1032,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": 905,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 1326,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1326,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1326,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1348,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1341,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": 202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 202,
+      "target": 1348,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 906,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": 906,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 1532,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1532,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 1307,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1307,
+      "target": 906,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 1361,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 801,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 801,
+      "target": 801,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 801,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 801,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 801,
+      "target": 864,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 839,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 839,
+      "weight": 18,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1509,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 482,
+      "target": 971,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1307,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1307,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1108,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1108,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 968,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 968,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1527,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1527,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1307,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1307,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 906,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1341,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1551,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1551,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1094,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1377,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1031,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": 1348,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 839,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 1042,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 817,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1527,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1377,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1031,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": 1326,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 1030,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 1377,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1377,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 923,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1377,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 906,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 906,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 907,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 1290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1290,
+      "target": 907,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1537,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1537,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": 864,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 482,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": 476,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 476,
+      "target": 906,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 906,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 478,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 478,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1326,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1108,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 971,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1108,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1551,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1551,
+      "target": 1348,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 601,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1166,
+      "target": 1166,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 802,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 802,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1510,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1510,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 1509,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 907,
+      "target": 817,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 817,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 482,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 971,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 400,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 400,
+      "target": 971,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1533,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1533,
+      "target": 611,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 971,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1455,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 611,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 449,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 449,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 611,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 465,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 465,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 1483,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1483,
+      "target": 971,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 465,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 465,
+      "target": 971,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1532,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1532,
+      "target": 1532,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1318,
+      "target": 449,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 449,
+      "target": 917,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 917,
+      "target": 1108,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 971,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 796,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 796,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1317,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 481,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 796,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 449,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 449,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 795,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 795,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1456,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 660,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 660,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 482,
+      "target": 481,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 660,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 660,
+      "target": 1052,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1052,
+      "target": 660,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 660,
+      "target": 917,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 917,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1108,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 481,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 481,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 1408,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1408,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1455,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1456,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 795,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 481,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 1346,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1408,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1408,
+      "target": 795,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 917,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 1107,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1546,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1546,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 795,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 917,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1108,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 796,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 449,
+      "target": 1417,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1417,
+      "target": 1376,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1196,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1006,
+      "target": 1166,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 1101,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": 1167,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1167,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1094,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1348,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 865,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 865,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1326,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1509,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 802,
+      "target": 923,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 1365,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 482,
+      "target": 839,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1030,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1031,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1377,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1551,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1453,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 677,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 771,
+      "target": 771,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 480,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 480,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 478,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 478,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1166,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1166,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1101,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1326,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 907,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1195,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1195,
+      "target": 907,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 864,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1042,
+      "target": 1361,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 864,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 971,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 917,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 660,
+      "target": 1408,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1407,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1407,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 796,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1376,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 962,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 962,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 1408,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 796,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 660,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1094,
+      "target": 1101,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": 1094,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1376,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 923,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 1361,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 864,
+      "target": 1365,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": 771,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 677,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1416,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 1031,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1031,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1377,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 1376,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 1470,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1470,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 482,
+      "target": 482,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1030,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1030,
+      "target": 971,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1317,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 971,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 917,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1108,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1107,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1107,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 276,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 276,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 795,
+      "target": 1453,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 481,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": 1483,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 971,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1452,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1452,
+      "target": 1108,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 796,
+      "target": 611,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 611,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1031,
+      "target": 1510,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1510,
+      "target": 1042,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 923,
+      "target": 802,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 839,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1341,
+      "target": 1483,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1483,
+      "target": 839,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1108,
+      "target": 1318,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1318,
+      "target": 742,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 742,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1165,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1165,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 796,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": 1376,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1376,
+      "target": 1326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1348,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1348,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1196,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1376,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1317,
+      "target": 795,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1032,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": 1196,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1196,
+      "target": 1032,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": 1419,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1419,
+      "target": 481,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 481,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1032,
+      "target": 1138,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1138,
+      "target": 1317,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1281,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

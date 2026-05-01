@@ -1,0 +1,295 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-math_l5_q3",
+  "nodes": [
+    {
+      "node_id": 200,
+      "context": "[Active Computation] Now, we sum these proper divisors: \\[ 1 + 2 + 4 + ...",
+      "node_type": "Active Computation",
+      "degree": 10
+    },
+    {
+      "node_id": 201,
+      "context": "[Uncertainty Management] Wait, that's a bit off. Let me double-check. 1 + 2...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 266,
+      "context": "[Uncertainty Management] 2. Find proper divisors of 220: 1,2,4,5,10,11,20,2...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 460,
+      "context": "[Conclusion] \"The proper divisors of 12 are 1, 2, 3, 4, and 6. ...",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 461,
+      "context": "[Planning] First, we need to find the sum of the proper divis...",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1453,
+      "context": "[Conclusion] It's:",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 239,
+      "context": "[Uncertainty Management] - **Sum of proper divisors:**   \\[   1 + 2 + 4 + 5...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 241,
+      "context": "[Uncertainty Management] ### Step 1: Find the proper divisors of 284.",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 529,
+      "context": "[Active Computation] So, the sum of the proper divisors of 284 is 218.",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 1269,
+      "context": "[Conclusion] Final Answer: \\(\\boxed{1}\\)",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 1241,
+      "context": "[Conclusion] \\[ \\boxed{100}. \\]",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 12
+    }
+  ],
+  "edges": [
+    {
+      "source": -1,
+      "target": 241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 241,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 200,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 200,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 1269,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 461,
+      "target": 241,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 266,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 266,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 239,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 460,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": 1241,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 529,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 529,
+      "target": 266,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 201,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 529,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 529,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 200,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 460,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 1241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 1453,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 241,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 200,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 266,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1453,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 239,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 461,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1453,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

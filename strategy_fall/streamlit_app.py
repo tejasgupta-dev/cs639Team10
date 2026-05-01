@@ -75,16 +75,29 @@ def render_step_card(step_text: str, node_id: int, tag: str) -> None:
 
 
 def _clustered_paths(version: str) -> Tuple[Path, Path, Path, Path]:
-    """cluster_map, cluster_tags, sft traces, rl traces."""
+    """Return (cluster_map, cluster_tags, sft_traces, rl_traces) for a given version.
+
+    Naming convention produced by clustering.py:
+        {model}_traces-{version}_clustered.json
+    Fallback (older runs without version suffix in filename):
+        {model}_clustered.json
+    """
     base = STRATEGY_FALL / "data" / f"clustered_{version}"
     cmap = base / "cluster_map.json"
     ctags = base / "cluster_tags.json"
-    sft = base / f"Qwen2.5-7B-Instruct-AWQ_traces-{version}_clustered.json"
-    rl = base / f"DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-{version}_clustered.json"
+
+    SFT_MODEL = "Qwen2.5-7B-Instruct-AWQ"
+    RL_MODEL  = "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ"
+
+    sft = base / f"{SFT_MODEL}_traces-{version}_clustered.json"
+    rl  = base / f"{RL_MODEL}_traces-{version}_clustered.json"
+
+    # Fallback: legacy filenames without the version infix
     if not sft.exists():
-        sft = base / "Qwen2.5-7B-Instruct-AWQ_clustered.json"
+        sft = base / f"{SFT_MODEL}_clustered.json"
     if not rl.exists():
-        rl = base / "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_clustered.json"
+        rl = base / f"{RL_MODEL}_clustered.json"
+
     return cmap, ctags, sft, rl
 
 
@@ -137,7 +150,12 @@ def main() -> None:
 
     with st.sidebar:
         st.header("Data")
-        version = st.selectbox("Trace set", options=["q1000", "q50"], index=0)
+        version = st.selectbox(
+            "Trace set",
+            options=["q1000", "q50", "math_l5", "math_l1", "math_l3"],
+            index=0,
+            help="math_l5 = MATH-500 Level 5 (hardest) | q1000/q50 = GSM8K",
+        )
         cmap, ctags, sft_path, rl_path = _clustered_paths(version)
 
         st.header("Mode")
@@ -273,63 +291,155 @@ def main() -> None:
             st.caption("No `results/causal_sft/causal_details.csv`")
 
 
+def _short_model_name(model_col_val: str) -> str:
+    if "DeepSeek" in model_col_val:
+        return "RL (R1)"
+    if "Instruct" in model_col_val:
+        return "SFT (Instruct)"
+    return "Base"
+
+
+def _load_report(version: str) -> "pd.DataFrame | None":
+    p = STRATEGY_FALL / "results" / version / f"strategy_collapse_report_{version}.csv"
+    if p.exists():
+        df = pd.read_csv(p)
+        df["model_short"] = df["model"].apply(_short_model_name)
+        df["version"] = version
+        return df
+    return None
+
+
 def render_global_stats() -> None:
-    """
-    Renders high-level aggregate metrics and causal summaries.
-    """
-    st.subheader("Systemic Strategy Comparison (n=1000)")
-    st.info("""
-        **Summary**: RL-trained models (DeepSeek-R1) consistently exhibit more 'Thought Anchors' 
-        than their SFT counterparts. This is visible in higher Planning and Uncertainty 
-        Management intensities, suggesting that RL incentivizes meta-cognitive verification.
-    """)
-    
-    report_path = STRATEGY_FALL / "results" / "q1000" / "strategy_collapse_report_q1000.csv"
-    if report_path.exists():
-        df = pd.read_csv(report_path)
-        # Rename for readability
-        df['model_short'] = df['model'].apply(lambda x: "RL (R1)" if "DeepSeek" in x else ("SFT (Instruct)" if "Instruct" in x else "Base"))
-        
+    """Renders high-level aggregate metrics, Level-5 complexity stress-test, and causal summaries."""
+
+    # ── Baseline (GSM8K / q1000) ──────────────────────────────────────────────
+    st.subheader("Systemic Strategy Comparison — Baseline (GSM8K, n=1000)")
+    st.info(
+        "**Summary**: RL-trained models (DeepSeek-R1) consistently exhibit more 'Thought Anchors' "
+        "than SFT counterparts, visible in higher Planning and Uncertainty Management intensities. "
+        "This suggests RL incentivises meta-cognitive verification."
+    )
+
+    df_base = _load_report("q1000")
+    if df_base is not None:
         c1, c2 = st.columns(2)
         with c1:
             st.markdown("**Planning Intensity**")
-            st.bar_chart(df.set_index('model_short')[['planning_intensity']])
+            st.bar_chart(df_base.set_index("model_short")[["planning_intensity"]])
         with c2:
             st.markdown("**Uncertainty Management Intensity**")
-            st.bar_chart(df.set_index('model_short')[['uncertainty_intensity']])
-            
+            st.bar_chart(df_base.set_index("model_short")[["uncertainty_intensity"]])
         st.markdown("**Structural Diversity (Entropy & Branching)**")
-        st.line_chart(df.set_index('model_short')[['mean_strategy_entropy', 'mean_branching_factor']])
-        st.caption("Higher entropy and branching indicate a 'Reasoning Web' with multiple redundant paths to the solution.")
+        st.line_chart(df_base.set_index("model_short")[["mean_strategy_entropy", "mean_branching_factor"]])
+        st.caption("Higher entropy and branching indicate a 'Reasoning Web' with multiple redundant paths.")
     else:
-        st.info("Global report not found at `results/q1000/strategy_collapse_report_q1000.csv`")
+        st.info("Baseline report not found at `results/q1000/strategy_collapse_report_q1000.csv`. "
+                "Run the pipeline with version `q1000` first.")
 
+    # ── Phase 1: Complexity Threshold (MATH Level 5) ──────────────────────────
+    st.divider()
+    st.subheader("Phase 1 — Complexity Threshold Stress-Test (MATH Level 5)")
+    st.markdown(
+        """
+        **Hypothesis**: At the hardest difficulty, does the RL model's 'Logical Web' **scale** 
+        (maintain high entropy + branching), or does it **collapse** to a single linear chain?
+        Conversely, does the SFT model's already-brittle structure shatter entirely?
+
+        | Metric | Expected SFT | Expected RL |
+        |---|---|---|
+        | Strategy Entropy | ↓ drops sharply (fewer unique paths) | ↔ / ↑ maintained or grows |
+        | Branching Factor | ↓ collapses toward 1 | ↔ stays distributed |
+        | Planning Intensity | ↓ model skips meta-reasoning | ↑ RL doubles down on structure |
+        | Uncertainty Mgmt | ↑ spikes (confusion) | ↑ but controlled |
+        """
+    )
+
+    df_l5 = _load_report("math_l5")
+    df_base_for_compare = _load_report("q1000")
+
+    if df_l5 is not None:
+        st.markdown("#### Level 5 Results")
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown("**Planning Intensity (L5)**")
+            st.bar_chart(df_l5.set_index("model_short")[["planning_intensity"]])
+        with c2:
+            st.markdown("**Uncertainty Management Intensity (L5)**")
+            st.bar_chart(df_l5.set_index("model_short")[["uncertainty_intensity"]])
+        st.markdown("**Structural Diversity — L5 (Entropy & Branching)**")
+        st.line_chart(df_l5.set_index("model_short")[["mean_strategy_entropy", "mean_branching_factor"]])
+
+        # Cross-difficulty delta comparison (requires baseline)
+        if df_base_for_compare is not None:
+            st.markdown("#### Δ Difficulty Scaling  (Level 5 − GSM8K baseline)")
+            st.caption(
+                "Positive = metric *grew* at Level 5 (good for RL). "
+                "Negative = metric *collapsed* under pressure (bad for SFT)."
+            )
+            metrics = ["mean_strategy_entropy", "mean_branching_factor",
+                       "planning_intensity", "uncertainty_intensity"]
+            rows = []
+            for model_short in df_l5["model_short"].unique():
+                l5_row   = df_l5[df_l5["model_short"] == model_short][metrics].iloc[0]
+                base_row = df_base_for_compare[df_base_for_compare["model_short"] == model_short]
+                if base_row.empty:
+                    continue
+                base_row = base_row[metrics].iloc[0]
+                delta = (l5_row - base_row).to_dict()
+                delta["model"] = model_short
+                rows.append(delta)
+            if rows:
+                delta_df = pd.DataFrame(rows).set_index("model")
+                st.dataframe(delta_df.style.background_gradient(cmap="RdYlGn", axis=None),
+                             use_container_width=True)
+    else:
+        st.info(
+            "Level 5 report not found at `results/math_l5/strategy_collapse_report_math_l5.csv`.\n\n"
+            "**To generate it, run:**\n"
+            "```bash\n"
+            "# 1. Generate traces (needs GPU + vLLM)\n"
+            "python strategy_fall/data/generate_traces.py \\\n"
+            "    --model Qwen/Qwen2.5-7B-Instruct-AWQ \\\n"
+            "    --dataset math --math_level 5 --num_questions 50\n\n"
+            "python strategy_fall/data/generate_traces.py \\\n"
+            "    --model deepseek-ai/DeepSeek-R1-Distill-Qwen-7B \\\n"
+            "    --dataset math --math_level 5 --num_questions 50\n\n"
+            "# 2. Run the analysis pipeline\n"
+            "bash strategy_fall/run_analysis.sh math_l5\n"
+            "```"
+        )
+
+    # ── Causal Anchor Impact ──────────────────────────────────────────────────
     st.divider()
     st.subheader("Causal Anchor Impact (Avg Accuracy Drop)")
-    st.markdown("""
+    st.markdown(
+        """
         **How to read this chart**:
-        - **Positive Drop**: Removing the 'Thought Anchor' caused accuracy to fall. This proves the node is a **Causal Hub**.
-        - **Negative Drop**: Forcing the model to rethink actually *improved* accuracy. This is common in **Brittle SFT** models that get stuck in loops.
-    """)
-    
-    crl_path = STRATEGY_FALL / "results" / "causal" / "causal_summary.csv"
+        - **Positive Drop**: Removing the anchor caused accuracy to fall → **Critical Hub**.
+        - **Negative Drop**: Forcing a rethink *improved* accuracy → **Brittle SFT loop**.
+        """
+    )
+
+    crl_path  = STRATEGY_FALL / "results" / "causal"     / "causal_summary.csv"
     csft_path = STRATEGY_FALL / "results" / "causal_sft" / "causal_summary.csv"
-    
+    crl5_path = STRATEGY_FALL / "results" / "causal_math_l5" / "causal_summary.csv"
+
     if crl_path.exists() and csft_path.exists():
-        crl = pd.read_csv(crl_path).set_index('type')
-        csft = pd.read_csv(csft_path).set_index('type')
-        
-        # Calculate drops (control - intervention)
-        rl_drop = crl.loc['control'] - crl.loc['intervention']
-        sft_drop = csft.loc['control'] - csft.loc['intervention']
-        
-        drop_df = pd.DataFrame({
-            "RL (R1) Drop": rl_drop,
-            "SFT (Instruct) Drop": sft_drop
-        })
-        
-        st.bar_chart(drop_df)
-        st.caption("Positive values indicate accuracy LOSS when anchor is removed. Negative values indicate accuracy GAIN (brittle logic).")
+        crl  = pd.read_csv(crl_path).set_index("type")
+        csft = pd.read_csv(csft_path).set_index("type")
+        drop_data = {
+            "RL (R1) Drop":       crl.loc["control"]  - crl.loc["intervention"],
+            "SFT (Instruct) Drop": csft.loc["control"] - csft.loc["intervention"],
+        }
+        if crl5_path.exists():
+            crl5 = pd.read_csv(crl5_path).set_index("type")
+            drop_data["RL (R1) Drop — L5"] = crl5.loc["control"] - crl5.loc["intervention"]
+        st.bar_chart(pd.DataFrame(drop_data))
+        st.caption(
+            "Positive values = accuracy LOSS when anchor removed. "
+            "Negative = accuracy GAIN (brittle logic). "
+            "L5 column appears once `results/causal_math_l5/` is populated."
+        )
     else:
         st.info("Causal summaries not found in `results/causal/` or `results/causal_sft/`.")
 
