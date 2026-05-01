@@ -39,3 +39,49 @@ _Generated: 2026-05-01 15:17_
 - RL - SFT:  mean_strategy_entropy +0.1500  mean_branching_factor +0.9950  avg_unique_paths +2.8200
 
 _(different cluster config — values not comparable to q1000/math_l5)_
+
+## Causal — GSM8K, RL
+
+| tag | control | intervention | drop |
+| --- | --- | --- | --- |
+| Conclusion | 0.7375 | 0.7562 | -0.0187 |
+| Other | 0.5714 | 0.5089 | 0.0625 |
+| Planning | 0.6562 | 0.6979 | -0.0417 |
+| Uncertainty Management | 0.537 | 0.5278 | 0.0093 |
+
+_n_questions = 50_
+
+## Causal — GSM8K, SFT
+
+| tag | control | intervention | drop |
+| --- | --- | --- | --- |
+| Conclusion | 0.0 | 0.125 | -0.125 |
+| Other | 0.0331 | 0.0294 | 0.0037 |
+| Uncertainty Management | 0.0175 | 0.055 | -0.0375 |
+
+_n_questions = 50_
+
+**Note:** SFT-GSM8K outputs use 'Final Answer:' without '####' / '\boxed{}'; absolute accuracies reflect parser limitation, drops still informative.
+
+## Causal — MATH L5, RL
+
+| tag | control | intervention | drop |
+| --- | --- | --- | --- |
+| Conclusion | 0.0 | 0.0 | 0.0 |
+| Uncertainty Management | 0.0 | 0.0 | 0.0 |
+
+_n_questions = 50_
+
+**Note:** all accuracies = 0.000; likely max_model_len truncation on Level-5 prompts. Drops not interpretable.
+
+## Causal — MATH L5, SFT
+
+| tag | control | intervention | drop |
+| --- | --- | --- | --- |
+| Active Computation | 0.0 | 0.0 | 0.0 |
+| Conclusion | 0.0 | 0.0 | 0.0 |
+| Uncertainty Management | 0.0 | 0.0 | 0.0 |
+
+_n_questions = 50_
+
+**Note:** all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.

@@ -134,6 +134,31 @@ def main():
             md.append('')
             md.append(f'_{note}_')
 
+    for label, directory in CAUSAL_CONDITIONS:
+        text.append('')
+        text.append('-' * 64)
+        text.append(f'Causal — {label}')
+        text.append('-' * 64)
+        md.append('')
+        md.append(f'## Causal — {label}')
+        md.append('')
+        result = causal_block(directory)
+        if result is None:
+            text.append('(no data)')
+            md.append('_(no data)_')
+            continue
+        table, n_questions = result
+        text.append(table.to_string(index=False))
+        md.append(df_to_md(table))
+        text.append(f'n_questions = {n_questions}')
+        md.append('')
+        md.append(f'_n_questions = {n_questions}_')
+        caveat = CAUSAL_CAVEATS.get(label)
+        if caveat:
+            text.append(f'note: {caveat}')
+            md.append('')
+            md.append(f'**Note:** {caveat}')
+
     print('\n'.join(text))
     OUT_MD.write_text('\n'.join(md) + '\n')
     print(f'\nWrote {OUT_MD.relative_to(REPO_ROOT)}')
