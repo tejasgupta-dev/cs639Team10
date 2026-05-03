@@ -27,8 +27,6 @@ CAUSAL_CONDITIONS = [
 
 CAUSAL_CAVEATS = {
     'GSM8K, SFT':   "SFT-GSM8K outputs use 'Final Answer:' without '####' / '\\boxed{}'; absolute accuracies reflect parser limitation, drops still informative.",
-    'MATH L5, RL':  'all accuracies = 0.000; likely max_model_len truncation on Level-5 prompts. Drops not interpretable.',
-    'MATH L5, SFT': 'all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.',
 }
 
 LEGACY_CSVS = [

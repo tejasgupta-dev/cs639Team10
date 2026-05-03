@@ -1,6 +1,6 @@
 # Evaluation Summary
 
-_Generated: 2026-05-01 15:18_
+_Generated: 2026-05-03 16:48_
 
 ## Structural metrics — GSM8K (q1000)
 
@@ -67,24 +67,20 @@ _n_questions = 50_
 
 | tag | control | intervention | drop |
 | --- | --- | --- | --- |
-| Conclusion | 0.0 | 0.0 | 0.0 |
-| Uncertainty Management | 0.0 | 0.0 | 0.0 |
+| Conclusion | 0.625 | 0.5 | 0.125 |
+| Uncertainty Management | 0.2734 | 0.2969 | -0.0234 |
 
 _n_questions = 50_
-
-**Note:** all accuracies = 0.000; likely max_model_len truncation on Level-5 prompts. Drops not interpretable.
 
 ## Causal — MATH L5, SFT
 
 | tag | control | intervention | drop |
 | --- | --- | --- | --- |
 | Active Computation | 0.0 | 0.0 | 0.0 |
-| Conclusion | 0.0 | 0.0 | 0.0 |
-| Uncertainty Management | 0.0 | 0.0 | 0.0 |
+| Conclusion | 0.2812 | 0.25 | 0.0312 |
+| Uncertainty Management | 0.3819 | 0.3389 | 0.0431 |
 
 _n_questions = 50_
-
-**Note:** all accuracies = 0.000; likely max_model_len truncation. Drops not interpretable.
 
 ## Files skipped (legacy / superseded)
 
