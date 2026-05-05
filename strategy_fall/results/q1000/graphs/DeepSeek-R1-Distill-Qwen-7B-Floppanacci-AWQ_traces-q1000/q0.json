@@ -1,0 +1,439 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_q0",
+  "nodes": [
+    {
+      "node_id": 5473,
+      "context": "[Conclusion] Final Answer: $\\boxed{18}$",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 5474,
+      "context": "[Conclusion] \\[\\boxed{18}\\]",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 2564,
+      "context": "[Conclusion] Step 4: Calculate how much Janet makes by selling ...",
+      "node_type": "Conclusion",
+      "degree": 17
+    },
+    {
+      "node_id": 2565,
+      "context": "[Conclusion] **Step 2: Set Up the Egg Production Equation**",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 3112,
+      "context": "[Conclusion] \\n\\n Step 3: Subtract the number of eggs Janet eat...",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 3113,
+      "context": "[Conclusion] 16 (total produced by ducks) - 7 (used by Janet) =...",
+      "node_type": "Conclusion",
+      "degree": 12
+    },
+    {
+      "node_id": 5290,
+      "context": "[Conclusion] \\[\\boxed{62}\\] dollars",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 2351,
+      "context": "[Active Computation] Eggs remaining for selling = Total production - To...",
+      "node_type": "Active Computation",
+      "degree": 8
+    },
+    {
+      "node_id": 2800,
+      "context": "[Planning] - She eats 3 eggs for breakfast: \\(3\\) eggs - She ...",
+      "node_type": "Planning",
+      "degree": 10
+    },
+    {
+      "node_id": 5808,
+      "context": "[Planning] To solve this, we need to follow a few steps:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 2036,
+      "context": "[Active Computation] \\[ \\text{Total eggs used per day} = 3 + 4 = 7 \\]",
+      "node_type": "Active Computation",
+      "degree": 5
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 14
+    },
+    {
+      "node_id": 5718,
+      "context": "[Conclusion] - **Total earnings:**     \\( \\$30.00 + \\$12.00 = \\...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 5460,
+      "context": "[Conclusion] \\[ \\boxed{\\text{Final Answer: \\$18}} \\]",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 5400,
+      "context": "[Uncertainty Management] **Step-by-step Solution:**",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 2940,
+      "context": "[Planning] **Step 3: Calculate the total earnings from sellin...",
+      "node_type": "Planning",
+      "degree": 3
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 17
+    }
+  ],
+  "edges": [
+    {
+      "source": 3113,
+      "target": 3112,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 2800,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2564,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3113,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 2036,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2036,
+      "target": 5140,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2800,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2036,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 2564,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5474,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2351,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2351,
+      "target": 2564,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 3113,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3112,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 2351,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2351,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5473,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 2800,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2351,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2565,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2565,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 2940,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2940,
+      "target": 2564,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5718,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5718,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5290,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5400,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5400,
+      "target": 3113,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 2351,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5400,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2036,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2351,
+      "target": 2351,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5460,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2800,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2564,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3112,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2036,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2940,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5808,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 3112,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_q0",
+  "nodes": [
+    {
+      "node_id": 357,
+      "context": "Step 2: Subtract the number of eggs Janet eats for...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 328,
+      "context": "Since Janet sells each of these fresh duck eggs at...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 335,
+      "context": "Let's break down the calculations step by step:",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 242,
+      "context": "\\n\\n Step 5: Calculate the value of x: x = 9.",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 339,
+      "context": "1. **Total Duck Eggs per Day:**        Janet's duc...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 403,
+      "context": "Step 2: Determine the number of eggs Janet uses ea...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 338,
+      "context": "This means Janet has 9 eggs left to sell.",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 94,
+      "context": "Final Answer: \\$20.00",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 123,
+      "context": "Step 3: Find the number of eggs Janet sells at the...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 16
+    }
+  ],
+  "edges": [
+    {
+      "source": 357,
+      "target": 403,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 328,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 94,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 357,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 357,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 403,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 328,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 335,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 357,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 357,
+      "target": 123,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": 123,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 242,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 242,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 94,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 338,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

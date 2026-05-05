@@ -1,0 +1,4 @@
+model,mean_strategy_entropy,mean_branching_factor,avg_unique_paths
+Qwen2.5-7B-Instruct-AWQ,3.256,3.443,9.68
+DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ,3.322,3.976,10.0
+qwen2.5-7b-awq-4bit,1.895,1.917,5.341

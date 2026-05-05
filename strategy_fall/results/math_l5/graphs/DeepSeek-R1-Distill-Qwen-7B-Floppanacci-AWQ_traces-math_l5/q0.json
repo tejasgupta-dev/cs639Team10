@@ -1,0 +1,2137 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-math_l5_q0",
+  "nodes": [
+    {
+      "node_id": 1408,
+      "context": "[Uncertainty Management] Then, the denominators become:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1537,
+      "context": "[Uncertainty Management] Wait a second, did I make a mistake earlier?",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1539,
+      "context": "[Uncertainty Management] Wait, let me verify:",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1542,
+      "context": "[Uncertainty Management] But let me double-check with another method.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1543,
+      "context": "[Uncertainty Management] Wait, that can't be right. Let me check my steps b...",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": 1416,
+      "context": "[Uncertainty Management] So, we had:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 905,
+      "context": "[Uncertainty Management] Wait, 63*80=5040, so 5047=5040+7, so 5047=63*80 +7...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 394,
+      "context": "[Uncertainty Management] Wait, but if we go up to n=10, it's still only abo...",
+      "node_type": "Uncertainty Management",
+      "degree": 14
+    },
+    {
+      "node_id": 395,
+      "context": "[Uncertainty Management] Therefore, I think my steps are correct, and the d...",
+      "node_type": "Uncertainty Management",
+      "degree": 32
+    },
+    {
+      "node_id": 1420,
+      "context": "[Uncertainty Management] So, that seems to fit.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1548,
+      "context": "[Uncertainty Management] Yes, that makes sense.",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 1289,
+      "context": "[Uncertainty Management] Let me expand each term:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1551,
+      "context": "[Uncertainty Management] I think that's the correct approach.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 784,
+      "context": "[Conclusion] First, we change the variables by setting \\( n = j...",
+      "node_type": "Conclusion",
+      "degree": 5
+    },
+    {
+      "node_id": 785,
+      "context": "[Uncertainty Management] Here, \\(n\\) starts from 2 because \\(j + k \\geq 2\\)...",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 1425,
+      "context": "[Uncertainty Management] So, add all together:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 276,
+      "context": "[Planning] Substituting back:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 24,
+      "context": "[Uncertainty Management] Similarly, for j=2:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 667,
+      "context": "[Conclusion] Thus, the sum is: \\[\\sum_{n=2}^\\infty \\sum_{m=1}^{...",
+      "node_type": "Conclusion",
+      "degree": 14
+    },
+    {
+      "node_id": 283,
+      "context": "[Uncertainty Management] Hmm, but can this be simplified further? Let me tr...",
+      "node_type": "Uncertainty Management",
+      "degree": 12
+    },
+    {
+      "node_id": 42,
+      "context": "[Planning] <think> Alright, so I've got this math problem to ...",
+      "node_type": "Planning",
+      "degree": 1
+    },
+    {
+      "node_id": 1535,
+      "context": "[Uncertainty Management] Wait, maybe. But I'm getting confused.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1452,
+      "context": "[Other] Which means:",
+      "node_type": "Other",
+      "degree": 2
+    },
+    {
+      "node_id": 1455,
+      "context": "[Uncertainty Management] Wait, so let me make a table:",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 1456,
+      "context": "[Uncertainty Management] Let's calculate each element:",
+      "node_type": "Uncertainty Management",
+      "degree": 3
+    },
+    {
+      "node_id": 945,
+      "context": "[Uncertainty Management] Let me think about how to approach this. Maybe cha...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 946,
+      "context": "[Uncertainty Management] So substituting back, the double sum is:",
+      "node_type": "Uncertainty Management",
+      "degree": 23
+    },
+    {
+      "node_id": 1457,
+      "context": "[Uncertainty Management] But wait, maybe I made a mistake in my calculation...",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 821,
+      "context": "[Planning] Hmm, okay, so we're dealing with a geometric serie...",
+      "node_type": "Planning",
+      "degree": 1
+    },
+    {
+      "node_id": 439,
+      "context": "[Uncertainty Management] Wait, is there a relationship between zeta(4) and ...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 953,
+      "context": "[Uncertainty Management] But p is sum_{k=1}^∞ 1/k², so sum_{n=2}^∞ 1/n² is ...",
+      "node_type": "Uncertainty Management",
+      "degree": 17
+    },
+    {
+      "node_id": 1343,
+      "context": "[Planning] **Step 4: Conclusion.**",
+      "node_type": "Planning",
+      "degree": 5
+    },
+    {
+      "node_id": 63,
+      "context": "[Conclusion] Thus, the final answer is: \\[\\boxed{p - q}\\]",
+      "node_type": "Conclusion",
+      "degree": 5
+    },
+    {
+      "node_id": 322,
+      "context": "[Uncertainty Management] Yes, that seems correct. So the answer should be p...",
+      "node_type": "Uncertainty Management",
+      "degree": 19
+    },
+    {
+      "node_id": 451,
+      "context": "[Conclusion] (p - 1) - (q - 1) = p - 1 - q + 1 = p - q.",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 452,
+      "context": "[Active Computation] So substituting back, we have: \\[(p - 1) - (q - 1)...",
+      "node_type": "Active Computation",
+      "degree": 7
+    },
+    {
+      "node_id": 1346,
+      "context": "[Active Computation] +0.046875 = 0.245945",
+      "node_type": "Active Computation",
+      "degree": 10
+    },
+    {
+      "node_id": 1476,
+      "context": "[Uncertainty Management] Again, same result.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 842,
+      "context": "[Uncertainty Management] Wait no, I think I confused S. S is actually the s...",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    },
+    {
+      "node_id": 843,
+      "context": "[Uncertainty Management] So, if I fix n, the inner sum becomes the sum over...",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    },
+    {
+      "node_id": 714,
+      "context": "[Uncertainty Management] For n=4:",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 206,
+      "context": "[Active Computation] Because \\(\\frac{n - 1}{n^3} = \\frac{n}{n^3} - \\fra...",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 719,
+      "context": "[Uncertainty Management] Alternatively, perhaps I can compute the entire se...",
+      "node_type": "Uncertainty Management",
+      "degree": 21
+    },
+    {
+      "node_id": 720,
+      "context": "[Conclusion] So, S = [Σ (n=2 to ∞) 1/n²] - [Σ (n=2 to ∞) 1/n³].",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": 81,
+      "context": "[Uncertainty Management] Wait, so for n=3, the sum is 2/27.",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 1360,
+      "context": "[Uncertainty Management] Multiply these terms:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1361,
+      "context": "[Uncertainty Management] Compute that term:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 982,
+      "context": "[Uncertainty Management] We know that: \\[ \\sum_{n = 1}^\\infty \\frac{1}{n^2}...",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 983,
+      "context": "[Conclusion] Similarly, \\(q = \\sum_{k=1}^\\infty \\frac{1}{k^3}\\)...",
+      "node_type": "Conclusion",
+      "degree": 7
+    },
+    {
+      "node_id": 603,
+      "context": "[Uncertainty Management] I know that \\(p\\) is the well-known Basel problem ...",
+      "node_type": "Uncertainty Management",
+      "degree": 13
+    },
+    {
+      "node_id": 732,
+      "context": "[Uncertainty Management] Wait, maybe I can express sum_{n=2}^\\infty 1/n^4 a...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 1373,
+      "context": "[Uncertainty Management] Wait, alternatively, perhaps I made a mistake in t...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1374,
+      "context": "[Uncertainty Management] Wait, alternatively, maybe I can find a substituti...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1504,
+      "context": "[Planning] Hmm, okay, let's try to break it down.",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1128,
+      "context": "[Uncertainty Management] The formula is:",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 105,
+      "context": "[Uncertainty Management] Wait, I know that in general, the sums of even pow...",
+      "node_type": "Uncertainty Management",
+      "degree": 1
+    },
+    {
+      "node_id": 875,
+      "context": "[Uncertainty Management] Let's denote \\(n = j + k\\). Then, for each fixed \\...",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    },
+    {
+      "node_id": 876,
+      "context": "[Uncertainty Management] Which is symmetric in j and k, so perhaps we can e...",
+      "node_type": "Uncertainty Management",
+      "degree": 28
+    },
+    {
+      "node_id": 1136,
+      "context": "[Uncertainty Management] Hmm, so what's going on here? Maybe I made a mista...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 498,
+      "context": "[Uncertainty Management] Now, the main task is to consider the double sum: ...",
+      "node_type": "Uncertainty Management",
+      "degree": 21
+    },
+    {
+      "node_id": 374,
+      "context": "[Conclusion] \\[ \\sum_{n=2}^\\infty \\frac{1}{n^2} - \\sum_{n=2}^\\i...",
+      "node_type": "Conclusion",
+      "degree": 11
+    },
+    {
+      "node_id": 633,
+      "context": "[Uncertainty Management] We need to evaluate: \\[ \\sum_{j = 1}^\\infty \\sum_{...",
+      "node_type": "Uncertainty Management",
+      "degree": 9
+    },
+    {
+      "node_id": 634,
+      "context": "[Uncertainty Management] Let me think again: S = sum_{j=1}^\\infty sum_{k=1}...",
+      "node_type": "Uncertainty Management",
+      "degree": 17
+    },
+    {
+      "node_id": 252,
+      "context": "[Uncertainty Management] n = 74 / 3 ≈ 24.666...",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 90
+    },
+    {
+      "node_id": 1407,
+      "context": "[Uncertainty Management] Let me apply that to both numerator and denominato...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 498,
+      "target": 498,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 876,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 875,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1455,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 946,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 667,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 374,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 206,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 206,
+      "target": 946,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 374,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 982,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 982,
+      "target": 983,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": 946,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 452,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 452,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 498,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 395,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 322,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 395,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 1343,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1343,
+      "target": 784,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 603,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": 603,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 876,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": -1,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1455,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 785,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 719,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 283,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 283,
+      "target": 719,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 953,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": -1,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 1416,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1416,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 70,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 785,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 283,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": -1,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1343,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1343,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 206,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 206,
+      "target": 983,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 63,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": 498,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 842,
+      "target": 876,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 842,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": 953,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 953,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 451,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 451,
+      "target": 322,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 634,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 876,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 719,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 953,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 451,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1551,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1551,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 946,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 714,
+      "target": 283,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 283,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 876,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 714,
+      "target": 81,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 81,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 634,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 24,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 24,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 322,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 63,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 63,
+      "target": 498,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 452,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 452,
+      "target": 395,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 63,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 603,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": 946,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 945,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 945,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1504,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1504,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 875,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 719,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 1452,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1452,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 1407,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1407,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 719,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 946,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 451,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 451,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 634,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1456,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 451,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 451,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 953,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 905,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1346,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 394,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 394,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 395,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 451,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 394,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 953,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 875,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1420,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1420,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 498,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 322,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 603,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": 1374,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1374,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 451,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1343,
+      "target": 498,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 395,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 603,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 206,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 983,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 452,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 498,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 842,
+      "target": 953,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 875,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 875,
+      "target": 720,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 720,
+      "target": 720,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 720,
+      "target": 283,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 283,
+      "target": 720,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 720,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 720,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 720,
+      "target": 451,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 953,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 843,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 1360,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1360,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 603,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 714,
+      "target": 252,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 252,
+      "target": 252,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": 252,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 394,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 322,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 252,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 252,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 1346,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1346,
+      "target": 1346,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 395,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 452,
+      "target": 63,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 945,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 875,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 875,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": 876,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 283,
+      "target": 283,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 732,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": 732,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": 1537,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1537,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 982,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 982,
+      "target": 732,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 732,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 945,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 283,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 283,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 842,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": 439,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 439,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 439,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 439,
+      "target": 439,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 439,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 634,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 842,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 784,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 784,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 732,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 439,
+      "target": 953,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 105,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 785,
+      "target": 667,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 374,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 982,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 81,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 81,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 81,
+      "target": 322,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1373,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1373,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 1136,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1136,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 394,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 252,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 714,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 843,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 394,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": 322,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 784,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 784,
+      "target": 785,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 374,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 983,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 983,
+      "target": 452,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 498,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 603,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 394,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 946,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 374,
+      "target": 395,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 439,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 439,
+      "target": 1128,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1128,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 633,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 876,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 667,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 667,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 667,
+      "target": 1548,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1548,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 439,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 945,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 945,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 498,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 498,
+      "target": 1128,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1128,
+      "target": 946,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1289,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1289,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 821,
+      "target": 603,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 719,
+      "target": 1408,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1408,
+      "target": 283,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 953,
+      "target": 276,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 276,
+      "target": 451,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 1539,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1539,
+      "target": 719,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 395,
+      "target": 1535,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1535,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 1361,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1361,
+      "target": 714,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 252,
+      "target": 842,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 876,
+      "target": 843,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 81,
+      "target": 876,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1476,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1476,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 322,
+      "target": 322,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 206,
+      "target": 374,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

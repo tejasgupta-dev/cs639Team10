@@ -1,0 +1,175 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-q1000_q0",
+  "nodes": [
+    {
+      "node_id": 2564,
+      "context": "[Conclusion] Step 4: Calculate how much Janet makes by selling ...",
+      "node_type": "Conclusion",
+      "degree": 5
+    },
+    {
+      "node_id": 3112,
+      "context": "[Conclusion] \\n\\n Step 3: Subtract the number of eggs Janet eat...",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": 3113,
+      "context": "[Conclusion] 16 (total produced by ducks) - 7 (used by Janet) =...",
+      "node_type": "Conclusion",
+      "degree": 6
+    },
+    {
+      "node_id": 2351,
+      "context": "[Active Computation] Eggs remaining for selling = Total production - To...",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 8
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    },
+    {
+      "node_id": 4991,
+      "context": "[Conclusion] Final answer: $288.",
+      "node_type": "Conclusion",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 3112,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2564,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 4991,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 3112,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 5140,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3112,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 2564,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 5140,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 4991,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3112,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 2564,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2351,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2351,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": 3112,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5140,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

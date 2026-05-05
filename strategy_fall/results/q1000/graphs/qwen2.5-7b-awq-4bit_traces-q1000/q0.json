@@ -1,0 +1,121 @@
+{
+  "graph_name": "qwen2.5-7b-awq-4bit_traces-q1000_q0",
+  "nodes": [
+    {
+      "node_id": 2564,
+      "context": "[Conclusion] Step 4: Calculate how much Janet makes by selling ...",
+      "node_type": "Conclusion",
+      "degree": 7
+    },
+    {
+      "node_id": 3112,
+      "context": "[Conclusion] \\n\\n Step 3: Subtract the number of eggs Janet eat...",
+      "node_type": "Conclusion",
+      "degree": 1
+    },
+    {
+      "node_id": 3113,
+      "context": "[Conclusion] 16 (total produced by ducks) - 7 (used by Janet) =...",
+      "node_type": "Conclusion",
+      "degree": 5
+    },
+    {
+      "node_id": 2800,
+      "context": "[Planning] - She eats 3 eggs for breakfast: \\(3\\) eggs - She ...",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 5202,
+      "context": "[Uncertainty Management] Thus, the answer is 21.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 4991,
+      "context": "[Conclusion] Final answer: $288.",
+      "node_type": "Conclusion",
+      "degree": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": 2564,
+      "target": 5202,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 2800,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2800,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5202,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 4991,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3112,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 3113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3113,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": 2564,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 2564,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

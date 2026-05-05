@@ -1,0 +1,409 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_q0",
+  "nodes": [
+    {
+      "node_id": 357,
+      "context": "Step 2: Subtract the number of eggs Janet eats for...",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 328,
+      "context": "Since Janet sells each of these fresh duck eggs at...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 392,
+      "context": "**Step 1: Analyze the problem**",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 299,
+      "context": "To solve this problem, we need to follow these ste...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 304,
+      "context": "The final answers are:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 338,
+      "context": "This means Janet has 9 eggs left to sell.",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 339,
+      "context": "1. **Total Duck Eggs per Day:**        Janet's duc...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 275,
+      "context": "Conclusion:",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 403,
+      "context": "Step 2: Determine the number of eggs Janet uses ea...",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 404,
+      "context": "She eats 3 eggs for breakfast and uses 4 eggs to b...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 216,
+      "context": "**Final Answer:** \\[ \\boxed{\\$75.00} \\]",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 346,
+      "context": "Final Answer: \\boxed{20}",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 123,
+      "context": "Step 3: Find the number of eggs Janet sells at the...",
+      "node_type": null,
+      "degree": 13
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 16
+    },
+    {
+      "node_id": 287,
+      "context": "\\[ \\text{Total Earnings} = \\text{Regular Pay} + \\t...",
+      "node_type": null,
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 339,
+      "target": 357,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 357,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 338,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": 328,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 339,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 339,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 123,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 275,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 357,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 357,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 403,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": 403,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": 123,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 328,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 328,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 275,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 304,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 304,
+      "target": 346,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 403,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 328,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 403,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 123,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 328,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 346,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 404,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 404,
+      "target": 123,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 338,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 275,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 338,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": 404,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 123,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 287,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 287,
+      "target": 275,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 275,
+      "target": 216,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 392,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 392,
+      "target": 339,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 404,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 123,
+      "target": 338,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 404,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": 403,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 338,
+      "target": 123,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 328,
+      "target": 299,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 299,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 403,
+      "target": 328,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

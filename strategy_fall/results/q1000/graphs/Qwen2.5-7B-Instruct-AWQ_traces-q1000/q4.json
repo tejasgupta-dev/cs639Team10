@@ -1,0 +1,397 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-q1000_q4",
+  "nodes": [
+    {
+      "node_id": 3297,
+      "context": "[Conclusion] \\[ \\text{Number of chickens} = 2C = 2 \\times 20 = ...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 770,
+      "context": "[Planning] Step 5: Calculate the total weight of all the feed...",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 1444,
+      "context": "[Conclusion] Each chicken eats a combined total of 15 + 25 = 40...",
+      "node_type": "Conclusion",
+      "degree": 6
+    },
+    {
+      "node_id": 1542,
+      "context": "[Planning] 3 cups/chicken * 20 chickens = 60 cups",
+      "node_type": "Planning",
+      "degree": 8
+    },
+    {
+      "node_id": 1543,
+      "context": "[Uncertainty Management] 8. Calculate the total needed for the day for 20 c...",
+      "node_type": "Uncertainty Management",
+      "degree": 13
+    },
+    {
+      "node_id": 3977,
+      "context": "[Uncertainty Management] Now, we subtract this from the total daily require...",
+      "node_type": "Uncertainty Management",
+      "degree": 21
+    },
+    {
+      "node_id": 3978,
+      "context": "[Planning] Sum the feed given in the morning and afternoon me...",
+      "node_type": "Planning",
+      "degree": 5
+    },
+    {
+      "node_id": 5808,
+      "context": "[Planning] To solve this, we need to follow a few steps:",
+      "node_type": "Planning",
+      "degree": 3
+    },
+    {
+      "node_id": 5233,
+      "context": "[Uncertainty Management] \\final answer. \\",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 5202,
+      "context": "[Uncertainty Management] Thus, the answer is 21.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1330,
+      "context": "[Conclusion] This means Wendi needs to provide 20 cups of feed ...",
+      "node_type": "Conclusion",
+      "degree": 10
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 7
+    },
+    {
+      "node_id": 5656,
+      "context": "[Uncertainty Management] Now, let's calculate the value:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 5114,
+      "context": "[Conclusion] \\n\\n Final Answer: 450",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 3963,
+      "context": "[Conclusion] Final Answer: 20 cups",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": 1542,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 3978,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3978,
+      "target": 3977,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 3978,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 5202,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": 1542,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 1444,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 1543,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 3977,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 5656,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5656,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 3977,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 3977,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 3963,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1330,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 5114,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": 1444,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": 3297,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3297,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1444,
+      "target": 5140,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 3978,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5202,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 1330,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": 1543,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 1330,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": 3978,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 1330,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": 5114,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 770,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 770,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 3977,
+      "target": 5233,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5233,
+      "target": 3963,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": 1330,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1330,
+      "target": 3977,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

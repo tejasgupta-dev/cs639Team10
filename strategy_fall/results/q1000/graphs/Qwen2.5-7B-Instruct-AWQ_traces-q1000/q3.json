@@ -1,0 +1,193 @@
+{
+  "graph_name": "Qwen2.5-7B-Instruct-AWQ_traces-q1000_q3",
+  "nodes": [
+    {
+      "node_id": 5312,
+      "context": "[Planning] **Step 3: Calculate the total number of sprints in...",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 5370,
+      "context": "[Planning] He completes 60 meters in each sprint.",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 5614,
+      "context": "[Conclusion] **Step 3: Calculate the required time to walk the ...",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 4625,
+      "context": "[Conclusion] Final answer: 180,000 meters.",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 5331,
+      "context": "[Planning] Step 1: Calculate the total distance for one sprin...",
+      "node_type": "Planning",
+      "degree": 4
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 3
+    },
+    {
+      "node_id": 5114,
+      "context": "[Conclusion] \\n\\n Final Answer: 450",
+      "node_type": "Conclusion",
+      "degree": 3
+    },
+    {
+      "node_id": 5371,
+      "context": "[Active Computation] To find the total distance he covers in a week, we...",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 5532,
+      "context": "[Conclusion] Therefore, James runs a total of 180 meters each w...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 15
+    }
+  ],
+  "edges": [
+    {
+      "source": -1,
+      "target": 5614,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5614,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 4625,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5312,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5371,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5371,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5114,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5331,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5370,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 4625,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5331,
+      "target": 5614,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5532,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5532,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5331,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5331,
+      "target": 5114,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5370,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5140,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5114,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

@@ -1,0 +1,871 @@
+{
+  "graph_name": "DeepSeek-depth_q3",
+  "nodes": [
+    {
+      "node_id": 4,
+      "context": "**Final Answer:** \\boxed{180 \\text{ meters}}",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 1544,
+      "context": "**Step 4:** Calculate the value:",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1034,
+      "context": "So, 9 sprints multiplied by 60 meters per sprint e...",
+      "node_type": null,
+      "degree": 23
+    },
+    {
+      "node_id": 1035,
+      "context": "Next, find out the distance of each sprint.",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 658,
+      "context": "Step 2: Calculate the total distance for all his s...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 659,
+      "context": "To find the total meters he runs in a week, I need...",
+      "node_type": null,
+      "degree": 17
+    },
+    {
+      "node_id": 1059,
+      "context": "1. James runs 3 sprints each time he does a sessio...",
+      "node_type": null,
+      "degree": 1
+    },
+    {
+      "node_id": 1446,
+      "context": "Adding the distances together for the week:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 42,
+      "context": "Total number of sprints in a week: \\[ 3 \\text{ spr...",
+      "node_type": null,
+      "degree": 15
+    },
+    {
+      "node_id": 1324,
+      "context": "Final Answer: 7.5",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 55,
+      "context": "<think> James runs 3 sprints each day.",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1222,
+      "context": "Finally, I'll present the result as the final answ...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1228,
+      "context": "<think> James runs 3 sprints each day. Each sprint...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": 1486,
+      "context": "**Final Answer:**   \\boxed{540}",
+      "node_type": null,
+      "degree": 9
+    },
+    {
+      "node_id": 1362,
+      "context": "1. **Calculate the total meters per training sessi...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1363,
+      "context": "Step 2: Calculate the distance James runs in one s...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 474,
+      "context": "Then, to find out the weekly total, I'll multiply ...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 475,
+      "context": "\\n\\n Step 2: Calculate the total weekly distance. ...",
+      "node_type": null,
+      "degree": 2
+    },
+    {
+      "node_id": 1258,
+      "context": "\\n\\n    \\n\\n",
+      "node_type": null,
+      "degree": 10
+    },
+    {
+      "node_id": 496,
+      "context": "To determine how many total meters James runs in a...",
+      "node_type": null,
+      "degree": 24
+    },
+    {
+      "node_id": 113,
+      "context": "1. **Determine the number of sprints per week:**  ...",
+      "node_type": null,
+      "degree": 5
+    },
+    {
+      "node_id": 1652,
+      "context": "Let's break this problem down step by step:",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 1655,
+      "context": "**Final Answer: \\boxed{120}**",
+      "node_type": null,
+      "degree": 4
+    },
+    {
+      "node_id": 633,
+      "context": "<think> First, I need to determine how many sprint...",
+      "node_type": null,
+      "degree": 7
+    },
+    {
+      "node_id": 634,
+      "context": "\\n\\n Step 2: Determine the number of sprints per w...",
+      "node_type": null,
+      "degree": 11
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": null,
+      "degree": 33
+    }
+  ],
+  "edges": [
+    {
+      "source": 55,
+      "target": 55,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 55,
+      "target": 1034,
+      "weight": 21,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 659,
+      "weight": 18,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 1035,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": -1,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1652,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1652,
+      "target": 113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 113,
+      "target": 1035,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 1486,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 42,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 1034,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 496,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": -1,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 113,
+      "weight": 10,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 4,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 1034,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 634,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 1034,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1035,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 1655,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 4,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 4,
+      "target": 496,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 634,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 16,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 496,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 496,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1362,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1362,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 4,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": -1,
+      "weight": 15,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1035,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1652,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1652,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 55,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 55,
+      "target": 42,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 496,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1034,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1486,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 659,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1228,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 1228,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 1035,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 1228,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 55,
+      "target": 496,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1486,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1035,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1544,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1544,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1324,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1324,
+      "target": 1486,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 4,
+      "target": 4,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 659,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 496,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 113,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 659,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 1035,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 42,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 55,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 1258,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1034,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1258,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1486,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 658,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 659,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1363,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1363,
+      "target": 658,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 1228,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 1486,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1034,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 42,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 659,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1324,
+      "target": 4,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 4,
+      "target": 1486,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 55,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1446,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1446,
+      "target": 658,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 4,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1655,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 42,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 496,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 42,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 55,
+      "target": 1035,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1035,
+      "target": 1034,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1228,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1228,
+      "target": 496,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1655,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 1222,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1222,
+      "target": 634,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 634,
+      "target": 55,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 658,
+      "target": 475,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 475,
+      "target": 1486,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": 1034,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1034,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1059,
+      "target": 659,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1034,
+      "target": 1655,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 659,
+      "target": 42,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 633,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 633,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 55,
+      "target": 659,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1446,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1446,
+      "target": 1034,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 1324,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 474,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 474,
+      "target": 496,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1486,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 113,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 496,
+      "target": 1258,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1258,
+      "target": 496,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

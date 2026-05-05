@@ -1,0 +1,295 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-q1000_q3",
+  "nodes": [
+    {
+      "node_id": 5312,
+      "context": "[Planning] **Step 3: Calculate the total number of sprints in...",
+      "node_type": "Planning",
+      "degree": 14
+    },
+    {
+      "node_id": 5608,
+      "context": "[Conclusion] Finally, I'll ensure to present the final answer i...",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 5453,
+      "context": "[Conclusion] Since he does this activity for 4 weeks:",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 4302,
+      "context": "[Conclusion] \\[ \\boxed{180} \\]",
+      "node_type": "Conclusion",
+      "degree": 2
+    },
+    {
+      "node_id": 5808,
+      "context": "[Planning] To solve this, we need to follow a few steps:",
+      "node_type": "Planning",
+      "degree": 2
+    },
+    {
+      "node_id": 5905,
+      "context": "[Conclusion] 3. **Final Answer:**    \\[    \\boxed{540}    \\]",
+      "node_type": "Conclusion",
+      "degree": 4
+    },
+    {
+      "node_id": 5140,
+      "context": "[Other] \\[\\]",
+      "node_type": "Other",
+      "degree": 8
+    },
+    {
+      "node_id": 5400,
+      "context": "[Uncertainty Management] **Step-by-step Solution:**",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 5370,
+      "context": "[Planning] He completes 60 meters in each sprint.",
+      "node_type": "Planning",
+      "degree": 11
+    },
+    {
+      "node_id": 5371,
+      "context": "[Active Computation] To find the total distance he covers in a week, we...",
+      "node_type": "Active Computation",
+      "degree": 7
+    },
+    {
+      "node_id": 5532,
+      "context": "[Conclusion] Therefore, James runs a total of 180 meters each w...",
+      "node_type": "Conclusion",
+      "degree": 5
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 13
+    }
+  ],
+  "edges": [
+    {
+      "source": 5312,
+      "target": 5370,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 5371,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5371,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5312,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 4302,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5370,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 4302,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": -1,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5532,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5532,
+      "target": 5400,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5400,
+      "target": 5312,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5371,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5371,
+      "target": 5905,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5312,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5532,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5532,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 5370,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 5608,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5608,
+      "target": 5808,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5808,
+      "target": 5312,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5532,
+      "target": 5312,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5140,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5370,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 5140,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5371,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5371,
+      "target": 5140,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5370,
+      "target": 5905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5312,
+      "target": 5453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5453,
+      "target": 5312,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5312,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 5140,
+      "target": 5905,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 5371,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

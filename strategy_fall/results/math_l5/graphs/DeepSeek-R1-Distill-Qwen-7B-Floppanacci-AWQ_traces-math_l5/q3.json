@@ -1,0 +1,1417 @@
+{
+  "graph_name": "DeepSeek-R1-Distill-Qwen-7B-Floppanacci-AWQ_traces-math_l5_q3",
+  "nodes": [
+    {
+      "node_id": 899,
+      "context": "[Active Computation] 72= 2^3*3^2",
+      "node_type": "Active Computation",
+      "degree": 5
+    },
+    {
+      "node_id": 1542,
+      "context": "[Uncertainty Management] But let me double-check with another method.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1543,
+      "context": "[Uncertainty Management] Wait, that can't be right. Let me check my steps b...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1545,
+      "context": "[Uncertainty Management] Wait, let's see:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 266,
+      "context": "[Uncertainty Management] 2. Find proper divisors of 220: 1,2,4,5,10,11,20,2...",
+      "node_type": "Uncertainty Management",
+      "degree": 34
+    },
+    {
+      "node_id": 905,
+      "context": "[Uncertainty Management] Wait, 63*80=5040, so 5047=5040+7, so 5047=63*80 +7...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1425,
+      "context": "[Uncertainty Management] So, add all together:",
+      "node_type": "Uncertainty Management",
+      "degree": 8
+    },
+    {
+      "node_id": 529,
+      "context": "[Active Computation] So, the sum of the proper divisors of 284 is 218.",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 1174,
+      "context": "[Active Computation] 5^0 *11^1=11",
+      "node_type": "Active Computation",
+      "degree": 10
+    },
+    {
+      "node_id": 1052,
+      "context": "[Uncertainty Management] Simplify exponents:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 924,
+      "context": "[Active Computation] a=12:48/9=16/3≈5.33, nope.",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 415,
+      "context": "[Conclusion] Is this the final answer?",
+      "node_type": "Conclusion",
+      "degree": 4
+    },
+    {
+      "node_id": 290,
+      "context": "[Active Computation] 78 + 142 = 220",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 1061,
+      "context": "[Active Computation] $5 = 1 + 4$",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 1534,
+      "context": "[Uncertainty Management] Hmm, that might get complicated, but maybe managea...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 424,
+      "context": "[Uncertainty Management] 10 + 20 =30",
+      "node_type": "Uncertainty Management",
+      "degree": 6
+    },
+    {
+      "node_id": 425,
+      "context": "[Active Computation] 22 +11=33.",
+      "node_type": "Active Computation",
+      "degree": 3
+    },
+    {
+      "node_id": 42,
+      "context": "[Planning] <think> Alright, so I've got this math problem to ...",
+      "node_type": "Planning",
+      "degree": 1
+    },
+    {
+      "node_id": 553,
+      "context": "[Other] 220.",
+      "node_type": "Other",
+      "degree": 4
+    },
+    {
+      "node_id": 1453,
+      "context": "[Conclusion] It's:",
+      "node_type": "Conclusion",
+      "degree": 16
+    },
+    {
+      "node_id": 47,
+      "context": "[Uncertainty Management] Wait, are there any other groupings?",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1456,
+      "context": "[Uncertainty Management] Let's calculate each element:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1457,
+      "context": "[Uncertainty Management] But wait, maybe I made a mistake in my calculation...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 949,
+      "context": "[Uncertainty Management] So, yes, both 1 and -2 are solutions.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1343,
+      "context": "[Planning] **Step 4: Conclusion.**",
+      "node_type": "Planning",
+      "degree": 3
+    },
+    {
+      "node_id": 966,
+      "context": "[Active Computation] 3 + 4 = 7.",
+      "node_type": "Active Computation",
+      "degree": 3
+    },
+    {
+      "node_id": 327,
+      "context": "[Active Computation] 1: 220 ÷1=220, but we exclude 220.",
+      "node_type": "Active Computation",
+      "degree": 7
+    },
+    {
+      "node_id": 200,
+      "context": "[Active Computation] Now, we sum these proper divisors: \\[ 1 + 2 + 4 + ...",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 329,
+      "context": "[Active Computation] 119 + 55 = 174.",
+      "node_type": "Active Computation",
+      "degree": 4
+    },
+    {
+      "node_id": 201,
+      "context": "[Uncertainty Management] Wait, that's a bit off. Let me double-check. 1 + 2...",
+      "node_type": "Uncertainty Management",
+      "degree": 10
+    },
+    {
+      "node_id": 330,
+      "context": "[Active Computation] 4 + 44 = 48",
+      "node_type": "Active Computation",
+      "degree": 3
+    },
+    {
+      "node_id": 460,
+      "context": "[Conclusion] \"The proper divisors of 12 are 1, 2, 3, 4, and 6. ...",
+      "node_type": "Conclusion",
+      "degree": 9
+    },
+    {
+      "node_id": 458,
+      "context": "[Uncertainty Management] Case 5: 2*(3*(4*5)). 4*5=20, 3*20=60, 2*60=120, +1...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 461,
+      "context": "[Planning] First, we need to find the sum of the proper divis...",
+      "node_type": "Planning",
+      "degree": 5
+    },
+    {
+      "node_id": 326,
+      "context": "[Uncertainty Management] 4: 220 ÷ 4 = 55, so 4 is a proper divisor.",
+      "node_type": "Uncertainty Management",
+      "degree": 7
+    },
+    {
+      "node_id": 592,
+      "context": "[Uncertainty Management] So the sum of the proper divisors of 284 is 220.",
+      "node_type": "Uncertainty Management",
+      "degree": 12
+    },
+    {
+      "node_id": 593,
+      "context": "[Uncertainty Management] Ah, so that explains why I was getting 284 earlier...",
+      "node_type": "Uncertainty Management",
+      "degree": 13
+    },
+    {
+      "node_id": 339,
+      "context": "[Uncertainty Management] Wait, I think those are the five ways.",
+      "node_type": "Uncertainty Management",
+      "degree": 4
+    },
+    {
+      "node_id": 980,
+      "context": "[Active Computation] So that's 1+3=4, +1=5, +2=7, +1=8. Okay, so 2⁸.",
+      "node_type": "Active Computation",
+      "degree": 8
+    },
+    {
+      "node_id": 1365,
+      "context": "[Uncertainty Management] Wait, let me compute this step by step:",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1366,
+      "context": "[Planning] Let's solve the problem step by step.",
+      "node_type": "Planning",
+      "degree": 6
+    },
+    {
+      "node_id": 1241,
+      "context": "[Conclusion] \\[ \\boxed{100}. \\]",
+      "node_type": "Conclusion",
+      "degree": 4
+    },
+    {
+      "node_id": 217,
+      "context": "[Conclusion] After obtaining that sum, I'll repeat the process ...",
+      "node_type": "Conclusion",
+      "degree": 18
+    },
+    {
+      "node_id": 218,
+      "context": "[Uncertainty Management] But wait, maybe I missed something here. Maybe if ...",
+      "node_type": "Uncertainty Management",
+      "degree": 16
+    },
+    {
+      "node_id": 1508,
+      "context": "[Uncertainty Management] But wait, could there be more possible k's where (...",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 1131,
+      "context": "[Active Computation] Exponents for 5: 0,1",
+      "node_type": "Active Computation",
+      "degree": 2
+    },
+    {
+      "node_id": 239,
+      "context": "[Uncertainty Management] - **Sum of proper divisors:**   \\[   1 + 2 + 4 + 5...",
+      "node_type": "Uncertainty Management",
+      "degree": 5
+    },
+    {
+      "node_id": 240,
+      "context": "[Active Computation] Adding all together: 1+2=3; 3+4=7; 7+5=12; 12+10=2...",
+      "node_type": "Active Computation",
+      "degree": 6
+    },
+    {
+      "node_id": 241,
+      "context": "[Uncertainty Management] ### Step 1: Find the proper divisors of 284.",
+      "node_type": "Uncertainty Management",
+      "degree": 24
+    },
+    {
+      "node_id": 1015,
+      "context": "[Uncertainty Management] (1 + 2 + 4) for 2^2: 7",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": 508,
+      "context": "[Conclusion] Hence, the answer is 203. </think>",
+      "node_type": "Conclusion",
+      "degree": 8
+    },
+    {
+      "node_id": 1021,
+      "context": "[Uncertainty Management] 0:0",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    },
+    {
+      "node_id": -1,
+      "context": "Noise/Unique",
+      "node_type": "Uncertainty Management",
+      "degree": 42
+    },
+    {
+      "node_id": 1535,
+      "context": "[Uncertainty Management] Wait, maybe. But I'm getting confused.",
+      "node_type": "Uncertainty Management",
+      "degree": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": 241,
+      "target": 217,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 217,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 218,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": -1,
+      "weight": 21,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 266,
+      "weight": 8,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 415,
+      "target": 1241,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 460,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 241,
+      "weight": 31,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 218,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 899,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 899,
+      "target": 899,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 899,
+      "target": 241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 980,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 980,
+      "target": 966,
+      "weight": 14,
+      "edge_type": "transition"
+    },
+    {
+      "source": 966,
+      "target": 329,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 592,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 218,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 201,
+      "target": 266,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 266,
+      "weight": 21,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 327,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 327,
+      "target": 327,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 327,
+      "target": -1,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1052,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1052,
+      "target": 1131,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1131,
+      "target": 1174,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1174,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": 1174,
+      "weight": 9,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": 266,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": -1,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 966,
+      "target": 1061,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1061,
+      "target": -1,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 425,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 425,
+      "target": 424,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 424,
+      "target": 424,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 424,
+      "target": 330,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 330,
+      "target": 329,
+      "weight": 12,
+      "edge_type": "transition"
+    },
+    {
+      "source": 329,
+      "target": 290,
+      "weight": 13,
+      "edge_type": "transition"
+    },
+    {
+      "source": 290,
+      "target": 593,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 593,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1425,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 458,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 458,
+      "target": 424,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 330,
+      "target": 425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 424,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1545,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1545,
+      "target": 529,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 529,
+      "target": 266,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 508,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 508,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 218,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 266,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 508,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 508,
+      "target": 592,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 1241,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 461,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 200,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 266,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 240,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 240,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 1343,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1343,
+      "target": 241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 239,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": -1,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 241,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": -1,
+      "weight": 7,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 326,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 326,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 924,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 924,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 1365,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1365,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 201,
+      "target": 592,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 593,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 593,
+      "weight": 5,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 592,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 266,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 326,
+      "target": 326,
+      "weight": 6,
+      "edge_type": "transition"
+    },
+    {
+      "source": 326,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 327,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 327,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 980,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 290,
+      "target": 592,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 592,
+      "target": 592,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 508,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 508,
+      "target": 1543,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1543,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 240,
+      "target": 508,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 461,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 461,
+      "target": 217,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 949,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 949,
+      "target": 1366,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1366,
+      "target": 461,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 461,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 1453,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 217,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 201,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 266,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1453,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 240,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 240,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 1241,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1343,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 529,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 42,
+      "target": 460,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": 460,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 217,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 241,
+      "target": 899,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 290,
+      "target": 201,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 201,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": 1508,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1508,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 339,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 339,
+      "target": 1174,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1425,
+      "target": 1021,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1021,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 290,
+      "target": -1,
+      "weight": 4,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 529,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 508,
+      "target": 1542,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1542,
+      "target": 217,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1457,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1457,
+      "target": 1456,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1456,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 1015,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1015,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1174,
+      "target": 905,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 905,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": 1534,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1534,
+      "target": 241,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 290,
+      "target": 266,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 239,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 1425,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 266,
+      "target": 47,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 47,
+      "target": 980,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 218,
+      "weight": 3,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 218,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 326,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 326,
+      "target": 327,
+      "weight": 2,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 218,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": -1,
+      "target": 553,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 553,
+      "target": 553,
+      "weight": 11,
+      "edge_type": "transition"
+    },
+    {
+      "source": 553,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 240,
+      "target": 593,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 593,
+      "target": 1535,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1535,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 218,
+      "target": 1366,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1366,
+      "target": 460,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 460,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": -1,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 200,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 239,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 1366,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1366,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 529,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 529,
+      "target": 1453,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 217,
+      "target": 266,
+      "weight": 1,
+      "edge_type": "transition"
+    },
+    {
+      "source": 1453,
+      "target": 415,
+      "weight": 1,
+      "edge_type": "transition"
+    }
+  ]
+}

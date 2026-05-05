@@ -1,0 +1,455 @@
+qid,type,tag,gt,accuracy
+0,control,Other,"Janet sells 16 - 3 - 4 = <<16-3-4=9>>9 duck eggs a day.
+She makes 9 * 2 = $<<9*2=18>>18 every day at the farmer’s market.
+#### 18",1.0
+0,intervention,Other,"Janet sells 16 - 3 - 4 = <<16-3-4=9>>9 duck eggs a day.
+She makes 9 * 2 = $<<9*2=18>>18 every day at the farmer’s market.
+#### 18",0.8125
+1,control,Conclusion,"It takes 2/2=<<2/2=1>>1 bolt of white fiber
+So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric
+#### 3",0.8125
+1,intervention,Conclusion,"It takes 2/2=<<2/2=1>>1 bolt of white fiber
+So the total amount of fabric is 2+1=<<2+1=3>>3 bolts of fabric
+#### 3",0.9375
+2,control,Other,"The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000
+He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000
+So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000
+So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000
+#### 70000",0.1875
+2,intervention,Other,"The cost of the house and repairs came out to 80,000+50,000=$<<80000+50000=130000>>130,000
+He increased the value of the house by 80,000*1.5=<<80000*1.5=120000>>120,000
+So the new value of the house is 120,000+80,000=$<<120000+80000=200000>>200,000
+So he made a profit of 200,000-130,000=$<<200000-130000=70000>>70,000
+#### 70000",0.375
+3,control,Planning,"He sprints 3*3=<<3*3=9>>9 times
+So he runs 9*60=<<9*60=540>>540 meters
+#### 540",0.3125
+3,intervention,Planning,"He sprints 3*3=<<3*3=9>>9 times
+So he runs 9*60=<<9*60=540>>540 meters
+#### 540",0.3125
+4,control,Uncertainty Management,"If each chicken eats 3 cups of feed per day, then for 20 chickens they would need 3*20=<<3*20=60>>60 cups of feed per day.
+If she feeds the flock 15 cups of feed in the morning, and 25 cups in the afternoon, then the final meal would require 60-15-25=<<60-15-25=20>>20 cups of chicken feed.
+#### 20",0.0
+4,intervention,Uncertainty Management,"If each chicken eats 3 cups of feed per day, then for 20 chickens they would need 3*20=<<3*20=60>>60 cups of feed per day.
+If she feeds the flock 15 cups of feed in the morning, and 25 cups in the afternoon, then the final meal would require 60-15-25=<<60-15-25=20>>20 cups of chicken feed.
+#### 20",0.1875
+5,control,Uncertainty Management,"The discount price of one glass is 60/100 * 5 = $<<60/100*5=3>>3.
+If every second glass is cheaper, that means Kylar is going to buy 16 / 2 = <<16/2=8>>8 cheaper glasses.
+So for the cheaper glasses, Kylar is going to pay 8 * 3 = $<<8*3=24>>24.
+And for the regular-priced glasses, Kylar will pay 8 * 5 = $<<8*5=40>>40.
+So in total Kylar needs to pay 24 + 40 = $<<24+40=64>>64 for the glasses he wants to buy.
+#### 64",0.8125
+5,intervention,Uncertainty Management,"The discount price of one glass is 60/100 * 5 = $<<60/100*5=3>>3.
+If every second glass is cheaper, that means Kylar is going to buy 16 / 2 = <<16/2=8>>8 cheaper glasses.
+So for the cheaper glasses, Kylar is going to pay 8 * 3 = $<<8*3=24>>24.
+And for the regular-priced glasses, Kylar will pay 8 * 5 = $<<8*5=40>>40.
+So in total Kylar needs to pay 24 + 40 = $<<24+40=64>>64 for the glasses he wants to buy.
+#### 64",0.75
+6,control,Other,"If Seattle has 20 sheep, Charleston has 4 * 20 sheep = <<20*4=80>>80 sheep
+Toulouse has twice as many sheep as Charleston, which is 2 * 80 sheep = <<2*80=160>>160 sheep
+Together, the three has 20 sheep + 160 sheep + 80 sheep = <<20+160+80=260>>260 sheep
+#### 260",1.0
+6,intervention,Other,"If Seattle has 20 sheep, Charleston has 4 * 20 sheep = <<20*4=80>>80 sheep
+Toulouse has twice as many sheep as Charleston, which is 2 * 80 sheep = <<2*80=160>>160 sheep
+Together, the three has 20 sheep + 160 sheep + 80 sheep = <<20+160+80=260>>260 sheep
+#### 260",1.0
+7,control,Other,"First find how many gigabytes are in 40% of the file: 200 GB * 40% = <<200*40*.01=80>>80 GB
+Then divide that number by the download rate to find the time until Windows restarts: 80 GB / 2 GB/minute = <<80/2=40>>40 minutes
+Then find the time to download the whole file after the restart: 200 GB / 2 GB/minute = <<200/2=100>>100 minutes
+Then add the time to download 40% of the file, to download the whole file, and to wait for Windows to update: 40 minutes + 100 minutes + 20 minutes = <<40+100+20=160>>160 minutes
+#### 160",0.0625
+7,intervention,Other,"First find how many gigabytes are in 40% of the file: 200 GB * 40% = <<200*40*.01=80>>80 GB
+Then divide that number by the download rate to find the time until Windows restarts: 80 GB / 2 GB/minute = <<80/2=40>>40 minutes
+Then find the time to download the whole file after the restart: 200 GB / 2 GB/minute = <<200/2=100>>100 minutes
+Then add the time to download 40% of the file, to download the whole file, and to wait for Windows to update: 40 minutes + 100 minutes + 20 minutes = <<40+100+20=160>>160 minutes
+#### 160",0.0625
+8,control,Uncertainty Management,"When he turned around he was 3*60=<<3*60=180>>180 miles from home
+He was only able to drive 4-2=<<4-2=2>>2 hours in the first four hours
+In half an hour he goes 30*.5=<<30*.5=15>>15 miles
+He then drives another 2-.5=<<2-.5=1.5>>1.5 hours
+In that time he goes 80*1.5=<<80*1.5=120>>120 miles
+So he drove 120+15=<<120+15=135>>135 miles
+So he is 180-135=<<180-135=45>>45 miles away from home
+#### 45",0.0625
+8,intervention,Uncertainty Management,"When he turned around he was 3*60=<<3*60=180>>180 miles from home
+He was only able to drive 4-2=<<4-2=2>>2 hours in the first four hours
+In half an hour he goes 30*.5=<<30*.5=15>>15 miles
+He then drives another 2-.5=<<2-.5=1.5>>1.5 hours
+In that time he goes 80*1.5=<<80*1.5=120>>120 miles
+So he drove 120+15=<<120+15=135>>135 miles
+So he is 180-135=<<180-135=45>>45 miles away from home
+#### 45",0.125
+9,control,Uncertainty Management,"Eliza is entitled to 45 -40 = <<45-40=5>>5 hours overtime pay.
+Her hourly rate for the overtime pay is $10 x 1.2 = $<<10*1.2=12>>12.
+So, Eliza will receive $12 x 5 =$<<12*5=60>>60 for overtime pay.
+Her regular weekly earning is $10 x 40 = $<<10*40=400>>400.
+Thus, Eliza will receive a total of $400 + $60 = $<<400+60=460>>460 for this week's work.
+#### 460",0.1875
+9,intervention,Uncertainty Management,"Eliza is entitled to 45 -40 = <<45-40=5>>5 hours overtime pay.
+Her hourly rate for the overtime pay is $10 x 1.2 = $<<10*1.2=12>>12.
+So, Eliza will receive $12 x 5 =$<<12*5=60>>60 for overtime pay.
+Her regular weekly earning is $10 x 40 = $<<10*40=400>>400.
+Thus, Eliza will receive a total of $400 + $60 = $<<400+60=460>>460 for this week's work.
+#### 460",0.25
+10,control,Planning,"The number of downloads of the program in the second month increased to 3*60 = <<3*60=180>>180
+In the first two months, the total number of downloads of the program was 180+60 = <<180+60=240>>240
+In the third month, the number of downloads of the program reduced by 30/100*180 = <<30/100*180=54>>54
+There were 180-54 = <<180-54=126>>126 downloads in the third month.
+In the three months, the total number of downloads of the program was 126+240 = <<126+240=366>>366
+#### 366",1.0
+10,intervention,Planning,"The number of downloads of the program in the second month increased to 3*60 = <<3*60=180>>180
+In the first two months, the total number of downloads of the program was 180+60 = <<180+60=240>>240
+In the third month, the number of downloads of the program reduced by 30/100*180 = <<30/100*180=54>>54
+There were 180-54 = <<180-54=126>>126 downloads in the third month.
+In the three months, the total number of downloads of the program was 126+240 = <<126+240=366>>366
+#### 366",1.0
+11,control,Uncertainty Management,"The total charge for the doughnuts was 3 x $68 = $<<3*68=204>>204.
+The total charge for the mini cupcakes was 2 x $80 = $<<2*80=160>>160.
+The total charge for the mini cheesecakes was 6 x $55 = $<<6*55=330>>330.
+Therefore the total amount Toula paid for the pastries was $204 + $160 + $330 = $<<204+160+330=694>>694.
+#### 694",0.0625
+11,intervention,Uncertainty Management,"The total charge for the doughnuts was 3 x $68 = $<<3*68=204>>204.
+The total charge for the mini cupcakes was 2 x $80 = $<<2*80=160>>160.
+The total charge for the mini cheesecakes was 6 x $55 = $<<6*55=330>>330.
+Therefore the total amount Toula paid for the pastries was $204 + $160 + $330 = $<<204+160+330=694>>694.
+#### 694",0.1875
+12,control,Uncertainty Management,"He makes $10.5 selling lemons each year because 7 x 1.5 = <<7*1.5=10.5>>10.5
+He earns $7.5 each year from the lemon tree because 10.5 - 3 = <<10.5-3=7.5>>7.5
+It will take 12 years to earn enough to pay off the tree because 90 / 7.5 = <<90/7.5=12>>12
+He will make money in year 13 because 12 + 1 = <<12+1=13>>13
+#### 13",0.0
+12,intervention,Uncertainty Management,"He makes $10.5 selling lemons each year because 7 x 1.5 = <<7*1.5=10.5>>10.5
+He earns $7.5 each year from the lemon tree because 10.5 - 3 = <<10.5-3=7.5>>7.5
+It will take 12 years to earn enough to pay off the tree because 90 / 7.5 = <<90/7.5=12>>12
+He will make money in year 13 because 12 + 1 = <<12+1=13>>13
+#### 13",0.0
+13,control,Planning,"First multiply the five remaining vacuum cleaners by two to find out how many Melanie had before she visited the orange house: 5 * 2 = <<5*2=10>>10
+Then add two to figure out how many vacuum cleaners she had before visiting the red house: 10 + 2 = <<10+2=12>>12
+Now we know that 2/3 * x = 12, where x is the number of vacuum cleaners Melanie started with. We can find x by dividing each side of the equation by 2/3, which produces x = 18
+#### 18",0.875
+13,intervention,Planning,"First multiply the five remaining vacuum cleaners by two to find out how many Melanie had before she visited the orange house: 5 * 2 = <<5*2=10>>10
+Then add two to figure out how many vacuum cleaners she had before visiting the red house: 10 + 2 = <<10+2=12>>12
+Now we know that 2/3 * x = 12, where x is the number of vacuum cleaners Melanie started with. We can find x by dividing each side of the equation by 2/3, which produces x = 18
+#### 18",1.0
+14,control,Uncertainty Management,"There are 20 x 20/100 = <<20*20/100=4>>4 students who enrolled in contemporary dance.
+So, 20 - 4 = <<20-4=16>>16 students are enrolled in either jazz or hip-hop dance.
+There are 16 x 25/100 = <<16*25/100=4>>4 students who enrolled in jazz dance.
+Hence, 16 - 4 = <<16-4=12>>12 students enrolled in hip-hop dance.
+This is 12/20 x 100% = 60% of the entire students.
+#### 60",0.0
+14,intervention,Uncertainty Management,"There are 20 x 20/100 = <<20*20/100=4>>4 students who enrolled in contemporary dance.
+So, 20 - 4 = <<20-4=16>>16 students are enrolled in either jazz or hip-hop dance.
+There are 16 x 25/100 = <<16*25/100=4>>4 students who enrolled in jazz dance.
+Hence, 16 - 4 = <<16-4=12>>12 students enrolled in hip-hop dance.
+This is 12/20 x 100% = 60% of the entire students.
+#### 60",0.0
+15,control,Conclusion,"If he purchases jewelry, he will make a profit of 2.5% which is $5000*(2.5/100) = $<<5000*(2.5/100)=125>>125
+If he purchases electronic gadgets, he will make a profit of 1.2% which is $8000*(1.2/100) = $<<8000*(1.2/100)=96>>96
+If he wants to maximize profit, since $125 > $96, he will choose to purchase jewelry, thereby making a profit of $<<125=125>>125
+#### 125",0.5
+15,intervention,Conclusion,"If he purchases jewelry, he will make a profit of 2.5% which is $5000*(2.5/100) = $<<5000*(2.5/100)=125>>125
+If he purchases electronic gadgets, he will make a profit of 1.2% which is $8000*(1.2/100) = $<<8000*(1.2/100)=96>>96
+If he wants to maximize profit, since $125 > $96, he will choose to purchase jewelry, thereby making a profit of $<<125=125>>125
+#### 125",0.4375
+16,control,Uncertainty Management,"On the first day, the trains covered 2 trains * 80 miles/train = <<2*80=160>>160 miles together.
+They also covered 150 miles/train * 2 trains = <<150*2=300>>300 miles together on the second day.
+The combined distance the two trains covered in the two days is 300 miles + 160 miles = <<300+160=460>>460 miles
+The average distance for the two days is 460 miles / 2 trains = <<460/2=230>>230 miles/train
+#### 230",0.1875
+16,intervention,Uncertainty Management,"On the first day, the trains covered 2 trains * 80 miles/train = <<2*80=160>>160 miles together.
+They also covered 150 miles/train * 2 trains = <<150*2=300>>300 miles together on the second day.
+The combined distance the two trains covered in the two days is 300 miles + 160 miles = <<300+160=460>>460 miles
+The average distance for the two days is 460 miles / 2 trains = <<460/2=230>>230 miles/train
+#### 230",0.25
+17,control,Uncertainty Management,"First find the total amount Jill makes per week teaching: $20/hour * 35 hours/week = $<<20*35=700>>700/week
+Then find the total amount Jill makes per week coaching: $30/hour * 15 hours/week = $<<30*15=450>>450/week
+Then add those two amounts to find the total amount Jill makes per week: $700/week + $450/week = $<<700+450=1150>>1150/week
+Then multiply that number by the number of weeks Jill works in a year to find her annual salary: $1150/week * 50 weeks/year = $<<1150*50=57500>>57,500
+#### 57500",0.0
+17,intervention,Uncertainty Management,"First find the total amount Jill makes per week teaching: $20/hour * 35 hours/week = $<<20*35=700>>700/week
+Then find the total amount Jill makes per week coaching: $30/hour * 15 hours/week = $<<30*15=450>>450/week
+Then add those two amounts to find the total amount Jill makes per week: $700/week + $450/week = $<<700+450=1150>>1150/week
+Then multiply that number by the number of weeks Jill works in a year to find her annual salary: $1150/week * 50 weeks/year = $<<1150*50=57500>>57,500
+#### 57500",0.125
+18,control,Conclusion,"She eats 3 eggs every day and there are 7 days in a week so she eats 3*7 = <<3*7=21>>21 eggs a week
+After 4 weeks she will have eaten 4*21 = <<4*21=84>>84 eggs
+There are 12 eggs in 1 dozen and she'll eat 84 eggs so that's 84/12 = <<84/12=7>>7 dozen eggs
+#### 7",0.9375
+18,intervention,Conclusion,"She eats 3 eggs every day and there are 7 days in a week so she eats 3*7 = <<3*7=21>>21 eggs a week
+After 4 weeks she will have eaten 4*21 = <<4*21=84>>84 eggs
+There are 12 eggs in 1 dozen and she'll eat 84 eggs so that's 84/12 = <<84/12=7>>7 dozen eggs
+#### 7",0.9375
+19,control,Uncertainty Management,"First figure out how many hours it takes to hike a 12-mile trail at 4 mph by dividing the distance by the speed: 12 miles / 4 mph = <<12/4=3>>3 hours
+Next subtract the time Marissa already spent walking to find out how much time she has left: 3 hours - 1 hour - 1 hour = <<3-1-1=1>>1 hour
+Now figure out how much distance she has left by subtracting the distance she already traveled from the total distance: 12 miles - 4 miles - 2 miles = <<12-4-2=6>>6 miles
+Now divide the remaining distance by the remaining time to find out how fast in miles per hour Marissa has to travel: 6 miles / 1 hour = <<6/1=6>>6 mph
+#### 6",0.625
+19,intervention,Uncertainty Management,"First figure out how many hours it takes to hike a 12-mile trail at 4 mph by dividing the distance by the speed: 12 miles / 4 mph = <<12/4=3>>3 hours
+Next subtract the time Marissa already spent walking to find out how much time she has left: 3 hours - 1 hour - 1 hour = <<3-1-1=1>>1 hour
+Now figure out how much distance she has left by subtracting the distance she already traveled from the total distance: 12 miles - 4 miles - 2 miles = <<12-4-2=6>>6 miles
+Now divide the remaining distance by the remaining time to find out how fast in miles per hour Marissa has to travel: 6 miles / 1 hour = <<6/1=6>>6 mph
+#### 6",0.75
+20,control,Uncertainty Management,"There are 15 x 3/5 = <<15*3/5=9>>9 liters of water from the 15 liters pineapple drink.
+After 1 liter of orange drink was spilled, there were 10 - 1 = <<10-1=9>>9 liters of orange drink left.
+Out of the 9 liters, 9 x 2/3 = <<9*2/3=6>>6 liters are water.
+Thus, there are a total of 9 + 6 = <<9+6=15>>15 liters of water out of the 24 liters.
+#### 15",0.3125
+20,intervention,Uncertainty Management,"There are 15 x 3/5 = <<15*3/5=9>>9 liters of water from the 15 liters pineapple drink.
+After 1 liter of orange drink was spilled, there were 10 - 1 = <<10-1=9>>9 liters of orange drink left.
+Out of the 9 liters, 9 x 2/3 = <<9*2/3=6>>6 liters are water.
+Thus, there are a total of 9 + 6 = <<9+6=15>>15 liters of water out of the 24 liters.
+#### 15",0.5625
+21,control,Other,"When Raymond's son was born Samantha was 23 - 6 = <<23-6=17>>17 years old.
+Thus it has been 31 - 17 = <<31-17=14>>14 years since Raymond's son was born.
+#### 14",0.125
+21,intervention,Other,"When Raymond's son was born Samantha was 23 - 6 = <<23-6=17>>17 years old.
+Thus it has been 31 - 17 = <<31-17=14>>14 years since Raymond's son was born.
+#### 14",0.1875
+22,control,Uncertainty Management,"His first 3 customers buy 3 * 1 = <<3*1=3>>3 DVDs.
+His next 2 buy 2 * 2 = <<2*2=4>>4 DVDs.
+He sells a total of 3 + 4 + 0 = <<3+4+0=7>>7 DVDs.
+#### 7",0.9375
+22,intervention,Uncertainty Management,"His first 3 customers buy 3 * 1 = <<3*1=3>>3 DVDs.
+His next 2 buy 2 * 2 = <<2*2=4>>4 DVDs.
+He sells a total of 3 + 4 + 0 = <<3+4+0=7>>7 DVDs.
+#### 7",1.0
+23,control,Conclusion,"The candle burns for 5 - 1 = <<5-1=4>>4 hours.
+Thus, the candle will be 2 * 4 = <<2*4=8>>8 centimeters shorter.
+#### 8",0.375
+23,intervention,Conclusion,"The candle burns for 5 - 1 = <<5-1=4>>4 hours.
+Thus, the candle will be 2 * 4 = <<2*4=8>>8 centimeters shorter.
+#### 8",0.3125
+24,control,Uncertainty Management,"Let X be the original price of the book. The discounted price is X - X*25% = $19.50.
+Combining like terms, we get .75X = $19.50
+Dividing both sides by .75, we get X = $26.
+#### 26",0.25
+24,intervention,Uncertainty Management,"Let X be the original price of the book. The discounted price is X - X*25% = $19.50.
+Combining like terms, we get .75X = $19.50
+Dividing both sides by .75, we get X = $26.
+#### 26",0.125
+25,control,Uncertainty Management,"Five packs of milk cost $3 x 5 = $<<3*5=15>>15.
+Four apples cost $1.50 x 4 = $<<1.5*4=6>>6.
+The total cost of the chicken meal, milk, and apples is $12 + $15 + $6 = $<<12+15+6=33>>33.
+Thus, the boxes of pizza cost $50 - $33 = $<<50-33=17>>17.
+Therefore, Marie ordered $17/$8.50 = <<17/8.5=2>>2 boxes of pizza.
+#### 2",1.0
+25,intervention,Uncertainty Management,"Five packs of milk cost $3 x 5 = $<<3*5=15>>15.
+Four apples cost $1.50 x 4 = $<<1.5*4=6>>6.
+The total cost of the chicken meal, milk, and apples is $12 + $15 + $6 = $<<12+15+6=33>>33.
+Thus, the boxes of pizza cost $50 - $33 = $<<50-33=17>>17.
+Therefore, Marie ordered $17/$8.50 = <<17/8.5=2>>2 boxes of pizza.
+#### 2",1.0
+26,control,Uncertainty Management,"3 * (16.50 + 22.50 + 42) = $<<3*(16.50+22.50+42)=243>>243
+Mishka spent $243 on clothing.
+#### 243",0.9375
+26,intervention,Uncertainty Management,"3 * (16.50 + 22.50 + 42) = $<<3*(16.50+22.50+42)=243>>243
+Mishka spent $243 on clothing.
+#### 243",1.0
+27,control,Conclusion,"Each container of ice cream has 15 servings and she eats 1 serving a night so after 60 days she will need 60/15 = 4 containers of ice cream
+If each carton costs $4.00 and she needs 4 containers then it will cost her 4*4 = $<<4*4=16.00>>16.00
+#### 16",0.5625
+27,intervention,Conclusion,"Each container of ice cream has 15 servings and she eats 1 serving a night so after 60 days she will need 60/15 = 4 containers of ice cream
+If each carton costs $4.00 and she needs 4 containers then it will cost her 4*4 = $<<4*4=16.00>>16.00
+#### 16",0.625
+28,control,Uncertainty Management,"He traveled 20 miles + 15 miles = <<20+15=35>>35 miles not counting the distance between stops.
+Henry traveled 60 miles - 35 miles = <<60-35=25>>25 miles between his first and second stop.
+#### 25",0.625
+28,intervention,Uncertainty Management,"He traveled 20 miles + 15 miles = <<20+15=35>>35 miles not counting the distance between stops.
+Henry traveled 60 miles - 35 miles = <<60-35=25>>25 miles between his first and second stop.
+#### 25",0.75
+29,control,Uncertainty Management,"The second pair of heels costs 33 * 2 = $<<33*2=66>>66.
+The heels together cost 66 + 33 = $<<66+33=99>>99.
+The boots cost $5 more than both pairs of heels together, so the boots cost 99 + 5 = $104.
+#### 104",1.0
+29,intervention,Uncertainty Management,"The second pair of heels costs 33 * 2 = $<<33*2=66>>66.
+The heels together cost 66 + 33 = $<<66+33=99>>99.
+The boots cost $5 more than both pairs of heels together, so the boots cost 99 + 5 = $104.
+#### 104",0.9375
+30,control,Uncertainty Management,"The total ratio representing their ages is 7+11= <<7+11=18>>18
+Since the fraction of the ratio that represents Allen's age is 11/18, Allen's current age is 11/18*162 = <<11/18*162=99>>99
+If Allen is currently 99 years old, in 10 years he will be 99+10 = <<99+10=109>>109 years old
+#### 109",1.0
+30,intervention,Uncertainty Management,"The total ratio representing their ages is 7+11= <<7+11=18>>18
+Since the fraction of the ratio that represents Allen's age is 11/18, Allen's current age is 11/18*162 = <<11/18*162=99>>99
+If Allen is currently 99 years old, in 10 years he will be 99+10 = <<99+10=109>>109 years old
+#### 109",1.0
+31,control,Conclusion,"The second person guessed 60 because 20 + (80/2)= <<20+(80/2)=60>>60
+The second guessed 100 because 80 x 1.25 = <<80*1.25=100>>100
+The total amount guessed is 240 because 80 + 60 + 100 = <<80+60+100=240>>240
+The average amount guessed is 80 because 240 / 3 = <<240/3=80>>80
+#### 80",1.0
+31,intervention,Conclusion,"The second person guessed 60 because 20 + (80/2)= <<20+(80/2)=60>>60
+The second guessed 100 because 80 x 1.25 = <<80*1.25=100>>100
+The total amount guessed is 240 because 80 + 60 + 100 = <<80+60+100=240>>240
+The average amount guessed is 80 because 240 / 3 = <<240/3=80>>80
+#### 80",1.0
+32,control,Uncertainty Management,"He spends 10*.5=<<10*.5=5>>5 hours per day
+That means he spends 5*7=<<5*7=35>>35 hours per week
+#### 35",0.9375
+32,intervention,Uncertainty Management,"He spends 10*.5=<<10*.5=5>>5 hours per day
+That means he spends 5*7=<<5*7=35>>35 hours per week
+#### 35",0.625
+33,control,Uncertainty Management,"Let x be the number of silver coins Gretchen has
+Gretchen has x+30 gold coins.
+x+x+30=110
+2*x=80
+x=<<40=40>>40
+Gretchen has 40+30=<<40+30=70>>70 gold coins
+#### 70",1.0
+33,intervention,Uncertainty Management,"Let x be the number of silver coins Gretchen has
+Gretchen has x+30 gold coins.
+x+x+30=110
+2*x=80
+x=<<40=40>>40
+Gretchen has 40+30=<<40+30=70>>70 gold coins
+#### 70",0.9375
+34,control,Conclusion,"Half of Raymond's jewels is 40/2 = <<40/2=20>>20
+Since Aaron has 5 more jewels than half of Raymond's jewels, he has 20+5 = <<5+20=25>>25 jewels.
+If Siobhan has 2 fewer jewels than Aaron, he has 25-2 = 23 jewels.
+#### 23",1.0
+34,intervention,Conclusion,"Half of Raymond's jewels is 40/2 = <<40/2=20>>20
+Since Aaron has 5 more jewels than half of Raymond's jewels, he has 20+5 = <<5+20=25>>25 jewels.
+If Siobhan has 2 fewer jewels than Aaron, he has 25-2 = 23 jewels.
+#### 23",1.0
+35,control,Conclusion,"He scored 4*.25=<<4*.25=1>>1 point more in the second 20 minutes
+So he scored 4+1=<<4+1=5>>5 points in the second 20 minutes
+So in total, he scored 4+5=<<4+5=9>>9 points in the 40 minutes
+#### 9",0.625
+35,intervention,Conclusion,"He scored 4*.25=<<4*.25=1>>1 point more in the second 20 minutes
+So he scored 4+1=<<4+1=5>>5 points in the second 20 minutes
+So in total, he scored 4+5=<<4+5=9>>9 points in the 40 minutes
+#### 9",0.625
+36,control,Other,"He eats 2 yogurts a day so over 30 days he will need 2*30 = <<2*30=60>>60 yogurts
+The yogurt is sold as 4 units for $5.00 and he needs 60 yogurts so that’s 60/4 = <<60/4=15>>15 4-packs
+Each 4-pack is $5.00 and he needs 15 4-packs so he will spend $5*15 = $<<5*15=75.00>>75.00 on yogurt
+#### 75",0.625
+36,intervention,Other,"He eats 2 yogurts a day so over 30 days he will need 2*30 = <<2*30=60>>60 yogurts
+The yogurt is sold as 4 units for $5.00 and he needs 60 yogurts so that’s 60/4 = <<60/4=15>>15 4-packs
+Each 4-pack is $5.00 and he needs 15 4-packs so he will spend $5*15 = $<<5*15=75.00>>75.00 on yogurt
+#### 75",0.3125
+37,control,Uncertainty Management,"He spent $160 on video games because 8 x 20 = <<8*20=160>>160
+He earned $165 from his sale because 160 + 5 = <<160+5=165>>165
+He sold 11 lego sets because 11 x 15 = <<11*15=165>>165
+He has 2 sets left because 13 - 11 = <<13-11=2>>2
+#### 2",0.4375
+37,intervention,Uncertainty Management,"He spent $160 on video games because 8 x 20 = <<8*20=160>>160
+He earned $165 from his sale because 160 + 5 = <<160+5=165>>165
+He sold 11 lego sets because 11 x 15 = <<11*15=165>>165
+He has 2 sets left because 13 - 11 = <<13-11=2>>2
+#### 2",0.5625
+38,control,Uncertainty Management,"He has 7-1=<<7-1=6>>6 possible running days.
+He runs half of those so he runs 6/2=<<6/2=3>>3 days.
+So for two days, he runs 3/2=<<3/2=1.5>>1.5 hours.
+So in total, he runs 3+1.5+1.5=<<3+1.5+1.5=6>>6 hours.
+So he runs 60/6=<<60/6=10>>10 mph.
+#### 10",0.3125
+38,intervention,Uncertainty Management,"He has 7-1=<<7-1=6>>6 possible running days.
+He runs half of those so he runs 6/2=<<6/2=3>>3 days.
+So for two days, he runs 3/2=<<3/2=1.5>>1.5 hours.
+So in total, he runs 3+1.5+1.5=<<3+1.5+1.5=6>>6 hours.
+So he runs 60/6=<<60/6=10>>10 mph.
+#### 10",0.0
+39,control,Conclusion,"If Dana can skip at half the speed she can run, then she can run at 3*2=<<3*2=6>>6 miles per hour.
+And since she can run at a speed that is 4 times faster than she can walk, this means she can walk at 6/4=1.5 miles per hour.
+If two-thirds of the time is spent walking, then she walks for 6*(2/3)=<<6*(2/3)=4>>4 hours.
+If one-third of the time is spent running, then she runs for 6-4=<<6-4=2>>2 hours.
+Thus, she runs for 2 hours at 6 miles per hour, or 2*6=<<2*6=12>>12 miles.
+She walks for 4 hours at 1.5 miles per hour, or 4*1.5=<<4*1.5=6>>6 miles.
+Thus, altogether, she travels 12+6=<<12+6=18>>18 miles.
+#### 18",0.5625
+39,intervention,Conclusion,"If Dana can skip at half the speed she can run, then she can run at 3*2=<<3*2=6>>6 miles per hour.
+And since she can run at a speed that is 4 times faster than she can walk, this means she can walk at 6/4=1.5 miles per hour.
+If two-thirds of the time is spent walking, then she walks for 6*(2/3)=<<6*(2/3)=4>>4 hours.
+If one-third of the time is spent running, then she runs for 6-4=<<6-4=2>>2 hours.
+Thus, she runs for 2 hours at 6 miles per hour, or 2*6=<<2*6=12>>12 miles.
+She walks for 4 hours at 1.5 miles per hour, or 4*1.5=<<4*1.5=6>>6 miles.
+Thus, altogether, she travels 12+6=<<12+6=18>>18 miles.
+#### 18",0.8125
+40,control,Planning,"Ben’s iPhone is 1*2 = <<1*2=2>>2 years old.
+Brandon’s iPhone is 4*2 = <<4*2=8>>8 years old.
+#### 8",0.875
+40,intervention,Planning,"Ben’s iPhone is 1*2 = <<1*2=2>>2 years old.
+Brandon’s iPhone is 4*2 = <<4*2=8>>8 years old.
+#### 8",0.75
+41,control,Uncertainty Management,"With the gemstone, Polly could throw the javelin 3 times farther than 400 feet, for a distance of 3*400=<<3*400=1200>>1200 feet.
+1200 feet is beyond the 1000-foot reach of the dragon's flames by a distance of 1200-1000=<<1200-1000=200>>200 feet.
+#### 200",0.875
+41,intervention,Uncertainty Management,"With the gemstone, Polly could throw the javelin 3 times farther than 400 feet, for a distance of 3*400=<<3*400=1200>>1200 feet.
+1200 feet is beyond the 1000-foot reach of the dragon's flames by a distance of 1200-1000=<<1200-1000=200>>200 feet.
+#### 200",0.1875
+42,control,Planning,"To start the evening, there were 5 pies, each with 8 pieces, which is 5*8=<<5*8=40>>40 pieces of pie.
+If only 14 remained, then 40-14=<<40-14=26>>26 pieces of pie had been taken by guests.
+#### 26",0.875
+42,intervention,Planning,"To start the evening, there were 5 pies, each with 8 pieces, which is 5*8=<<5*8=40>>40 pieces of pie.
+If only 14 remained, then 40-14=<<40-14=26>>26 pieces of pie had been taken by guests.
+#### 26",0.875
+43,control,Planning,"If the total calorie target is 2000 and I have consumed 1800 calories then I have 2000-1800 = <<2000-1800=200>>200 calories left to eat
+If each serving of chips has 250 calories and I only have 200 calories left to eat, then I can only eat 200/250 of a serving = 4/5 of a serving
+We also know that a 300g bag of chips has 5 servings, hence each serving has 300g/5 = <<300/5=60>>60 grams
+If I can only eat 4/5 of a serving, then I can eat only 60g * 4/5 = 240g/5 = 48 grams
+#### 48",0.0
+43,intervention,Planning,"If the total calorie target is 2000 and I have consumed 1800 calories then I have 2000-1800 = <<2000-1800=200>>200 calories left to eat
+If each serving of chips has 250 calories and I only have 200 calories left to eat, then I can only eat 200/250 of a serving = 4/5 of a serving
+We also know that a 300g bag of chips has 5 servings, hence each serving has 300g/5 = <<300/5=60>>60 grams
+If I can only eat 4/5 of a serving, then I can eat only 60g * 4/5 = 240g/5 = 48 grams
+#### 48",0.25
+44,control,Uncertainty Management,"1 pound of beeswax and the wick make 10 candles and he wants to make 20 candles so he needs 20/10 = <<20/10=2>>2 pounds of beeswax
+1 pound of beeswax costs $10.00 and he needs 2 pounds so his supplies will cost 10*2 = $<<10*2=20.00>>20.00
+He wants to sell each candle for $2.00 each and he's selling 20 candles so that's 2*20 = $<<2*20=40.00>>40.00
+If he makes $40.00 selling candles and his supplies cost $20.00 then his net profit is 40-20 = $<<40-20=20.00>>20.00
+#### 20",0.1875
+44,intervention,Uncertainty Management,"1 pound of beeswax and the wick make 10 candles and he wants to make 20 candles so he needs 20/10 = <<20/10=2>>2 pounds of beeswax
+1 pound of beeswax costs $10.00 and he needs 2 pounds so his supplies will cost 10*2 = $<<10*2=20.00>>20.00
+He wants to sell each candle for $2.00 each and he's selling 20 candles so that's 2*20 = $<<2*20=40.00>>40.00
+If he makes $40.00 selling candles and his supplies cost $20.00 then his net profit is 40-20 = $<<40-20=20.00>>20.00
+#### 20",0.125
+45,control,Uncertainty Management,"If she wrote five articles on Monday, then on Tuesday she wrote 2/5* 5 = 2 more articles.
+The total number of articles she wrote on Tuesday is 5+2 = <<5+2=7>>7
+On Wednesday, the number of articles was twice the number she wrote on Tuesday, so it was 2*7 = <<2*7=14>>14 articles.
+Over the three days, she wrote 5+7 +14 = <<5+7+14=26>>26 articles.
+If each article takes her 4 hours to research and write about, she spent 4*26 = <<4*26=104>>104 hours on all the articles.
+#### 104",0.75
+45,intervention,Uncertainty Management,"If she wrote five articles on Monday, then on Tuesday she wrote 2/5* 5 = 2 more articles.
+The total number of articles she wrote on Tuesday is 5+2 = <<5+2=7>>7
+On Wednesday, the number of articles was twice the number she wrote on Tuesday, so it was 2*7 = <<2*7=14>>14 articles.
+Over the three days, she wrote 5+7 +14 = <<5+7+14=26>>26 articles.
+If each article takes her 4 hours to research and write about, she spent 4*26 = <<4*26=104>>104 hours on all the articles.
+#### 104",0.875
+46,control,Uncertainty Management,"Let's let x be the number of post-it notes in the package that Candice purchased.
+Then, the total number of post-it notes she had when she left the store was 80+x.
+And if she used 220 Post-it notes at work and had 23 left, then 80+x=220+23
+Subtracting 80 from each side of the equation, we see that x=220+23-80=<<220+23-80=163>>163 Post-it notes.
+#### 163",1.0
+46,intervention,Uncertainty Management,"Let's let x be the number of post-it notes in the package that Candice purchased.
+Then, the total number of post-it notes she had when she left the store was 80+x.
+And if she used 220 Post-it notes at work and had 23 left, then 80+x=220+23
+Subtracting 80 from each side of the equation, we see that x=220+23-80=<<220+23-80=163>>163 Post-it notes.
+#### 163",1.0
+47,control,Other,"He bought 200 / 40 = <<200/40=5>>5 blue ties
+So he bought 5 * 2 = <<5*2=10>>10 red ties
+Each red tie cost $40 * .5 = $<<40*.5=20>>20 more than blue ties
+So they each cost $40 + $20 = $<<40+20=60>>60
+So he spent $60 * 10 = $<<60*10=600>>600 on red ties
+So he spent $200 + $600 = $<<200+600=800>>800 on ties
+#### 800",1.0
+47,intervention,Other,"He bought 200 / 40 = <<200/40=5>>5 blue ties
+So he bought 5 * 2 = <<5*2=10>>10 red ties
+Each red tie cost $40 * .5 = $<<40*.5=20>>20 more than blue ties
+So they each cost $40 + $20 = $<<40+20=60>>60
+So he spent $60 * 10 = $<<60*10=600>>600 on red ties
+So he spent $200 + $600 = $<<200+600=800>>800 on ties
+#### 800",0.8125
+48,control,Conclusion,"If Tracy used a piece of wire 4 feet long, since 1 foot is equal to 12 inches, the total length of the wire in inches was 12*4=<<12*4=48>>48 inches.
+Since the wire was cut into pieces 6 inches long, Tracy obtained 48/6=<<48/6=8>>8 pieces
+#### 8",1.0
+48,intervention,Conclusion,"If Tracy used a piece of wire 4 feet long, since 1 foot is equal to 12 inches, the total length of the wire in inches was 12*4=<<12*4=48>>48 inches.
+Since the wire was cut into pieces 6 inches long, Tracy obtained 48/6=<<48/6=8>>8 pieces
+#### 8",0.875
+49,control,Uncertainty Management,"The total number of units in the building will be 8 units/floor * 15 floors = <<8*15=120>>120 units.
+If 3/4 of the building is occupied, then the total number of occupied units is 3/4 * 120 units = <<3/4*120=90>>90 units.
+The total number of unoccupied units is 120 units - 90 units = <<120-90=30>>30 units.
+#### 30",1.0
+49,intervention,Uncertainty Management,"The total number of units in the building will be 8 units/floor * 15 floors = <<8*15=120>>120 units.
+If 3/4 of the building is occupied, then the total number of occupied units is 3/4 * 120 units = <<3/4*120=90>>90 units.
+The total number of unoccupied units is 120 units - 90 units = <<120-90=30>>30 units.
+#### 30",0.9375

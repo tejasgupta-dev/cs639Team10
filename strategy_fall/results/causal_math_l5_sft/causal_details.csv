@@ -1,0 +1,1091 @@
+qid,type,tag,gt,accuracy
+0,control,Uncertainty Management,"We count the number of times $\frac{1}{n^3}$ appears in the sum
+\[\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3},\]where $n$ is a fixed positive integer.  (In other words, we are conditioning the sum on $j + k$.)  We get a term of $\frac{1}{n^3}$ each time $j + k = n.$  The pairs $(j,k)$ that work are $(1,n - 1),$ $(2,n - 2),$ $\dots,$ $(n - 1,1),$ for a total of $n - 1$ pairs.  Therefore,
+\begin{align*}
+\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3} &= \sum_{n = 1}^\infty \frac{n - 1}{n^3} \\
+&= \sum_{n = 1}^\infty \left( \frac{n}{n^3} - \frac{1}{n^3} \right) \\
+&= \sum_{n = 1}^\infty \left( \frac{1}{n^2} - \frac{1}{n^3} \right) \\
+&= \sum_{n = 1}^\infty \frac{1}{n^2} - \sum_{n = 1}^\infty \frac{1}{n^3} \\
+&= \boxed{p - q}.
+\end{align*}",1.0
+0,intervention,Uncertainty Management,"We count the number of times $\frac{1}{n^3}$ appears in the sum
+\[\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3},\]where $n$ is a fixed positive integer.  (In other words, we are conditioning the sum on $j + k$.)  We get a term of $\frac{1}{n^3}$ each time $j + k = n.$  The pairs $(j,k)$ that work are $(1,n - 1),$ $(2,n - 2),$ $\dots,$ $(n - 1,1),$ for a total of $n - 1$ pairs.  Therefore,
+\begin{align*}
+\sum_{j = 1}^\infty \sum_{k = 1}^\infty \frac{1}{(j + k)^3} &= \sum_{n = 1}^\infty \frac{n - 1}{n^3} \\
+&= \sum_{n = 1}^\infty \left( \frac{n}{n^3} - \frac{1}{n^3} \right) \\
+&= \sum_{n = 1}^\infty \left( \frac{1}{n^2} - \frac{1}{n^3} \right) \\
+&= \sum_{n = 1}^\infty \frac{1}{n^2} - \sum_{n = 1}^\infty \frac{1}{n^3} \\
+&= \boxed{p - q}.
+\end{align*}",1.0
+1,control,Uncertainty Management,"By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0.0
+1,intervention,Uncertainty Management,"By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0.0
+2,control,Uncertainty Management,"Let $q(x) = (x^2 - 1) p(x) - x.$  Then $q(x)$ has degree 7, and $q(n) = 0$ for $n = 2$, 3, 4, $\dots,$ 7, so
+\[q(x) = (ax + b)(x - 2)(x - 3) \dotsm (x - 7)\]for some constants $a$ and $b.$
+
+We know that $q(1) = (1^2 - 1)p(1) - 1 = -1.$  Setting $x = 1$ in the equation above, we get
+\[q(1) = 720(a + b),\]so $a + b = -\frac{1}{720}.$
+
+We also know that $q(-1) = ((-1)^2 - 1)p(-1) + 1 = 1.$  Setting $x = -1$ in the equation above, we get
+\[q(-1) = 20160(-a + b),\]so $-a + b = \frac{1}{20160}.$  Solving for $a$ and $b,$ we find $a = -\frac{29}{40320}$ and $b = -\frac{3}{4480}.$  Hence,
+\begin{align*}
+q(x) &= \left( -\frac{29}{40320} x - \frac{3}{4480} \right) (x - 2)(x - 3) \dotsm (x - 7) \\
+&= -\frac{(29x + 27)(x - 2)(x - 3) \dotsm (x - 7)}{40320}.
+\end{align*}In particular,
+\[q(8) = -\frac{(29 \cdot 8 + 27)(6)(5) \dotsm (1)}{40320} = -\frac{37}{8},\]so
+\[p(8) = \frac{q(8) + 8}{8^2 - 1} = \boxed{\frac{3}{56}}.\]",0.0
+2,intervention,Uncertainty Management,"Let $q(x) = (x^2 - 1) p(x) - x.$  Then $q(x)$ has degree 7, and $q(n) = 0$ for $n = 2$, 3, 4, $\dots,$ 7, so
+\[q(x) = (ax + b)(x - 2)(x - 3) \dotsm (x - 7)\]for some constants $a$ and $b.$
+
+We know that $q(1) = (1^2 - 1)p(1) - 1 = -1.$  Setting $x = 1$ in the equation above, we get
+\[q(1) = 720(a + b),\]so $a + b = -\frac{1}{720}.$
+
+We also know that $q(-1) = ((-1)^2 - 1)p(-1) + 1 = 1.$  Setting $x = -1$ in the equation above, we get
+\[q(-1) = 20160(-a + b),\]so $-a + b = \frac{1}{20160}.$  Solving for $a$ and $b,$ we find $a = -\frac{29}{40320}$ and $b = -\frac{3}{4480}.$  Hence,
+\begin{align*}
+q(x) &= \left( -\frac{29}{40320} x - \frac{3}{4480} \right) (x - 2)(x - 3) \dotsm (x - 7) \\
+&= -\frac{(29x + 27)(x - 2)(x - 3) \dotsm (x - 7)}{40320}.
+\end{align*}In particular,
+\[q(8) = -\frac{(29 \cdot 8 + 27)(6)(5) \dotsm (1)}{40320} = -\frac{37}{8},\]so
+\[p(8) = \frac{q(8) + 8}{8^2 - 1} = \boxed{\frac{3}{56}}.\]",0.0
+3,control,Uncertainty Management,"Prime factorize $284=2^2\cdot71$. The sum of the proper divisors of $284$ is
+\begin{align*}
+1+2+2^2+71+2 \cdot 71 &= (1+2+2^2)(1+71)-284 \\
+&= 220 \\
+&= 2^2\cdot5\cdot11.
+\end{align*}Here we have used the observation that multiplying out $(1+2+2^2)(1+71)$ by distributing yields an expression which is the sum of all $6$ factors of $284.$ Applying this observation again, we find that the sum of the proper divisors of $220$ is $$(1+2+2^2)(1+5)(1+11)-220=7\cdot 6\cdot 12-220=\boxed{284}.$$",0.8125
+3,intervention,Uncertainty Management,"Prime factorize $284=2^2\cdot71$. The sum of the proper divisors of $284$ is
+\begin{align*}
+1+2+2^2+71+2 \cdot 71 &= (1+2+2^2)(1+71)-284 \\
+&= 220 \\
+&= 2^2\cdot5\cdot11.
+\end{align*}Here we have used the observation that multiplying out $(1+2+2^2)(1+71)$ by distributing yields an expression which is the sum of all $6$ factors of $284.$ Applying this observation again, we find that the sum of the proper divisors of $220$ is $$(1+2+2^2)(1+5)(1+11)-220=7\cdot 6\cdot 12-220=\boxed{284}.$$",1.0
+4,control,Uncertainty Management,"Rotating by $\frac{\pi}{4}$ counter-clockwise corresponds to the complex number
+\[e^{\pi i/4} = \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}}.\]Hence,
+\[w - c = \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (z - c),\]so
+\begin{align*}
+w &= \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (z - c) + c \\
+&= \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (\sqrt{2} - 3i \sqrt{2}) + 2 - 3i \\
+&= (4 - 2i) + 2 - 3i \\
+&= \boxed{6 - 5i}.
+\end{align*}",0.25
+4,intervention,Uncertainty Management,"Rotating by $\frac{\pi}{4}$ counter-clockwise corresponds to the complex number
+\[e^{\pi i/4} = \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}}.\]Hence,
+\[w - c = \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (z - c),\]so
+\begin{align*}
+w &= \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (z - c) + c \\
+&= \left( \frac{1}{\sqrt{2}} + \frac{i}{\sqrt{2}} \right) (\sqrt{2} - 3i \sqrt{2}) + 2 - 3i \\
+&= (4 - 2i) + 2 - 3i \\
+&= \boxed{6 - 5i}.
+\end{align*}",0.25
+5,control,Uncertainty Management,"Rewriting the sentence ""the ratio of Denali's pay to Nate's pay would be the same if Denali started walking $4x$ more dogs and Nate stayed at $12$ dogs or if $x$ of Nate's dogs were reassigned to Denali"" as an equation, we have \[\frac{16+4x}{12}=\frac{16+x}{12-x}.\]Clearing denominators, \begin{align*}
+(16+4x)(12-x)&=(16+x)(12)\quad \Rightarrow\\
+192-16x+48x-4x^2&=192+12x\quad \Rightarrow\\
+32x-4x^2&=12x\quad \Rightarrow\\
+0&=4x^2-20x\quad \Rightarrow\\
+0&=4x(x-5).
+\end{align*}Because $x$ cannot be $0$, $x=\boxed{5}$.",0.9375
+5,intervention,Uncertainty Management,"Rewriting the sentence ""the ratio of Denali's pay to Nate's pay would be the same if Denali started walking $4x$ more dogs and Nate stayed at $12$ dogs or if $x$ of Nate's dogs were reassigned to Denali"" as an equation, we have \[\frac{16+4x}{12}=\frac{16+x}{12-x}.\]Clearing denominators, \begin{align*}
+(16+4x)(12-x)&=(16+x)(12)\quad \Rightarrow\\
+192-16x+48x-4x^2&=192+12x\quad \Rightarrow\\
+32x-4x^2&=12x\quad \Rightarrow\\
+0&=4x^2-20x\quad \Rightarrow\\
+0&=4x(x-5).
+\end{align*}Because $x$ cannot be $0$, $x=\boxed{5}$.",0.875
+6,control,Uncertainty Management,"We first isolate the square root, so we can then square both sides to get rid of it.  Subtracting 4 from both sides gives $x-4 = \!\sqrt{11-2x}$.  Squaring both sides gives $x^2 - 8x + 16 = 11-2x$, or $x^2 -6x + 5=0$.  Factoring gives $(x-5)(x-1)=0$, so $x=5$ or $x=1$.  Because we squared the equation, we must  check if our solutions are extraneous. For $x=5$, the equation reads $5 = \!\sqrt{11-10} + 4$, which is true. If $x=1$, we have $1 = \!\sqrt{11-2} + 4$, which is not true, so $x=1$ is extraneous. Therefore, our only solution is $\boxed{x=5}$.",0.5
+6,intervention,Uncertainty Management,"We first isolate the square root, so we can then square both sides to get rid of it.  Subtracting 4 from both sides gives $x-4 = \!\sqrt{11-2x}$.  Squaring both sides gives $x^2 - 8x + 16 = 11-2x$, or $x^2 -6x + 5=0$.  Factoring gives $(x-5)(x-1)=0$, so $x=5$ or $x=1$.  Because we squared the equation, we must  check if our solutions are extraneous. For $x=5$, the equation reads $5 = \!\sqrt{11-10} + 4$, which is true. If $x=1$, we have $1 = \!\sqrt{11-2} + 4$, which is not true, so $x=1$ is extraneous. Therefore, our only solution is $\boxed{x=5}$.",0.0
+7,control,Uncertainty Management,"If the interest rate is $r$, it follows that $$20000(1+r)^2 + 20000(1+r) + 20000 \ge 66200.$$ If we set $x = 1+r$ and divide through the inequality by $200$, it follows that $$100x^2 + 100x - 231 \ge 0.$$ Since $231 = 11 \cdot 21$, we can factor the quadratic as $(10x - 11)(10x + 21) \ge 0$, so it follows that $x \ge \frac {11}{10}$ or $x \le \frac{-21}{10}$. Since we are looking for an interest rate percentage, it follows that $x \ge \frac{11}{10} = 1.1$, and $r = x - 1 = \boxed{10}\%$.",0.8125
+7,intervention,Uncertainty Management,"If the interest rate is $r$, it follows that $$20000(1+r)^2 + 20000(1+r) + 20000 \ge 66200.$$ If we set $x = 1+r$ and divide through the inequality by $200$, it follows that $$100x^2 + 100x - 231 \ge 0.$$ Since $231 = 11 \cdot 21$, we can factor the quadratic as $(10x - 11)(10x + 21) \ge 0$, so it follows that $x \ge \frac {11}{10}$ or $x \le \frac{-21}{10}$. Since we are looking for an interest rate percentage, it follows that $x \ge \frac{11}{10} = 1.1$, and $r = x - 1 = \boxed{10}\%$.",0.75
+8,control,Conclusion,"Setting $x = y = 0,$ we get
+\[2f(0) = f(0) - 1,\]so $f(0) = -1.$
+
+Setting $y = 1,$ we get
+\[f(x) + 1 = f(x + 1) - x - 1,\]so
+\[f(x + 1) - f(x) = x + 2.\]Thus,
+\begin{align*}
+f(2) - f(1) &= 1 + 2, \\
+f(3) - f(2) &= 2 + 2, \\
+f(4) - f(3) &= 3 + 2, \\
+&\dots, \\
+f(n) - f(n - 1) &= (n - 1) + 2.
+\end{align*}Adding all the equations, we get
+\[f(n) - f(1) = 1 + 2 + 3 + \dots + (n - 1) + 2(n - 1) = \frac{(n - 1)n}{2} + 2n - 2 = \frac{n^2 + 3n - 4}{2},\]so
+\[f(n) = \frac{n^2 + 3n - 2}{2}\]for all positive integers $n.$
+
+Setting $x = -n$ and $y = n,$ where $n$ is a positive integer, we get
+\[f(-n) + f(n) = f(0) + n^2 - 1.\]Then
+\[f(-n) = n^2 - f(n) + f(0) - 1 = n^2 - \frac{n^2 + 3n - 2}{2} - 2 = \frac{n^2 - 3n - 2}{2}.\]Thus, the formula
+\[f(n) = \frac{n^2 + 3n - 2}{2}\]holds for all integers $n.$
+
+We want to solve $f(n) = n,$ or
+\[\frac{n^2 + 3n - 2}{2} = n.\]Then $n^2 + 3n - 2 = 2n,$ or $n^2 + n - 2 = 0.$  This factors as $(n - 1)(n + 2) = 0,$ so the solutions are $n = \boxed{1,-2}.$",0.125
+8,intervention,Conclusion,"Setting $x = y = 0,$ we get
+\[2f(0) = f(0) - 1,\]so $f(0) = -1.$
+
+Setting $y = 1,$ we get
+\[f(x) + 1 = f(x + 1) - x - 1,\]so
+\[f(x + 1) - f(x) = x + 2.\]Thus,
+\begin{align*}
+f(2) - f(1) &= 1 + 2, \\
+f(3) - f(2) &= 2 + 2, \\
+f(4) - f(3) &= 3 + 2, \\
+&\dots, \\
+f(n) - f(n - 1) &= (n - 1) + 2.
+\end{align*}Adding all the equations, we get
+\[f(n) - f(1) = 1 + 2 + 3 + \dots + (n - 1) + 2(n - 1) = \frac{(n - 1)n}{2} + 2n - 2 = \frac{n^2 + 3n - 4}{2},\]so
+\[f(n) = \frac{n^2 + 3n - 2}{2}\]for all positive integers $n.$
+
+Setting $x = -n$ and $y = n,$ where $n$ is a positive integer, we get
+\[f(-n) + f(n) = f(0) + n^2 - 1.\]Then
+\[f(-n) = n^2 - f(n) + f(0) - 1 = n^2 - \frac{n^2 + 3n - 2}{2} - 2 = \frac{n^2 - 3n - 2}{2}.\]Thus, the formula
+\[f(n) = \frac{n^2 + 3n - 2}{2}\]holds for all integers $n.$
+
+We want to solve $f(n) = n,$ or
+\[\frac{n^2 + 3n - 2}{2} = n.\]Then $n^2 + 3n - 2 = 2n,$ or $n^2 + n - 2 = 0.$  This factors as $(n - 1)(n + 2) = 0,$ so the solutions are $n = \boxed{1,-2}.$",0.0
+9,control,Uncertainty Management,"After Pierre sits, we can place Rosa either two seats from Pierre (that is, with one seat between them) or three seats from Pierre. We tackle these two cases separately:
+
+Case 1: Rosa is two seats from Pierre. There are $2$ such seats. For either of these, there are then four empty seats in a row, and one empty seat between Rosa and Pierre. Thomas can sit in either of the middle two of the four empty seats in a row. So, there are $2\cdot 2 = 4$ ways to seat Rosa and Thomas in this case. There are then $4$ seats left, which the others can take in $4! = 24$ ways. So, there are $4\cdot 24 = 96$ seatings in this case.
+
+Case 2: Rosa is three seats from Pierre (that is, there are $2$ seats between them). There are $2$ such seats. Thomas can't sit in either of the $2$ seats directly between them, but after Rosa sits, there are $3$ empty seats in a row still, and Thomas can only sit in the middle seat of these three. Once again, there are $4$ empty seats remaining, and the $4$ remaining people can sit in them in $4! = 24$ ways. So, we have $2\cdot 24 = 48$ seatings in this case.
+
+Putting our two cases together gives a total of $96+48 = \boxed{144}$ seatings.",0.3125
+9,intervention,Uncertainty Management,"After Pierre sits, we can place Rosa either two seats from Pierre (that is, with one seat between them) or three seats from Pierre. We tackle these two cases separately:
+
+Case 1: Rosa is two seats from Pierre. There are $2$ such seats. For either of these, there are then four empty seats in a row, and one empty seat between Rosa and Pierre. Thomas can sit in either of the middle two of the four empty seats in a row. So, there are $2\cdot 2 = 4$ ways to seat Rosa and Thomas in this case. There are then $4$ seats left, which the others can take in $4! = 24$ ways. So, there are $4\cdot 24 = 96$ seatings in this case.
+
+Case 2: Rosa is three seats from Pierre (that is, there are $2$ seats between them). There are $2$ such seats. Thomas can't sit in either of the $2$ seats directly between them, but after Rosa sits, there are $3$ empty seats in a row still, and Thomas can only sit in the middle seat of these three. Once again, there are $4$ empty seats remaining, and the $4$ remaining people can sit in them in $4! = 24$ ways. So, we have $2\cdot 24 = 48$ seatings in this case.
+
+Putting our two cases together gives a total of $96+48 = \boxed{144}$ seatings.",0.25
+10,control,Active Computation,"Completing the square in $x$ and $y,$ the expression becomes
+\[\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(x - 40)^2 + (y - 50)^2} = \sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2}.\]By QM-AM,
+\begin{align*}
+\sqrt{\frac{x^2 + 400}{2}} &\ge \frac{x + 20}{2}, \\
+\sqrt{\frac{y^2 + 900}{2}} &\ge \frac{y + 30}{2}, \\
+\sqrt{\frac{(40 - x)^2 + (50 - y)^2}{2}} &\ge \frac{(40 - x) + (50 - y)}{2},
+\end{align*}so
+\begin{align*}
+&\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2} \\
+&\ge \sqrt{2} \cdot \frac{x + 20}{2} + \sqrt{2} \cdot \frac{y + 30}{2} + \sqrt{2} \cdot \frac{(40 - x) + (50 - y)}{2} \\
+&= 70 \sqrt{2}.
+\end{align*}Equality occurs when $x = 20$ and $y = 30,$ so the minimum value is $\boxed{70 \sqrt{2}}.$",0.0
+10,intervention,Active Computation,"Completing the square in $x$ and $y,$ the expression becomes
+\[\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(x - 40)^2 + (y - 50)^2} = \sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2}.\]By QM-AM,
+\begin{align*}
+\sqrt{\frac{x^2 + 400}{2}} &\ge \frac{x + 20}{2}, \\
+\sqrt{\frac{y^2 + 900}{2}} &\ge \frac{y + 30}{2}, \\
+\sqrt{\frac{(40 - x)^2 + (50 - y)^2}{2}} &\ge \frac{(40 - x) + (50 - y)}{2},
+\end{align*}so
+\begin{align*}
+&\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{(40 - x)^2 + (50 - y)^2} \\
+&\ge \sqrt{2} \cdot \frac{x + 20}{2} + \sqrt{2} \cdot \frac{y + 30}{2} + \sqrt{2} \cdot \frac{(40 - x) + (50 - y)}{2} \\
+&= 70 \sqrt{2}.
+\end{align*}Equality occurs when $x = 20$ and $y = 30,$ so the minimum value is $\boxed{70 \sqrt{2}}.$",0.0
+11,control,Uncertainty Management,"The diagram on the left shows the path of Bill's walk. As the diagram on the right illustrates, he could also have walked from $A$ to $B$ by first walking 1 mile south then $\frac{3}{4}$ mile east. [asy]
+pair a=(0,1), b=(.75, 0), c=(0,.5), d=(.75,.5), o=(0,0);
+draw(a--b--d--c--cycle);
+label(""$A$"", a, NW);
+label(""$B$"", b, SE);
+label(""$\frac{1}{2}$"", (0,0.75), W);
+label(""$\frac{3}{4}$"", (.7, 0.66),W);
+label(""$\frac{1}{2}$"", (.75, .25), E);
+
+picture pic;
+draw(pic, a--b--o--cycle);
+label(pic, ""$A$"", a, NW);
+label(pic, ""$B$"", b, SE);
+label(pic, ""$\frac{3}{4}$"", (.375,0), S);
+label(pic, ""1"", (0, .5), W);
+add(shift(1.5,0)*pic);
+[/asy] By the Pythagorean Theorem, \[(AB)^2=1^2+\left(\frac{3}{4}\right)^2=1+\frac{9}{16}=\frac{25}{16},\]so $AB=\frac{5}{4}=1\frac{1}{4}$, or $\boxed{1.25}$.",1.0
+11,intervention,Uncertainty Management,"The diagram on the left shows the path of Bill's walk. As the diagram on the right illustrates, he could also have walked from $A$ to $B$ by first walking 1 mile south then $\frac{3}{4}$ mile east. [asy]
+pair a=(0,1), b=(.75, 0), c=(0,.5), d=(.75,.5), o=(0,0);
+draw(a--b--d--c--cycle);
+label(""$A$"", a, NW);
+label(""$B$"", b, SE);
+label(""$\frac{1}{2}$"", (0,0.75), W);
+label(""$\frac{3}{4}$"", (.7, 0.66),W);
+label(""$\frac{1}{2}$"", (.75, .25), E);
+
+picture pic;
+draw(pic, a--b--o--cycle);
+label(pic, ""$A$"", a, NW);
+label(pic, ""$B$"", b, SE);
+label(pic, ""$\frac{3}{4}$"", (.375,0), S);
+label(pic, ""1"", (0, .5), W);
+add(shift(1.5,0)*pic);
+[/asy] By the Pythagorean Theorem, \[(AB)^2=1^2+\left(\frac{3}{4}\right)^2=1+\frac{9}{16}=\frac{25}{16},\]so $AB=\frac{5}{4}=1\frac{1}{4}$, or $\boxed{1.25}$.",0.9375
+12,control,Conclusion,"Vertical asymptotes occur at values of $x$ where the denominator is 0.  We can factor the denominator into $(x-7)(x+2)$, so the denominator equals 0 when $x=7$ or $x=-2$. Those $x$-values are where our vertical asymptotes are located.
+
+For horizontal asymptotes, we look at the degree of $x$ in the numerator and the denominator. The degree of the numerator is 1, and the degree of the denominator is 2, so the denominator grows faster than the numerator for large values of $x$, and the function approaches the horizontal asymptote $y=0$. We can also see that when we divide $x$ out of the numerator and denominator, we get \[\frac{2x}{x^2 - 5x - 14} = \frac{\frac{2x}{x}}{\frac{x^2-5x-14}{x}}=\frac{2}{x-5-\frac{14}{x}}.\]As $x$ approaches infinity or negative infinity, the expression approaches 0.
+
+So, our answer is $7 + (-2) + 0 = \boxed{5}$.",1.0
+12,intervention,Conclusion,"Vertical asymptotes occur at values of $x$ where the denominator is 0.  We can factor the denominator into $(x-7)(x+2)$, so the denominator equals 0 when $x=7$ or $x=-2$. Those $x$-values are where our vertical asymptotes are located.
+
+For horizontal asymptotes, we look at the degree of $x$ in the numerator and the denominator. The degree of the numerator is 1, and the degree of the denominator is 2, so the denominator grows faster than the numerator for large values of $x$, and the function approaches the horizontal asymptote $y=0$. We can also see that when we divide $x$ out of the numerator and denominator, we get \[\frac{2x}{x^2 - 5x - 14} = \frac{\frac{2x}{x}}{\frac{x^2-5x-14}{x}}=\frac{2}{x-5-\frac{14}{x}}.\]As $x$ approaches infinity or negative infinity, the expression approaches 0.
+
+So, our answer is $7 + (-2) + 0 = \boxed{5}$.",0.9375
+13,control,Uncertainty Management,"If there are $b$ gold coins in each of the original 7 bags, then $7b+53$ is divisible by 8. In other words, $7b + 53 \equiv 0 \pmod{8}$. Since $53 \equiv 5 \pmod{8}$ and $7 \equiv -1 \pmod{8}$, we have that $-b \equiv -5 \pmod{8}$. Multiplying both sides by $-1$, we get that $b \equiv 5 \pmod{8}$. Now, we want $7b + 53 > 200$, so as a result, $b > \frac{200-53}{7} \implies b > 21$. Therefore, we want an integer greater than 21 which leaves a remainder of 5 when divided by 8. The least such integer is 29, so you had $29 \cdot 7 = \boxed{203}$ coins before finding the bag of 53 coins.",0.8125
+13,intervention,Uncertainty Management,"If there are $b$ gold coins in each of the original 7 bags, then $7b+53$ is divisible by 8. In other words, $7b + 53 \equiv 0 \pmod{8}$. Since $53 \equiv 5 \pmod{8}$ and $7 \equiv -1 \pmod{8}$, we have that $-b \equiv -5 \pmod{8}$. Multiplying both sides by $-1$, we get that $b \equiv 5 \pmod{8}$. Now, we want $7b + 53 > 200$, so as a result, $b > \frac{200-53}{7} \implies b > 21$. Therefore, we want an integer greater than 21 which leaves a remainder of 5 when divided by 8. The least such integer is 29, so you had $29 \cdot 7 = \boxed{203}$ coins before finding the bag of 53 coins.",0.375
+14,control,Uncertainty Management,"We have  \begin{align*}
+\frac{\sqrt{2.5^2 - 0.7^2}}{2.7-2.5} &= \frac{\sqrt{6.25 - 0.49}}{2.7-2.5} = \frac{\sqrt{5.76}}{0.2} = \frac{\sqrt{576/100}}{0.2}\\
+&= \frac{\sqrt{576}/\sqrt{100}}{0.2} = \frac{24/10}{0.2} = \frac{2.4}{0.2} = \boxed{12}.\end{align*}",1.0
+14,intervention,Uncertainty Management,"We have  \begin{align*}
+\frac{\sqrt{2.5^2 - 0.7^2}}{2.7-2.5} &= \frac{\sqrt{6.25 - 0.49}}{2.7-2.5} = \frac{\sqrt{5.76}}{0.2} = \frac{\sqrt{576/100}}{0.2}\\
+&= \frac{\sqrt{576}/\sqrt{100}}{0.2} = \frac{24/10}{0.2} = \frac{2.4}{0.2} = \boxed{12}.\end{align*}",0.9375
+15,control,Uncertainty Management,"Let $\alpha$ be a root of $x^3 - 3x^2 + 4x - 1 = 0,$ so $\alpha^3 = 3 \alpha^2 - 4 \alpha + 1.$  Then
+\[\alpha^4 = 3 \alpha^3 - 4 \alpha^2 + \alpha = 3 (3 \alpha^2 - 4 \alpha + 1) - 4 \alpha^2 + \alpha = 5 \alpha^2 - 11 \alpha + 3.\]Hence,
+\begin{align*}
+\alpha^6 &= (3 \alpha^2 - 4 \alpha + 1)^2 \\
+&= 9 \alpha^4 - 24 \alpha^3 + 22 \alpha^2 - 8 \alpha + 1 \\
+&= 9 (5 \alpha^2 - 11 \alpha + 3) - 24 (3 \alpha^2 - 4 \alpha + 1) + 22 \alpha^2 - 8 \alpha + 1 \\
+&= -5 \alpha^2 - 11 \alpha + 4,
+\end{align*}and
+\begin{align*}
+\alpha^9 &= \alpha^3 \cdot \alpha^6 \\
+&= (3 \alpha^2 - 4 \alpha + 1)(-5 \alpha^2 - 11 \alpha + 4) \\
+&= -15 \alpha^4 - 13 \alpha^3 + 51 \alpha^2 - 27 \alpha + 4 \\
+&= -15 (5 \alpha^2 - 11 \alpha + 3) - 13 (3 \alpha^2 - 4 \alpha + 1) + 51 \alpha^2 - 27 \alpha + 4 \\
+&= -63 \alpha^2 + 190 \alpha - 54.
+\end{align*}Then
+\begin{align*}
+\alpha^9 + p \alpha^6 + q \alpha^3 + r &= (-63 \alpha^2 + 190 \alpha - 54) + p (-5 \alpha^2 - 11 \alpha + 4) + q (3 \alpha^2 - 4 \alpha + 1) + r \\
+&= (-5p + 3q - 63) \alpha^2 + (-11p - 4q + 190) \alpha + (4p + q + r - 54).
+\end{align*}We want this to reduce to 0, so we set
+\begin{align*}
+-5p + 3q &= 63, \\
+11p + 4q &= 190, \\
+4p + q + r &= 54.
+\end{align*}Solving, we find $(p,q,r) = \boxed{(6,31,-1)}.$   For these values, $\alpha^9 + p \alpha^6 + q \alpha^3 + r$ reduces to 0 for any root $\alpha$ of $x^3 - 3x^2 + 4x - 1,$ so $x^9 + px^6 + qx^3 + r$ will be divisible by $x^3 - 3x^2 + 4x - 1.$",0.0
+15,intervention,Uncertainty Management,"Let $\alpha$ be a root of $x^3 - 3x^2 + 4x - 1 = 0,$ so $\alpha^3 = 3 \alpha^2 - 4 \alpha + 1.$  Then
+\[\alpha^4 = 3 \alpha^3 - 4 \alpha^2 + \alpha = 3 (3 \alpha^2 - 4 \alpha + 1) - 4 \alpha^2 + \alpha = 5 \alpha^2 - 11 \alpha + 3.\]Hence,
+\begin{align*}
+\alpha^6 &= (3 \alpha^2 - 4 \alpha + 1)^2 \\
+&= 9 \alpha^4 - 24 \alpha^3 + 22 \alpha^2 - 8 \alpha + 1 \\
+&= 9 (5 \alpha^2 - 11 \alpha + 3) - 24 (3 \alpha^2 - 4 \alpha + 1) + 22 \alpha^2 - 8 \alpha + 1 \\
+&= -5 \alpha^2 - 11 \alpha + 4,
+\end{align*}and
+\begin{align*}
+\alpha^9 &= \alpha^3 \cdot \alpha^6 \\
+&= (3 \alpha^2 - 4 \alpha + 1)(-5 \alpha^2 - 11 \alpha + 4) \\
+&= -15 \alpha^4 - 13 \alpha^3 + 51 \alpha^2 - 27 \alpha + 4 \\
+&= -15 (5 \alpha^2 - 11 \alpha + 3) - 13 (3 \alpha^2 - 4 \alpha + 1) + 51 \alpha^2 - 27 \alpha + 4 \\
+&= -63 \alpha^2 + 190 \alpha - 54.
+\end{align*}Then
+\begin{align*}
+\alpha^9 + p \alpha^6 + q \alpha^3 + r &= (-63 \alpha^2 + 190 \alpha - 54) + p (-5 \alpha^2 - 11 \alpha + 4) + q (3 \alpha^2 - 4 \alpha + 1) + r \\
+&= (-5p + 3q - 63) \alpha^2 + (-11p - 4q + 190) \alpha + (4p + q + r - 54).
+\end{align*}We want this to reduce to 0, so we set
+\begin{align*}
+-5p + 3q &= 63, \\
+11p + 4q &= 190, \\
+4p + q + r &= 54.
+\end{align*}Solving, we find $(p,q,r) = \boxed{(6,31,-1)}.$   For these values, $\alpha^9 + p \alpha^6 + q \alpha^3 + r$ reduces to 0 for any root $\alpha$ of $x^3 - 3x^2 + 4x - 1,$ so $x^9 + px^6 + qx^3 + r$ will be divisible by $x^3 - 3x^2 + 4x - 1.$",0.0
+16,control,Uncertainty Management,"Let $\bold{v} = \begin{pmatrix} x \\ y \end{pmatrix}$.  Then
+\[\|\bold{v}\| = \left\| \begin{pmatrix} x \\ y \end{pmatrix} \right\| = \sqrt{x^2 + y^2},\]and
+\begin{align*}
+\left\| \begin{pmatrix} 2 & 3 \\ 0 & -2 \end{pmatrix} \bold{v} \right\| &= \left\| \begin{pmatrix} 2 & 3 \\ 0 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} \right\| \\
+&= \left\| \begin{pmatrix} 2x + 3y \\ -2y \end{pmatrix} \right\| \\
+&= \sqrt{(2x + 3y)^2 + (-2y)^2} \\
+&= \sqrt{4x^2 + 12xy + 13y^2},
+\end{align*}so the given inequality becomes
+\[\sqrt{4x^2 + 12xy + 13y^2} \le C \sqrt{x^2 + y^2},\]or
+\[\sqrt{\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2}} \le C.\]Thus, we can think of $C$ as the maximum value of the expression in the left-hand side.
+
+Maximizing the expression in the left-hand side is equivalent to maximizing its square, namely
+\[\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2}.\]Let $k$ be a possible value of this expression, which means the equation
+\[\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2} = k\]has a solution in $x$ and $y$.  We can re-write this equation as
+\[(4 - k) x^2 + 12xy + (13 - k) y^2 = 0.\]For this quadratic expression to have a solution in $x$ and $y$, its discriminant must be nonnegative.  In other words,
+\[12^2 - 4 (4 - k)(13 - k) \ge 0,\]or $4k^2 - 68k + 64 \le 0$.  This inequality factors as $4(k - 1)(k - 16) \le 0$.  The largest value of $k$ that satisfies this inequality is 16, so the value of $C$ we seek is $\sqrt{16} = \boxed{4}$.  Note that equality occurs for
+\[\bold{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}.\]",0.25
+16,intervention,Uncertainty Management,"Let $\bold{v} = \begin{pmatrix} x \\ y \end{pmatrix}$.  Then
+\[\|\bold{v}\| = \left\| \begin{pmatrix} x \\ y \end{pmatrix} \right\| = \sqrt{x^2 + y^2},\]and
+\begin{align*}
+\left\| \begin{pmatrix} 2 & 3 \\ 0 & -2 \end{pmatrix} \bold{v} \right\| &= \left\| \begin{pmatrix} 2 & 3 \\ 0 & -2 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} \right\| \\
+&= \left\| \begin{pmatrix} 2x + 3y \\ -2y \end{pmatrix} \right\| \\
+&= \sqrt{(2x + 3y)^2 + (-2y)^2} \\
+&= \sqrt{4x^2 + 12xy + 13y^2},
+\end{align*}so the given inequality becomes
+\[\sqrt{4x^2 + 12xy + 13y^2} \le C \sqrt{x^2 + y^2},\]or
+\[\sqrt{\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2}} \le C.\]Thus, we can think of $C$ as the maximum value of the expression in the left-hand side.
+
+Maximizing the expression in the left-hand side is equivalent to maximizing its square, namely
+\[\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2}.\]Let $k$ be a possible value of this expression, which means the equation
+\[\frac{4x^2 + 12xy + 13y^2}{x^2 + y^2} = k\]has a solution in $x$ and $y$.  We can re-write this equation as
+\[(4 - k) x^2 + 12xy + (13 - k) y^2 = 0.\]For this quadratic expression to have a solution in $x$ and $y$, its discriminant must be nonnegative.  In other words,
+\[12^2 - 4 (4 - k)(13 - k) \ge 0,\]or $4k^2 - 68k + 64 \le 0$.  This inequality factors as $4(k - 1)(k - 16) \le 0$.  The largest value of $k$ that satisfies this inequality is 16, so the value of $C$ we seek is $\sqrt{16} = \boxed{4}$.  Note that equality occurs for
+\[\bold{v} = \begin{pmatrix} 1 \\ 2 \end{pmatrix}.\]",0.0
+17,control,Uncertainty Management,"First, we can factor $x^8 + 3x^4 - 4$ as $(x^4 - 1)(x^4 + 4).$  Then
+\[x^4 - 1 = (x^2 + 1)(x^2 - 1) = (x^2 + 1)(x - 1)(x + 1),\]and by Sophie Germain,
+\[x^4 + 4 = x^4 + 4x^2 + 4 - 4x^2 = (x^2 + 2)^2 - (2x)^2 = (x^2 + 2x + 2)(x^2 - 2x + 2).\]Thus, the full factorization is
+\[x^8 + 3x^4 - 4 = (x^2 + 1)(x - 1)(x + 1)(x^2 + 2x + 2)(x^2 - 2x + 2).\]Evaluating each factor at $x = 1,$ we get $2 + 0 + 2 + 5 + 1 = \boxed{10}.$",0.0
+17,intervention,Uncertainty Management,"First, we can factor $x^8 + 3x^4 - 4$ as $(x^4 - 1)(x^4 + 4).$  Then
+\[x^4 - 1 = (x^2 + 1)(x^2 - 1) = (x^2 + 1)(x - 1)(x + 1),\]and by Sophie Germain,
+\[x^4 + 4 = x^4 + 4x^2 + 4 - 4x^2 = (x^2 + 2)^2 - (2x)^2 = (x^2 + 2x + 2)(x^2 - 2x + 2).\]Thus, the full factorization is
+\[x^8 + 3x^4 - 4 = (x^2 + 1)(x - 1)(x + 1)(x^2 + 2x + 2)(x^2 - 2x + 2).\]Evaluating each factor at $x = 1,$ we get $2 + 0 + 2 + 5 + 1 = \boxed{10}.$",0.125
+18,control,Uncertainty Management,"First, note that if $k < 0,$ then $\log(kx)$ is defined for $x \in (-\infty, 0),$ and is strictly decreasing on that interval. Since $2\log(x+2)$ is defined for $x \in (-2, \infty)$ and is strictly increasing on that interval, it follows that $\log(kx) = 2\log(x+2)$ has exactly one real solution, which must lie in the interval $(-2, 0).$ Therefore, all the values $k = -500, -499, \ldots, -2, -1$ satisfy the condition.
+
+If $k = 0,$ then the left-hand side is never defined, so we may assume now that $k > 0.$ In this case, converting to exponential form, we have \[ kx = (x+2)^2\]or \[x^2 + (4-k)x + 4 = 0.\]Any solution of this equation satisfies $\log(kx) = 2\log(x+2)$ as well, as long as the two logarithms are defined; since $k > 0,$ the logarithms are defined exactly when $x > 0.$ Therefore, this quadratic must have exactly one positive root.
+
+But by Vieta's formulas, the product of the roots of this quadratic is $4,$ which is positive, so the only way for it to have exactly one positive root is if it has $\sqrt{4} = 2$ as a double root. That is, \[x^2 + (4-k)x + 4 = (x-2)^2 = x^2 - 4x + 4\]for all $x,$ so $4-k=-4,$ and $k=8,$ which is the only positive value of $k$ satisfying the condition.
+
+In total, there are $500 + 1 = \boxed{501}$ values of $k$ satisfying the condition.",0.0
+18,intervention,Uncertainty Management,"First, note that if $k < 0,$ then $\log(kx)$ is defined for $x \in (-\infty, 0),$ and is strictly decreasing on that interval. Since $2\log(x+2)$ is defined for $x \in (-2, \infty)$ and is strictly increasing on that interval, it follows that $\log(kx) = 2\log(x+2)$ has exactly one real solution, which must lie in the interval $(-2, 0).$ Therefore, all the values $k = -500, -499, \ldots, -2, -1$ satisfy the condition.
+
+If $k = 0,$ then the left-hand side is never defined, so we may assume now that $k > 0.$ In this case, converting to exponential form, we have \[ kx = (x+2)^2\]or \[x^2 + (4-k)x + 4 = 0.\]Any solution of this equation satisfies $\log(kx) = 2\log(x+2)$ as well, as long as the two logarithms are defined; since $k > 0,$ the logarithms are defined exactly when $x > 0.$ Therefore, this quadratic must have exactly one positive root.
+
+But by Vieta's formulas, the product of the roots of this quadratic is $4,$ which is positive, so the only way for it to have exactly one positive root is if it has $\sqrt{4} = 2$ as a double root. That is, \[x^2 + (4-k)x + 4 = (x-2)^2 = x^2 - 4x + 4\]for all $x,$ so $4-k=-4,$ and $k=8,$ which is the only positive value of $k$ satisfying the condition.
+
+In total, there are $500 + 1 = \boxed{501}$ values of $k$ satisfying the condition.",0.0
+19,control,Uncertainty Management,"Since point $A$ is constrained to a rectangular region with sides parallel to the axes, its $x$ and $y$ coordinates can be chosen independently of one another.  The same is true of point $B$.  Therefore, the horizontal separation between $A$ and $B$ should be minimized and the vertical separation maximized.  The greatest possible $y$-coordinate for $B$ is 3 and the least possible $y$-coordinate for $A$ is 0.  The greatest possible $x$-coordinate for $A$ is 2 and the least possible $x$-coordinate for $B$ is 4. Therefore, the slope between $A$ and $B$ is maximized when $A$ has coordinates (2,0) and $B$ has coordinates (4,3).  The maximum slope is $\boxed{\frac{3}{2}}$.",0.875
+19,intervention,Uncertainty Management,"Since point $A$ is constrained to a rectangular region with sides parallel to the axes, its $x$ and $y$ coordinates can be chosen independently of one another.  The same is true of point $B$.  Therefore, the horizontal separation between $A$ and $B$ should be minimized and the vertical separation maximized.  The greatest possible $y$-coordinate for $B$ is 3 and the least possible $y$-coordinate for $A$ is 0.  The greatest possible $x$-coordinate for $A$ is 2 and the least possible $x$-coordinate for $B$ is 4. Therefore, the slope between $A$ and $B$ is maximized when $A$ has coordinates (2,0) and $B$ has coordinates (4,3).  The maximum slope is $\boxed{\frac{3}{2}}$.",0.6875
+20,control,Uncertainty Management,"For $x < a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax+2a,$ which is a line with slope $a$ and which passes through the point $(a, a^2+2a).$ For $x \ge a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax^2,$ which is a parabola passing through the point $(a, a^3).$
+
+Notice that the parabola only ever takes nonnegative values. Therefore, the line portion of the graph must have positive slope, because it must intersect horizontal lines which lie below the $x-$axis. Thus, $a > 0.$
+
+For $a > 0,$ the line portion of the graph passes through all horizontal lines with height less than or equal to $a^2+2a,$ and the parabola portion of the graph passes through all horizontal lines with height greater than or equal to $a^3.$ Therefore, all horizontal lines are covered if and only if \[a^2 + 2a \ge a^3.\]Since $ a > 0,$ we can divide by $a$ to get \[a + 2 \ge a^2,\]so $0 \ge a^2 - a - 2 = (a-2) ( a+1).$ This means that $-1 \le a \le 2,$ so the greatest possible value of $a$ is $\boxed{2}.$
+
+The graph of $y = f(x)$ for $a = 2$ is shown below (not to scale); note how the parabola and line meet at one point: [asy]
+size(8cm);
+import graph;
+
+real a =2;
+draw((-5,0)--(6,0),EndArrow());
+draw((0,-6)--(0,14),EndArrow());
+
+real g(real x) {return 0.5*a*(x-a)^2+a^3;}
+real f(real x) {return a*x+2*a;}
+
+draw(graph(f,-4.6,a),BeginArrow());
+draw(graph(g,a,4.5),EndArrow());
+
+label(""$f(x)$"",(0,15.5));
+label(""$x$"",(6,0),E);
+dot((2,8));
+[/asy]",0.875
+20,intervention,Uncertainty Management,"For $x < a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax+2a,$ which is a line with slope $a$ and which passes through the point $(a, a^2+2a).$ For $x \ge a,$ the graph of $y = f(x)$ is the same as the graph of $y = ax^2,$ which is a parabola passing through the point $(a, a^3).$
+
+Notice that the parabola only ever takes nonnegative values. Therefore, the line portion of the graph must have positive slope, because it must intersect horizontal lines which lie below the $x-$axis. Thus, $a > 0.$
+
+For $a > 0,$ the line portion of the graph passes through all horizontal lines with height less than or equal to $a^2+2a,$ and the parabola portion of the graph passes through all horizontal lines with height greater than or equal to $a^3.$ Therefore, all horizontal lines are covered if and only if \[a^2 + 2a \ge a^3.\]Since $ a > 0,$ we can divide by $a$ to get \[a + 2 \ge a^2,\]so $0 \ge a^2 - a - 2 = (a-2) ( a+1).$ This means that $-1 \le a \le 2,$ so the greatest possible value of $a$ is $\boxed{2}.$
+
+The graph of $y = f(x)$ for $a = 2$ is shown below (not to scale); note how the parabola and line meet at one point: [asy]
+size(8cm);
+import graph;
+
+real a =2;
+draw((-5,0)--(6,0),EndArrow());
+draw((0,-6)--(0,14),EndArrow());
+
+real g(real x) {return 0.5*a*(x-a)^2+a^3;}
+real f(real x) {return a*x+2*a;}
+
+draw(graph(f,-4.6,a),BeginArrow());
+draw(graph(g,a,4.5),EndArrow());
+
+label(""$f(x)$"",(0,15.5));
+label(""$x$"",(6,0),E);
+dot((2,8));
+[/asy]",0.4375
+21,control,Conclusion,"Triangle $AFD$ must have a total angle measure of $180^\circ$. We know that the other two angles have measures of $2x$ and $2y$, so angle $AFD$ must have a measure of $180-2x-2y=180-(2x+2y)$ degrees. We now look at quadrilateral $ABCD$, whose interior angle measures must sum to $360^\circ$. Therefore, we have that $110^\circ +100^\circ +3y+3x=360^\circ$, so $3x+3y=150^\circ$. We want to find $2x+2y$, so we multiply both sides of the equation by $2/3$ to get that $2x+2y=100^\circ$. We can now substitute in $100^\circ$ for $2x+2y$ to find that the measure of angle $AFD$ is $180-(2x+2y)=180-100=\boxed{80}$ degrees.",0.0
+21,intervention,Conclusion,"Triangle $AFD$ must have a total angle measure of $180^\circ$. We know that the other two angles have measures of $2x$ and $2y$, so angle $AFD$ must have a measure of $180-2x-2y=180-(2x+2y)$ degrees. We now look at quadrilateral $ABCD$, whose interior angle measures must sum to $360^\circ$. Therefore, we have that $110^\circ +100^\circ +3y+3x=360^\circ$, so $3x+3y=150^\circ$. We want to find $2x+2y$, so we multiply both sides of the equation by $2/3$ to get that $2x+2y=100^\circ$. We can now substitute in $100^\circ$ for $2x+2y$ to find that the measure of angle $AFD$ is $180-(2x+2y)=180-100=\boxed{80}$ degrees.",0.0625
+22,control,Uncertainty Management,"Multiplying out each numerator and denominator, we get
+\[\frac{x^2 - 2x - 3}{5(x^2 - 2x - 8)} + \frac{x^2 - 2x - 15}{9(x^2 - 2x - 24)} - \frac{2(x^2 - 2x - 35)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\]We can write this as
+\[\frac{(x^2 - 2x - 8) + 5}{5(x^2 - 2x - 8)} + \frac{(x^2 - 2x - 24) + 9}{9(x^2 - 2x - 24)} - \frac{2((x^2 - 2x - 48) + 13)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\]Hence,
+\[\frac{1}{5} + \frac{1}{x^2 - 2x - 8} + \frac{1}{9} + \frac{1}{x^2 - 2x - 24} - \frac{2}{13} - \frac{2}{x^2 - 2x - 48} = \frac{92}{585}.\]This simplifies to
+\[\frac{1}{x^2 - 2x - 8} + \frac{1}{x^2 - 2x - 24} - \frac{2}{x^2 - 2x - 48} = 0.\]Let $y = x^2 - 2x - 48.$  Then
+\[\frac{1}{y + 40} + \frac{1}{y + 24} - \frac{2}{y} = 0.\]Multiplying everything by $y(y + 24)(y + 40),$ we get
+\[y(y + 24) + y(y + 40) - 2(y + 24)(y + 40) = 0.\]This simplifies to $64y + 1920 = 0,$ so $y = -30.$  Then $x^2 - 2x - 48 = -30,$ or $x^2 - 2x - 18 = 0.$  By the quadratic formula, $x = \boxed{1 \pm \sqrt{19}}.$  (Since the denominators are nonzero for these values, we know that they are not extraneous.)",0.0
+22,intervention,Uncertainty Management,"Multiplying out each numerator and denominator, we get
+\[\frac{x^2 - 2x - 3}{5(x^2 - 2x - 8)} + \frac{x^2 - 2x - 15}{9(x^2 - 2x - 24)} - \frac{2(x^2 - 2x - 35)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\]We can write this as
+\[\frac{(x^2 - 2x - 8) + 5}{5(x^2 - 2x - 8)} + \frac{(x^2 - 2x - 24) + 9}{9(x^2 - 2x - 24)} - \frac{2((x^2 - 2x - 48) + 13)}{13(x^2 - 2x - 48)} = \frac{92}{585}.\]Hence,
+\[\frac{1}{5} + \frac{1}{x^2 - 2x - 8} + \frac{1}{9} + \frac{1}{x^2 - 2x - 24} - \frac{2}{13} - \frac{2}{x^2 - 2x - 48} = \frac{92}{585}.\]This simplifies to
+\[\frac{1}{x^2 - 2x - 8} + \frac{1}{x^2 - 2x - 24} - \frac{2}{x^2 - 2x - 48} = 0.\]Let $y = x^2 - 2x - 48.$  Then
+\[\frac{1}{y + 40} + \frac{1}{y + 24} - \frac{2}{y} = 0.\]Multiplying everything by $y(y + 24)(y + 40),$ we get
+\[y(y + 24) + y(y + 40) - 2(y + 24)(y + 40) = 0.\]This simplifies to $64y + 1920 = 0,$ so $y = -30.$  Then $x^2 - 2x - 48 = -30,$ or $x^2 - 2x - 18 = 0.$  By the quadratic formula, $x = \boxed{1 \pm \sqrt{19}}.$  (Since the denominators are nonzero for these values, we know that they are not extraneous.)",0.0
+23,control,Uncertainty Management,"Labeling our vertices will help a great deal, as will drawing a few radii: [asy]
+pair pA, pB, pC, pD, pE, pF, pO;
+pO = (0, 0);
+pA = pO + dir(-10);
+pB = pO + dir(60);
+pC = pO + dir(130);
+pD = pO + dir(170);
+pE = pO + dir(-160);
+pF = pO + dir(-80);
+draw(pA--pB--pC--pD--pE--pF--pA);
+draw(pA--pO--pC--pO--pE--pO, red);
+draw(circle(pO, 1));
+label(""$O$"", pO, NE);
+label(""$A$"", pA, E);
+label(""$B$"", pB, NE);
+label(""$C$"", pC, NW);
+label(""$D$"", pD, W);
+label(""$E$"", pE, SW);
+label(""$F$"", pF, S);
+label(""$105^\circ$"", pF, N * 2);
+label(""$110^\circ$"", pB, SW * 1.5);
+label(""$\alpha$"", pD, E);
+[/asy] First of all, we see that $\angle ABC = 110^\circ$ must be half of the major arc ${AEC},$ thus arc ${AEC} = 2 \cdot \angle ABC.$ Then, the minor arc ${AC}$ must be $360^\circ - 2 \cdot \angle ABC = 360^\circ - 2 \cdot 110^\circ = 140^\circ.$
+
+Likewise, the minor arc ${EA}$ must be $360^\circ - 2 \cdot \angle EFA = 360^\circ - 2 \cdot 105^\circ = 150^\circ,$ and the minor arc ${CE}$ is $360^\circ - 2 \alpha.$ Now, arc ${AC},$ ${CE},$ and ${EA}$ must add up to $360^\circ,$ which means that \begin{align*}
+360^\circ &= (360^\circ - 2 \alpha) + 140^\circ + 150^\circ\\
+360^\circ &= 650^\circ - 2\alpha\\
+2\alpha &= 290^\circ\\
+\alpha &= \boxed{145^\circ}.
+\end{align*}",0.0
+23,intervention,Uncertainty Management,"Labeling our vertices will help a great deal, as will drawing a few radii: [asy]
+pair pA, pB, pC, pD, pE, pF, pO;
+pO = (0, 0);
+pA = pO + dir(-10);
+pB = pO + dir(60);
+pC = pO + dir(130);
+pD = pO + dir(170);
+pE = pO + dir(-160);
+pF = pO + dir(-80);
+draw(pA--pB--pC--pD--pE--pF--pA);
+draw(pA--pO--pC--pO--pE--pO, red);
+draw(circle(pO, 1));
+label(""$O$"", pO, NE);
+label(""$A$"", pA, E);
+label(""$B$"", pB, NE);
+label(""$C$"", pC, NW);
+label(""$D$"", pD, W);
+label(""$E$"", pE, SW);
+label(""$F$"", pF, S);
+label(""$105^\circ$"", pF, N * 2);
+label(""$110^\circ$"", pB, SW * 1.5);
+label(""$\alpha$"", pD, E);
+[/asy] First of all, we see that $\angle ABC = 110^\circ$ must be half of the major arc ${AEC},$ thus arc ${AEC} = 2 \cdot \angle ABC.$ Then, the minor arc ${AC}$ must be $360^\circ - 2 \cdot \angle ABC = 360^\circ - 2 \cdot 110^\circ = 140^\circ.$
+
+Likewise, the minor arc ${EA}$ must be $360^\circ - 2 \cdot \angle EFA = 360^\circ - 2 \cdot 105^\circ = 150^\circ,$ and the minor arc ${CE}$ is $360^\circ - 2 \alpha.$ Now, arc ${AC},$ ${CE},$ and ${EA}$ must add up to $360^\circ,$ which means that \begin{align*}
+360^\circ &= (360^\circ - 2 \alpha) + 140^\circ + 150^\circ\\
+360^\circ &= 650^\circ - 2\alpha\\
+2\alpha &= 290^\circ\\
+\alpha &= \boxed{145^\circ}.
+\end{align*}",0.0625
+24,control,Uncertainty Management,"Let $p(x) = x^{10} + (13x - 1)^{10}.$  If $r$ is a root of $p(x),$ then $r^{10} + (13x - 1)^{10} = 0.$  Then $(13r - 1)^{10} = -r^{10},$ so
+\[-1 = \left( \frac{13r - 1}{r} \right)^{10} = \left( \frac{1}{r} - 13 \right)^{10}.\]Then $\frac{1}{r} - 13$ has magnitude 1, so
+\[\left( \frac{1}{r} - 13 \right) \left( \frac{1}{\overline{r}} - 13 \right) = 1,\]so
+\[\left( \frac{1}{r_1} - 13 \right) \left( \frac{1}{\overline{r}_1} - 13 \right) + \dots + \left( \frac{1}{r_5} - 13 \right) \left( \frac{1}{\overline{r}_5} - 13 \right) = 5.\]Expanding, we get
+\[\frac{1}{r_1 \overline{r}_1} + \dots + \frac{1}{r_5 \overline{r}_5} - 13 \left( \frac{1}{r_1} + \frac{1}{\overline{r}_1} + \dots + \frac{1}{r_5} + \frac{1}{\overline{r}_5} \right) + 5 \cdot 169 = 5.\]We see that $\frac{1}{r_1},$ $\frac{1}{\overline{r}_1},$ $\dots,$ $\frac{1}{r_5},$ $\frac{1}{\overline{r}_5}$ are the solutions to
+\[\left( \frac{1}{x} \right)^{10} + \left( \frac{13}{x} - 1 \right)^{10} = 0,\]or $1 + (13 - x)^{10} = 0.$  The first few terms in the expansion as
+\[x^{10} - 130x^9 + \dotsb = 0,\]so by Vieta's formulas,
+\[\frac{1}{r_1} + \frac{1}{\overline{r}_1} + \dots + \frac{1}{r_5} + \frac{1}{\overline{r}_5} = 130.\]Hence,
+\[\frac{1}{r_1 \overline{r}_1} + \dots + \frac{1}{r_5 \overline{r}_5} = 13 \cdot 130 - 5 \cdot 169 + 5 = \boxed{850}.\]",0.0625
+24,intervention,Uncertainty Management,"Let $p(x) = x^{10} + (13x - 1)^{10}.$  If $r$ is a root of $p(x),$ then $r^{10} + (13x - 1)^{10} = 0.$  Then $(13r - 1)^{10} = -r^{10},$ so
+\[-1 = \left( \frac{13r - 1}{r} \right)^{10} = \left( \frac{1}{r} - 13 \right)^{10}.\]Then $\frac{1}{r} - 13$ has magnitude 1, so
+\[\left( \frac{1}{r} - 13 \right) \left( \frac{1}{\overline{r}} - 13 \right) = 1,\]so
+\[\left( \frac{1}{r_1} - 13 \right) \left( \frac{1}{\overline{r}_1} - 13 \right) + \dots + \left( \frac{1}{r_5} - 13 \right) \left( \frac{1}{\overline{r}_5} - 13 \right) = 5.\]Expanding, we get
+\[\frac{1}{r_1 \overline{r}_1} + \dots + \frac{1}{r_5 \overline{r}_5} - 13 \left( \frac{1}{r_1} + \frac{1}{\overline{r}_1} + \dots + \frac{1}{r_5} + \frac{1}{\overline{r}_5} \right) + 5 \cdot 169 = 5.\]We see that $\frac{1}{r_1},$ $\frac{1}{\overline{r}_1},$ $\dots,$ $\frac{1}{r_5},$ $\frac{1}{\overline{r}_5}$ are the solutions to
+\[\left( \frac{1}{x} \right)^{10} + \left( \frac{13}{x} - 1 \right)^{10} = 0,\]or $1 + (13 - x)^{10} = 0.$  The first few terms in the expansion as
+\[x^{10} - 130x^9 + \dotsb = 0,\]so by Vieta's formulas,
+\[\frac{1}{r_1} + \frac{1}{\overline{r}_1} + \dots + \frac{1}{r_5} + \frac{1}{\overline{r}_5} = 130.\]Hence,
+\[\frac{1}{r_1 \overline{r}_1} + \dots + \frac{1}{r_5 \overline{r}_5} = 13 \cdot 130 - 5 \cdot 169 + 5 = \boxed{850}.\]",0.0
+25,control,Conclusion,"We have that
+\[f(f(x)) = f(\lambda x(1 - x)) = \lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)),\]so we want to solve $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) = x.$
+
+Note that if $f(x) = x,$ then $f(f(x)) = f(x) = x,$ so any roots of $\lambda x(1 - x) = x$ will also be roots of $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) = x.$  Thus, we should expect $\lambda x(1 - x) - x$ to be a factor of $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) - x.$  Indeed,
+\[\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) - x = (\lambda x(1 - x) - x)(\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1).\]The discriminant of $\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1$ is
+\[(\lambda^2 + \lambda)^2 - 4 \lambda^2 (\lambda + 1) = \lambda^4 - 2 \lambda^3 - 3 \lambda^2 = \lambda^2 (\lambda + 1)(\lambda - 3).\]This is nonnegative when $\lambda = 0$ or $3 \le \lambda \le 4.$
+
+If $\lambda = 0,$ then $f(x) = 0$ for all $x \in [0,1].$
+
+If $\lambda = 3,$ then the equation $f(f(x)) = x$ becomes
+\[(3x(1 - x) - x)(9x^2 - 12x + 4) = 0.\]The roots of $9x^2 - 12x + 4 = 0$ are both $\frac{2}{3},$ which satisfy $f(x) = x.$
+
+On the other hand, for $\lambda > 3,$ the roots of $\lambda x(1 - x) = x$ are $x = 0$ and $x = \frac{\lambda - 1}{\lambda}.$  Clearly $x = 0$ is not a root of $\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1 = 0.$  Also, if $x = \frac{\lambda - 1}{\lambda},$ then
+\[\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1 = \lambda^2 \left( \frac{\lambda - 1}{\lambda} \right)^2 - (\lambda^2 + \lambda) \cdot \frac{\lambda - 1}{\lambda} + \lambda + 1 = 3 - \lambda \neq 0.\]Furthermore, the product of the roots is $\frac{\lambda + 1}{\lambda^2},$ which is positive, so either both roots are positive or both roots are negative.  Since the sum of the roots is $\frac{\lambda^2 + \lambda}{\lambda^2} > 0,$ both roots are positive.  Also,
+\[\frac{\lambda^2 + \lambda}{\lambda} = 1 + \frac{1}{\lambda} < \frac{4}{3},\]so at least one root must be less than 1.
+
+Therefore, the set of $\lambda$ that satisfy the given condition is $\lambda \in \boxed{(3,4]}.$",0.0
+25,intervention,Conclusion,"We have that
+\[f(f(x)) = f(\lambda x(1 - x)) = \lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)),\]so we want to solve $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) = x.$
+
+Note that if $f(x) = x,$ then $f(f(x)) = f(x) = x,$ so any roots of $\lambda x(1 - x) = x$ will also be roots of $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) = x.$  Thus, we should expect $\lambda x(1 - x) - x$ to be a factor of $\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) - x.$  Indeed,
+\[\lambda \cdot \lambda x(1 - x) (1 - \lambda x(1 - x)) - x = (\lambda x(1 - x) - x)(\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1).\]The discriminant of $\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1$ is
+\[(\lambda^2 + \lambda)^2 - 4 \lambda^2 (\lambda + 1) = \lambda^4 - 2 \lambda^3 - 3 \lambda^2 = \lambda^2 (\lambda + 1)(\lambda - 3).\]This is nonnegative when $\lambda = 0$ or $3 \le \lambda \le 4.$
+
+If $\lambda = 0,$ then $f(x) = 0$ for all $x \in [0,1].$
+
+If $\lambda = 3,$ then the equation $f(f(x)) = x$ becomes
+\[(3x(1 - x) - x)(9x^2 - 12x + 4) = 0.\]The roots of $9x^2 - 12x + 4 = 0$ are both $\frac{2}{3},$ which satisfy $f(x) = x.$
+
+On the other hand, for $\lambda > 3,$ the roots of $\lambda x(1 - x) = x$ are $x = 0$ and $x = \frac{\lambda - 1}{\lambda}.$  Clearly $x = 0$ is not a root of $\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1 = 0.$  Also, if $x = \frac{\lambda - 1}{\lambda},$ then
+\[\lambda^2 x^2 - (\lambda^2 + \lambda) x + \lambda + 1 = \lambda^2 \left( \frac{\lambda - 1}{\lambda} \right)^2 - (\lambda^2 + \lambda) \cdot \frac{\lambda - 1}{\lambda} + \lambda + 1 = 3 - \lambda \neq 0.\]Furthermore, the product of the roots is $\frac{\lambda + 1}{\lambda^2},$ which is positive, so either both roots are positive or both roots are negative.  Since the sum of the roots is $\frac{\lambda^2 + \lambda}{\lambda^2} > 0,$ both roots are positive.  Also,
+\[\frac{\lambda^2 + \lambda}{\lambda} = 1 + \frac{1}{\lambda} < \frac{4}{3},\]so at least one root must be less than 1.
+
+Therefore, the set of $\lambda$ that satisfy the given condition is $\lambda \in \boxed{(3,4]}.$",0.0
+26,control,Uncertainty Management,"From the angle addition formula, the numerator is
+\begin{align*}
+&(\cos 5^\circ \cos 20^\circ - \sin 5^\circ \sin 20^\circ) + (\cos 35^\circ \cos 50^\circ -  \sin 35^\circ \sin 50^\circ) \\
+&= \cos (5^\circ + 20^\circ) + \cos (35^\circ + 50^\circ) \\
+&= \cos 25^\circ + \cos 85^\circ.
+\end{align*}From the sum-to-product formula, $\cos 25^\circ + \cos 85^\circ = 2 \cos 55^\circ \cos 30^\circ.$
+
+Similarly, the denominator is
+\begin{align*}
+&\sin 5^\circ \cos 20^\circ - \sin 35^\circ \cos 50^\circ + \cos 5^\circ \sin 20^\circ - \cos 35^\circ \sin 50^\circ) \\
+&= (\sin 5^\circ \cos 20^\circ +  \cos 5^\circ \sin 20^\circ) - (\sin 35^\circ \cos 50^\circ + \cos 35^\circ \sin 50^\circ) \\
+&= \sin (5^\circ + 20^\circ) - \sin (35^\circ + 50^\circ) \\
+&= \sin 25^\circ - \sin 85^\circ \\
+&= -2 \sin 30^\circ \cos 55^\circ,
+\end{align*}so the expression is equal to
+\[\frac{2 \cos 55^\circ \cos 30^\circ}{-2 \sin 30^\circ \cos 55^\circ} = -\frac{\cos 30^\circ}{\sin 30^\circ} = -\sqrt{3} = \tan 120^\circ.\]Hence, the smallest such $\theta$ is $\boxed{120^\circ}.$",0.0
+26,intervention,Uncertainty Management,"From the angle addition formula, the numerator is
+\begin{align*}
+&(\cos 5^\circ \cos 20^\circ - \sin 5^\circ \sin 20^\circ) + (\cos 35^\circ \cos 50^\circ -  \sin 35^\circ \sin 50^\circ) \\
+&= \cos (5^\circ + 20^\circ) + \cos (35^\circ + 50^\circ) \\
+&= \cos 25^\circ + \cos 85^\circ.
+\end{align*}From the sum-to-product formula, $\cos 25^\circ + \cos 85^\circ = 2 \cos 55^\circ \cos 30^\circ.$
+
+Similarly, the denominator is
+\begin{align*}
+&\sin 5^\circ \cos 20^\circ - \sin 35^\circ \cos 50^\circ + \cos 5^\circ \sin 20^\circ - \cos 35^\circ \sin 50^\circ) \\
+&= (\sin 5^\circ \cos 20^\circ +  \cos 5^\circ \sin 20^\circ) - (\sin 35^\circ \cos 50^\circ + \cos 35^\circ \sin 50^\circ) \\
+&= \sin (5^\circ + 20^\circ) - \sin (35^\circ + 50^\circ) \\
+&= \sin 25^\circ - \sin 85^\circ \\
+&= -2 \sin 30^\circ \cos 55^\circ,
+\end{align*}so the expression is equal to
+\[\frac{2 \cos 55^\circ \cos 30^\circ}{-2 \sin 30^\circ \cos 55^\circ} = -\frac{\cos 30^\circ}{\sin 30^\circ} = -\sqrt{3} = \tan 120^\circ.\]Hence, the smallest such $\theta$ is $\boxed{120^\circ}.$",0.0
+27,control,Uncertainty Management,"The problem asks us to count the number of complex numbers that lie in or on the circle of radius 5 centered at the origin, with integer real and imaginary parts.
+
+[asy]
+unitsize(0.5 cm);
+
+int i, j;
+
+draw((-5,0)--(5,0));
+draw((0,-5)--(0,5));
+draw(Circle((0,0),5));
+
+for (i = -5; i <= 5; ++i) {
+for (j = -5; j <= 5; ++j) {
+  if (i^2 + j^2 > 25) {dot((i,j));}
+  if (i^2 + j^2 <= 25) {dot((i,j),red);}
+}}
+[/asy]
+
+We can count that there are 15 such complex numbers in the first quadrant (not including the axes).  Then there are 5 complex on the positive real axis, the negative real axis, the positive imaginary axis, and negative imaginary axis.  Finally, there is the origin itself, which gives us $4 \cdot 15 + 4 \cdot 5 + 1 = \boxed{81}$ complex numbers.",0.0625
+27,intervention,Uncertainty Management,"The problem asks us to count the number of complex numbers that lie in or on the circle of radius 5 centered at the origin, with integer real and imaginary parts.
+
+[asy]
+unitsize(0.5 cm);
+
+int i, j;
+
+draw((-5,0)--(5,0));
+draw((0,-5)--(0,5));
+draw(Circle((0,0),5));
+
+for (i = -5; i <= 5; ++i) {
+for (j = -5; j <= 5; ++j) {
+  if (i^2 + j^2 > 25) {dot((i,j));}
+  if (i^2 + j^2 <= 25) {dot((i,j),red);}
+}}
+[/asy]
+
+We can count that there are 15 such complex numbers in the first quadrant (not including the axes).  Then there are 5 complex on the positive real axis, the negative real axis, the positive imaginary axis, and negative imaginary axis.  Finally, there is the origin itself, which gives us $4 \cdot 15 + 4 \cdot 5 + 1 = \boxed{81}$ complex numbers.",0.0625
+28,control,Uncertainty Management,"By Pythagoras, $\angle C = 90^\circ$.  Triangles $ACD$ and $ABC$ are similar, so \[CD = BC \cdot \frac{AC}{AB} = 15 \cdot \frac{8}{17} = \frac{120}{17},\]and \[AD = AC \cdot \frac{AC}{AB} = 8 \cdot \frac{8}{17} = \frac{64}{17}.\][asy]
+unitsize(0.4 cm);
+
+pair A, B, C, D;
+
+A = (0,8);
+B = (15,0);
+C = (0,0);
+D = (C + reflect(A,B)*(C))/2;
+
+draw(A--B--C--cycle);
+draw(C--D);
+
+label(""$A$"", A, NW);
+label(""$B$"", B, SE);
+label(""$C$"", C, SW);
+label(""$D$"", D, NE);
+[/asy]
+
+Therefore, the area of triangle $ACD$ is \[\frac{1}{2} \cdot AD \cdot CD = \frac{1}{2} \cdot \frac{64}{17} \cdot \frac{120}{17} = \boxed{\frac{3840}{289}}.\]",0.1875
+28,intervention,Uncertainty Management,"By Pythagoras, $\angle C = 90^\circ$.  Triangles $ACD$ and $ABC$ are similar, so \[CD = BC \cdot \frac{AC}{AB} = 15 \cdot \frac{8}{17} = \frac{120}{17},\]and \[AD = AC \cdot \frac{AC}{AB} = 8 \cdot \frac{8}{17} = \frac{64}{17}.\][asy]
+unitsize(0.4 cm);
+
+pair A, B, C, D;
+
+A = (0,8);
+B = (15,0);
+C = (0,0);
+D = (C + reflect(A,B)*(C))/2;
+
+draw(A--B--C--cycle);
+draw(C--D);
+
+label(""$A$"", A, NW);
+label(""$B$"", B, SE);
+label(""$C$"", C, SW);
+label(""$D$"", D, NE);
+[/asy]
+
+Therefore, the area of triangle $ACD$ is \[\frac{1}{2} \cdot AD \cdot CD = \frac{1}{2} \cdot \frac{64}{17} \cdot \frac{120}{17} = \boxed{\frac{3840}{289}}.\]",0.0625
+29,control,Uncertainty Management,"You get a digit $0$ on the end of a number whenever it has a factor of $10$, so the question is really asking, how many $10$s are in the prime factorization of $42!$. Since $10=2\cdot5$, we need to count how many of each there are. We're going to have more $2$s than $5$s, so we actually only need to count how many times $5$ appears in the prime factorization.
+
+Every time a number is a multiple of $5$, it adds a factor of $5$ to the prime factorization. There are $8$ multiples of $5$ between $1$ and $42$. Now look at $25$. It actually has two factors of $5$. We've already counted one of them, so now we need to count one more. This gives a total of $8+1=9$ times the factor $5$ appears, so $42!$ has $\boxed{9}$ zeroes at the end.",0.0
+29,intervention,Uncertainty Management,"You get a digit $0$ on the end of a number whenever it has a factor of $10$, so the question is really asking, how many $10$s are in the prime factorization of $42!$. Since $10=2\cdot5$, we need to count how many of each there are. We're going to have more $2$s than $5$s, so we actually only need to count how many times $5$ appears in the prime factorization.
+
+Every time a number is a multiple of $5$, it adds a factor of $5$ to the prime factorization. There are $8$ multiples of $5$ between $1$ and $42$. Now look at $25$. It actually has two factors of $5$. We've already counted one of them, so now we need to count one more. This gives a total of $8+1=9$ times the factor $5$ appears, so $42!$ has $\boxed{9}$ zeroes at the end.",1.0
+30,control,Uncertainty Management,"By Cauchy-Schwarz,
+\[(a_1 + a_2 + \dots + a_n)(a_1^3 + a_2^3 + \dots + a_n^3) \ge (a_1^2 + a_2^2 + \dots + a_n^2)^2.\]Since $96 \cdot 216 = 144^2,$ we have equality in the Cauchy-Schwarz Inequality, which means
+\[\frac{a_1^3}{a_1} = \frac{a_2^3}{a_2} = \dots = \frac{a_n^3}{a_n}.\]Then $a_1^2 = a_2^2 = \dots = a_n^2,$ so $a_1 = a_2 = \dots = a_n.$
+
+From the given, $na_1 = 96$ and $na_1^2 = 144.$  Dividing these equations, we get $a_1 = \frac{3}{2},$ so $n = \boxed{64}.$",0.875
+30,intervention,Uncertainty Management,"By Cauchy-Schwarz,
+\[(a_1 + a_2 + \dots + a_n)(a_1^3 + a_2^3 + \dots + a_n^3) \ge (a_1^2 + a_2^2 + \dots + a_n^2)^2.\]Since $96 \cdot 216 = 144^2,$ we have equality in the Cauchy-Schwarz Inequality, which means
+\[\frac{a_1^3}{a_1} = \frac{a_2^3}{a_2} = \dots = \frac{a_n^3}{a_n}.\]Then $a_1^2 = a_2^2 = \dots = a_n^2,$ so $a_1 = a_2 = \dots = a_n.$
+
+From the given, $na_1 = 96$ and $na_1^2 = 144.$  Dividing these equations, we get $a_1 = \frac{3}{2},$ so $n = \boxed{64}.$",0.8125
+31,control,Uncertainty Management,"Choose any seat in which to place the Independent -- it doesn't matter which seat that we choose, since we can rotate the table. Once the Independent's seat has been chosen, either all the Democrats sit to their left and all the Republicans sit to their right, or the other way around. Either way, there are $5!$ ways to put the Democrats in their seats, and $5!$ ways to put the Republicans in their seats. So, the total number of ways to seat the people around the table is $2\cdot5!\cdot5!=2\cdot120\cdot120=\boxed{28800}$.",0.9375
+31,intervention,Uncertainty Management,"Choose any seat in which to place the Independent -- it doesn't matter which seat that we choose, since we can rotate the table. Once the Independent's seat has been chosen, either all the Democrats sit to their left and all the Republicans sit to their right, or the other way around. Either way, there are $5!$ ways to put the Democrats in their seats, and $5!$ ways to put the Republicans in their seats. So, the total number of ways to seat the people around the table is $2\cdot5!\cdot5!=2\cdot120\cdot120=\boxed{28800}$.",0.625
+32,control,Uncertainty Management,"From $z + \frac{1}{z} = \frac{1 + \sqrt{5}}{2},$
+\[z + \frac{1}{z} - \frac{1}{2} = \frac{\sqrt{5}}{2}.\]Squaring both sides, we end up with
+\[z^2 - z + \frac{9}{4} - \frac{1}{z} + \frac{1}{z^2} = \frac{5}{4}.\]Then
+\[z^2 - z + 1 - \frac{1}{z} + \frac{1}{z^2} = 0.\]Hence, $z^4 - z^3 + z^2 - z + 1 = 0.$  Then
+\[(z + 1)(z^4 - z^3 + z^2 - z + 1) = 0,\]which expands as $z^5 + 1 = 0.$  This gives us $z^5 = -1.$
+
+Therefore,
+\[z^{85} + \frac{1}{z^{85}} = (z^5)^{17} + \frac{1}{(z^5)^{17}} = (-1)^{17} + \frac{1}{(-1)^{17}} = \boxed{-2}.\]",0.0
+32,intervention,Uncertainty Management,"From $z + \frac{1}{z} = \frac{1 + \sqrt{5}}{2},$
+\[z + \frac{1}{z} - \frac{1}{2} = \frac{\sqrt{5}}{2}.\]Squaring both sides, we end up with
+\[z^2 - z + \frac{9}{4} - \frac{1}{z} + \frac{1}{z^2} = \frac{5}{4}.\]Then
+\[z^2 - z + 1 - \frac{1}{z} + \frac{1}{z^2} = 0.\]Hence, $z^4 - z^3 + z^2 - z + 1 = 0.$  Then
+\[(z + 1)(z^4 - z^3 + z^2 - z + 1) = 0,\]which expands as $z^5 + 1 = 0.$  This gives us $z^5 = -1.$
+
+Therefore,
+\[z^{85} + \frac{1}{z^{85}} = (z^5)^{17} + \frac{1}{(z^5)^{17}} = (-1)^{17} + \frac{1}{(-1)^{17}} = \boxed{-2}.\]",0.1875
+33,control,Uncertainty Management,"By AM-GM,
+\begin{align*}
+x^4 + 4y^2 + 4z^4 &= x^4 + 2y^2 + 2y^2 + 4z^4 \\
+&\ge 4 \sqrt[4]{(x^4)(2y^2)(2y^2)(4z^4)} \\
+&= 8xyz \\
+&= 16.
+\end{align*}Equality occurs when $x^4 = 2y^2 = 4z^2.$  Using the condition $xyz = 2,$ we can solve to get $x = y = \sqrt{2}$ and $z = 1,$ so the minimum value is $\boxed{16}.$",0.25
+33,intervention,Uncertainty Management,"By AM-GM,
+\begin{align*}
+x^4 + 4y^2 + 4z^4 &= x^4 + 2y^2 + 2y^2 + 4z^4 \\
+&\ge 4 \sqrt[4]{(x^4)(2y^2)(2y^2)(4z^4)} \\
+&= 8xyz \\
+&= 16.
+\end{align*}Equality occurs when $x^4 = 2y^2 = 4z^2.$  Using the condition $xyz = 2,$ we can solve to get $x = y = \sqrt{2}$ and $z = 1,$ so the minimum value is $\boxed{16}.$",0.0
+34,control,Uncertainty Management,"We construct a table for the values $f(i,j)$:
+\[
+\begin{array}{c|ccccc}
+i \backslash j & 0 & 1 & 2 & 3 & 4 \\ \hline
+0 & 1 & 2 & 3 & 4 & 0 \\
+1 & 2 & 3 & 4 & 0 & 1 \\
+2 & 3 & 0 & 2 & 4 & 1 \\
+3 & 0 & 3 & 4 & 1 & 0 \\
+4 & 3 & 1 & 3 & 1 & 3 \\
+5 & 1 & 1 & 1 & 1 & 1 \\
+6 & 1 & 1 & 1 & 1 & 1
+\end{array}
+\]It follows that $f(i,2) = \boxed{1}$ for all $i \ge 5.$",0.125
+34,intervention,Uncertainty Management,"We construct a table for the values $f(i,j)$:
+\[
+\begin{array}{c|ccccc}
+i \backslash j & 0 & 1 & 2 & 3 & 4 \\ \hline
+0 & 1 & 2 & 3 & 4 & 0 \\
+1 & 2 & 3 & 4 & 0 & 1 \\
+2 & 3 & 0 & 2 & 4 & 1 \\
+3 & 0 & 3 & 4 & 1 & 0 \\
+4 & 3 & 1 & 3 & 1 & 3 \\
+5 & 1 & 1 & 1 & 1 & 1 \\
+6 & 1 & 1 & 1 & 1 & 1
+\end{array}
+\]It follows that $f(i,2) = \boxed{1}$ for all $i \ge 5.$",0.125
+35,control,Uncertainty Management,"In general,
+\[\frac{1}{2} \begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}\]is the signed area of the triangle with vertices at $(x_1,y_1),$ $(x_2,y_2),$ and $(x_3,y_3).$  (The area is signed, i.e. it can be positive or negative, depending on the orientation of the triangle.)  Here, the sides of the triangle are 3, 4, and 5, which is a right triangle.  Therefore, its area is $\frac{1}{2} \cdot 3 \cdot 4 = 6.$  Then
+\[\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix} = \pm 12,\]so
+\[\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}^2 = \boxed{144}.\]",0.75
+35,intervention,Uncertainty Management,"In general,
+\[\frac{1}{2} \begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}\]is the signed area of the triangle with vertices at $(x_1,y_1),$ $(x_2,y_2),$ and $(x_3,y_3).$  (The area is signed, i.e. it can be positive or negative, depending on the orientation of the triangle.)  Here, the sides of the triangle are 3, 4, and 5, which is a right triangle.  Therefore, its area is $\frac{1}{2} \cdot 3 \cdot 4 = 6.$  Then
+\[\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix} = \pm 12,\]so
+\[\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}^2 = \boxed{144}.\]",0.4375
+36,control,Uncertainty Management,"Since $E$ is the midpoint of $AC$, the area of triangle $BCE$ is half the area of triangle $ABC$, or $144/2 = 72$.
+
+[asy]
+import geometry;
+
+unitsize(1 cm);
+
+pair A, B, C, D, E, F, G, M, N;
+
+A = (1,3);
+B = (0,0);
+C = (4,0);
+D = (B + C)/2;
+E = (C + A)/2;
+F = (A + B)/2;
+G = (A + B + C)/3;
+M = extension(G, G + B - C, A, B);
+N = extension(G, G + B - C, A, C);
+
+draw(A--B--C--cycle);
+draw(A--D);
+draw(B--E);
+draw(C--F);
+draw(M--N);
+
+label(""$A$"", A, dir(90));
+label(""$B$"", B, SW);
+label(""$C$"", C, SE);
+label(""$D$"", D, S);
+label(""$E$"", E, NE);
+label(""$F$"", F, NW);
+label(""$G$"", G, SSW);
+label(""$M$"", M, NW);
+label(""$N$"", N, NE);
+[/asy]
+
+Since $GN$ is parallel to $BC$, triangles $ENG$ and $ECB$ are similar.  Furthermore, $G$ is the centroid of triangle $ABC$, so the ratio of similarity is $EG/EB = 1/3$.  Therefore, the area of triangle $ENG$ is $72 \cdot (1/3)^2 = \boxed{8}$.",0.0
+36,intervention,Uncertainty Management,"Since $E$ is the midpoint of $AC$, the area of triangle $BCE$ is half the area of triangle $ABC$, or $144/2 = 72$.
+
+[asy]
+import geometry;
+
+unitsize(1 cm);
+
+pair A, B, C, D, E, F, G, M, N;
+
+A = (1,3);
+B = (0,0);
+C = (4,0);
+D = (B + C)/2;
+E = (C + A)/2;
+F = (A + B)/2;
+G = (A + B + C)/3;
+M = extension(G, G + B - C, A, B);
+N = extension(G, G + B - C, A, C);
+
+draw(A--B--C--cycle);
+draw(A--D);
+draw(B--E);
+draw(C--F);
+draw(M--N);
+
+label(""$A$"", A, dir(90));
+label(""$B$"", B, SW);
+label(""$C$"", C, SE);
+label(""$D$"", D, S);
+label(""$E$"", E, NE);
+label(""$F$"", F, NW);
+label(""$G$"", G, SSW);
+label(""$M$"", M, NW);
+label(""$N$"", N, NE);
+[/asy]
+
+Since $GN$ is parallel to $BC$, triangles $ENG$ and $ECB$ are similar.  Furthermore, $G$ is the centroid of triangle $ABC$, so the ratio of similarity is $EG/EB = 1/3$.  Therefore, the area of triangle $ENG$ is $72 \cdot (1/3)^2 = \boxed{8}$.",0.0625
+37,control,Uncertainty Management,"[asy]
+import three;
+currentprojection=orthographic(1/2,-1,1/2);
+triple A,B,C,D,E,F,G,H,g,f;
+A = (0,0,0);
+B = (12,0,0);
+C = (12,10,0);
+D = (0,10,0);
+E = (0,10,8);
+F = (0,0,8);
+G = (12,0,8);
+H = (12,10,8);
+draw(A--B--C--D--cycle);
+draw(E--F--G--H--cycle);
+draw(A--F); draw(B--G); draw(C--H); draw(D--E);
+g = (12,9,7); f = (0,1,1);
+dot(g, green); dot(f, purple);
+label(""12"", A--B); label(""10"", B--C); label(""8"", C--H);
+[/asy] In the above diagram, the green dot is the gecko and the purple dot is the fly. We can ``unfold'' the walls that the gecko traveled along, as below, to represent the gecko's path in two dimensions. This unfolding does not change the length of the gecko's path, so in order for the gecko's path to be minimal before unfolding, it must be minimal after unfolding. In other words, it must be a straight line after unfolding. Now, besides the side walls, the gecko can travel along the front, back, and ceiling. Suppose that among these, it only travels along the front wall. The walls the gecko walked along unfold as such: [asy]
+draw( (0,0)--(10,0)--(10,8)--(0,8)--cycle ); draw( (10,0)--(22,0) ); draw( (10,8)--(22,8) );
+draw( (22,0)--(32,0)--(32,8)--(22,8)--cycle );
+pair g = (31,7); pair f = (9,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(31,1), red+dashed); draw(g--(31,1), red+dashed);
+label( ""10"", (0,0)--(10,0) ); label( ""12"", (10,0)--(22,0) ); label( ""10"", (22,0)--(32,0) ); label( ""8"", (32,0)--(32,8) );
+[/asy] The gecko's path is the hypotenuse of a right triangle with legs 6 and 22, so its length is $\sqrt{6^2 + 22^2} = 2\sqrt{3^2 + 11^2} = 2\sqrt{130}$. By symmetry (the gecko and the fly are exactly opposite each other in the room), the path length is the same if the gecko only travels along the back wall and side walls.
+
+Now suppose the gecko only travels along the ceiling and side walls. These walls unfolded become: [asy]
+draw( (0,0)--(8,0)--(8,10)--(0,10)--cycle ); draw( (8,0)--(20,0) ); draw( (8,10)--(20,10) );
+draw( (20,0)--(28,0)--(28,10)--(20,10)--cycle );
+pair g = (21,9); pair f = (1,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(21,1), red+dashed); draw(g--(21,1), red+dashed);
+label( ""8"", (0,0)--(8,0) ); label( ""12"", (8,0)--(20,0) ); label( ""8"", (20,0)--(28,0) ); label( ""10"", (28,0)--(28,10) );
+[/asy] The path is the hypotenuse of a right triangle with legs 8 and 20, so its length is $\sqrt{8^2 + 20^2} = 2\sqrt{4^2+10^2} = 2\sqrt{116}$. (We'll keep it in this form because it makes it easier to compare with the other cases.)
+
+Finally, the gecko may cross both the ceiling and front wall (or back wall; the cases give the same results by symmetry). The unfolded walls then look like this: [asy]
+draw( (0,0)--(10,0)--(10,8)--(0,8)--cycle );
+draw( (10,0)--(22,0)--(22,8)--(10,8)--(10,18)--(22,18) );
+draw( (22,8)--(30,8)--(30,18)--(22,18)--cycle );
+pair g = (23,17); pair f = (9,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(23,1), red+dashed); draw(g--(23,1), red+dashed);
+label(""10"", (0,0)--(10,0)); label(""12"", (10,0)--(22,0)); label(""8"", (0,0)--(0,8), W);
+
+label(""8"", (22,18)--(30,18), N); label(""10"", (30,18)--(30,8), E);
+[/asy] The path is the hypotenuse of a right triangle with legs 16 and 14, so its length is $\sqrt{16^2+14^2} = 2\sqrt{8^2+7^2} = 2\sqrt{113}$. Of the three cases, this is the smallest, so the answer is $\boxed{2\sqrt{113}}$.",0.0
+37,intervention,Uncertainty Management,"[asy]
+import three;
+currentprojection=orthographic(1/2,-1,1/2);
+triple A,B,C,D,E,F,G,H,g,f;
+A = (0,0,0);
+B = (12,0,0);
+C = (12,10,0);
+D = (0,10,0);
+E = (0,10,8);
+F = (0,0,8);
+G = (12,0,8);
+H = (12,10,8);
+draw(A--B--C--D--cycle);
+draw(E--F--G--H--cycle);
+draw(A--F); draw(B--G); draw(C--H); draw(D--E);
+g = (12,9,7); f = (0,1,1);
+dot(g, green); dot(f, purple);
+label(""12"", A--B); label(""10"", B--C); label(""8"", C--H);
+[/asy] In the above diagram, the green dot is the gecko and the purple dot is the fly. We can ``unfold'' the walls that the gecko traveled along, as below, to represent the gecko's path in two dimensions. This unfolding does not change the length of the gecko's path, so in order for the gecko's path to be minimal before unfolding, it must be minimal after unfolding. In other words, it must be a straight line after unfolding. Now, besides the side walls, the gecko can travel along the front, back, and ceiling. Suppose that among these, it only travels along the front wall. The walls the gecko walked along unfold as such: [asy]
+draw( (0,0)--(10,0)--(10,8)--(0,8)--cycle ); draw( (10,0)--(22,0) ); draw( (10,8)--(22,8) );
+draw( (22,0)--(32,0)--(32,8)--(22,8)--cycle );
+pair g = (31,7); pair f = (9,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(31,1), red+dashed); draw(g--(31,1), red+dashed);
+label( ""10"", (0,0)--(10,0) ); label( ""12"", (10,0)--(22,0) ); label( ""10"", (22,0)--(32,0) ); label( ""8"", (32,0)--(32,8) );
+[/asy] The gecko's path is the hypotenuse of a right triangle with legs 6 and 22, so its length is $\sqrt{6^2 + 22^2} = 2\sqrt{3^2 + 11^2} = 2\sqrt{130}$. By symmetry (the gecko and the fly are exactly opposite each other in the room), the path length is the same if the gecko only travels along the back wall and side walls.
+
+Now suppose the gecko only travels along the ceiling and side walls. These walls unfolded become: [asy]
+draw( (0,0)--(8,0)--(8,10)--(0,10)--cycle ); draw( (8,0)--(20,0) ); draw( (8,10)--(20,10) );
+draw( (20,0)--(28,0)--(28,10)--(20,10)--cycle );
+pair g = (21,9); pair f = (1,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(21,1), red+dashed); draw(g--(21,1), red+dashed);
+label( ""8"", (0,0)--(8,0) ); label( ""12"", (8,0)--(20,0) ); label( ""8"", (20,0)--(28,0) ); label( ""10"", (28,0)--(28,10) );
+[/asy] The path is the hypotenuse of a right triangle with legs 8 and 20, so its length is $\sqrt{8^2 + 20^2} = 2\sqrt{4^2+10^2} = 2\sqrt{116}$. (We'll keep it in this form because it makes it easier to compare with the other cases.)
+
+Finally, the gecko may cross both the ceiling and front wall (or back wall; the cases give the same results by symmetry). The unfolded walls then look like this: [asy]
+draw( (0,0)--(10,0)--(10,8)--(0,8)--cycle );
+draw( (10,0)--(22,0)--(22,8)--(10,8)--(10,18)--(22,18) );
+draw( (22,8)--(30,8)--(30,18)--(22,18)--cycle );
+pair g = (23,17); pair f = (9,1);
+dot(g, green); dot(f, purple);
+draw(g--f, red);
+draw(f--(23,1), red+dashed); draw(g--(23,1), red+dashed);
+label(""10"", (0,0)--(10,0)); label(""12"", (10,0)--(22,0)); label(""8"", (0,0)--(0,8), W);
+
+label(""8"", (22,18)--(30,18), N); label(""10"", (30,18)--(30,8), E);
+[/asy] The path is the hypotenuse of a right triangle with legs 16 and 14, so its length is $\sqrt{16^2+14^2} = 2\sqrt{8^2+7^2} = 2\sqrt{113}$. Of the three cases, this is the smallest, so the answer is $\boxed{2\sqrt{113}}$.",0.0
+38,control,Uncertainty Management,"Since $100 = 50\cdot 2$, there are 50 integers in the set that are divisible by 2.  The numbers among these that are also divisible by 3 are the multiples of 6 in the set.  Dividing 100 by 6 gives $16\frac23$, so there are 16 multiples of 6 in the set, which leaves $50-16 = 34$ multiples of 2 that are not also multiples of 3.  There are 100 numbers in the set so the desired probability is $\dfrac{34}{100} = \boxed{\dfrac{17}{50}}$.",0.0
+38,intervention,Uncertainty Management,"Since $100 = 50\cdot 2$, there are 50 integers in the set that are divisible by 2.  The numbers among these that are also divisible by 3 are the multiples of 6 in the set.  Dividing 100 by 6 gives $16\frac23$, so there are 16 multiples of 6 in the set, which leaves $50-16 = 34$ multiples of 2 that are not also multiples of 3.  There are 100 numbers in the set so the desired probability is $\dfrac{34}{100} = \boxed{\dfrac{17}{50}}$.",0.0
+39,control,Uncertainty Management,The given expression expands to $\frac{1}{b^2} - a^2$.  Thus we want $b$ to have the least possible magnitude and $a$ to also have the least possible magnitude.  Our maximum value is therefore $\frac{1}{3^2} - (-2)^2 = \boxed{-\frac{35}{9}}$.,1.0
+39,intervention,Uncertainty Management,The given expression expands to $\frac{1}{b^2} - a^2$.  Thus we want $b$ to have the least possible magnitude and $a$ to also have the least possible magnitude.  Our maximum value is therefore $\frac{1}{3^2} - (-2)^2 = \boxed{-\frac{35}{9}}$.,0.5
+40,control,Uncertainty Management,"The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.  Therefore, the measure of angle $\angle BAD$ is $180(7-2)/7=\frac{900}7$ degrees and the measure of angle $CAD$ is 90 degrees.  Their difference, $\angle BAC$, measures  \[\frac{900}7-\frac{630}7=\boxed{\frac{270}7\text{ degrees}}.\]",0.0
+40,intervention,Uncertainty Management,"The measure of each interior angle in a regular $n$-gon is $180(n-2)/n$ degrees.  Therefore, the measure of angle $\angle BAD$ is $180(7-2)/7=\frac{900}7$ degrees and the measure of angle $CAD$ is 90 degrees.  Their difference, $\angle BAC$, measures  \[\frac{900}7-\frac{630}7=\boxed{\frac{270}7\text{ degrees}}.\]",0.0
+41,control,Uncertainty Management,"The number of $1\times1$ squares in the diagram is $2(n-1)$, the number of $2\times 2$ squares is $n-2$, and the number of $\sqrt{2} \times \sqrt{2}$ squares is also $n-2$ (see diagram).  Solving \[
+2(n-1)+n-2+n-2=70
+\] we find $n=\boxed{19}$.
+
+[asy]
+unitsize(5mm);
+defaultpen(linewidth(.7pt)+fontsize(8pt));
+dotfactor=4;
+
+int i,j;
+
+for(i=0;i<=10;i=i+1)
+
+for(j=0;j<=2;j=j+1)
+
+{
+
+dot((i,j));
+
+}
+
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+draw((3,0)--(5,0)--(5,2)--(3,2)--cycle);
+draw((7,1)--(8,2)--(9,1)--(8,0)--cycle); [/asy]",0.0
+41,intervention,Uncertainty Management,"The number of $1\times1$ squares in the diagram is $2(n-1)$, the number of $2\times 2$ squares is $n-2$, and the number of $\sqrt{2} \times \sqrt{2}$ squares is also $n-2$ (see diagram).  Solving \[
+2(n-1)+n-2+n-2=70
+\] we find $n=\boxed{19}$.
+
+[asy]
+unitsize(5mm);
+defaultpen(linewidth(.7pt)+fontsize(8pt));
+dotfactor=4;
+
+int i,j;
+
+for(i=0;i<=10;i=i+1)
+
+for(j=0;j<=2;j=j+1)
+
+{
+
+dot((i,j));
+
+}
+
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+draw((3,0)--(5,0)--(5,2)--(3,2)--cycle);
+draw((7,1)--(8,2)--(9,1)--(8,0)--cycle); [/asy]",0.25
+42,control,Uncertainty Management,"Squaring $y=x^2-8$, we obtain $y^2=x^4-16x^2+64$. Setting the right-hand sides equal to each other, we find \begin{align*}
+-5x+44&=x^4-16x^2+64\quad\Rightarrow\\
+0&=x^4-16x^2+5x+20\quad\Rightarrow\\
+&=x^2(x^2-16)+5(x+4)\quad\Rightarrow\\
+&=x^2(x-4)(x+4)+5(x+4)\quad\Rightarrow\\
+&=(x+4)(x^3-4x^2+5).
+\end{align*} Therefore, one of the solutions has an $x$-value of $-4$. Then there is the polynomial $x^3-4x^2+5$. The only possible rational roots are now $\pm1$ and $\pm5$. Using synthetic or long division, it can be determined that $(x+1)$ is a factor: \[(x+1)(x^2-5x+5)=x^3-4x^2+5\] Therefore, one of the solutions has an $x$-value of $-1$. Because $x^2-5x+5$ does not factor easily, we use the quadratic formula to get \begin{align*}
+x&=\frac{5\pm\sqrt{25-4\cdot1\cdot5}}{2}\quad\Rightarrow\\
+&=\frac{5\pm\sqrt{5}}{2}.
+\end{align*} The four values for $x$ are then $-4, -1, \frac{5\pm\sqrt{5}}{2}$. Squaring each: \[(-4)^2=16\] \[(-1)^2=1\] \[\left(\frac{5+\sqrt{5}}{2}\right)^2=\frac{25+10\sqrt{5}+5}{4}=\frac{15+5\sqrt{5}}{2}\] \[\left(\frac{5-\sqrt{5}}{2}\right)^2=\frac{25-10\sqrt{5}+5}{4}=\frac{15-5\sqrt{5}}{2}\] And subtracting $8$: \[16-8=8\] \[1-8=-7\] \[\frac{15+5\sqrt{5}}{2}-\frac{16}{2}=\frac{-1+5\sqrt{5}}{2}\] \[\frac{15-5\sqrt{5}}{2}-\frac{16}{2}=\frac{-1-5\sqrt{5}}{2}\] Therefore, the four solutions are $$(-4,8),(-1,-7),$$ $$\left(\frac{5+\sqrt{5}}{2},\frac{-1+5\sqrt{5}}{2}\right),\left(\frac{5-\sqrt{5}}{2},\frac{-1-5\sqrt{5}}{2}\right).$$
+
+Multiplying the $y$-coordinates: \[8\cdot-7\cdot\frac{-1+5\sqrt{5}}{2}\cdot\frac{-1-5\sqrt{5}}{2}=\frac{-56(1-25\cdot5)}{4}=\boxed{1736}.\]",0.0
+42,intervention,Uncertainty Management,"Squaring $y=x^2-8$, we obtain $y^2=x^4-16x^2+64$. Setting the right-hand sides equal to each other, we find \begin{align*}
+-5x+44&=x^4-16x^2+64\quad\Rightarrow\\
+0&=x^4-16x^2+5x+20\quad\Rightarrow\\
+&=x^2(x^2-16)+5(x+4)\quad\Rightarrow\\
+&=x^2(x-4)(x+4)+5(x+4)\quad\Rightarrow\\
+&=(x+4)(x^3-4x^2+5).
+\end{align*} Therefore, one of the solutions has an $x$-value of $-4$. Then there is the polynomial $x^3-4x^2+5$. The only possible rational roots are now $\pm1$ and $\pm5$. Using synthetic or long division, it can be determined that $(x+1)$ is a factor: \[(x+1)(x^2-5x+5)=x^3-4x^2+5\] Therefore, one of the solutions has an $x$-value of $-1$. Because $x^2-5x+5$ does not factor easily, we use the quadratic formula to get \begin{align*}
+x&=\frac{5\pm\sqrt{25-4\cdot1\cdot5}}{2}\quad\Rightarrow\\
+&=\frac{5\pm\sqrt{5}}{2}.
+\end{align*} The four values for $x$ are then $-4, -1, \frac{5\pm\sqrt{5}}{2}$. Squaring each: \[(-4)^2=16\] \[(-1)^2=1\] \[\left(\frac{5+\sqrt{5}}{2}\right)^2=\frac{25+10\sqrt{5}+5}{4}=\frac{15+5\sqrt{5}}{2}\] \[\left(\frac{5-\sqrt{5}}{2}\right)^2=\frac{25-10\sqrt{5}+5}{4}=\frac{15-5\sqrt{5}}{2}\] And subtracting $8$: \[16-8=8\] \[1-8=-7\] \[\frac{15+5\sqrt{5}}{2}-\frac{16}{2}=\frac{-1+5\sqrt{5}}{2}\] \[\frac{15-5\sqrt{5}}{2}-\frac{16}{2}=\frac{-1-5\sqrt{5}}{2}\] Therefore, the four solutions are $$(-4,8),(-1,-7),$$ $$\left(\frac{5+\sqrt{5}}{2},\frac{-1+5\sqrt{5}}{2}\right),\left(\frac{5-\sqrt{5}}{2},\frac{-1-5\sqrt{5}}{2}\right).$$
+
+Multiplying the $y$-coordinates: \[8\cdot-7\cdot\frac{-1+5\sqrt{5}}{2}\cdot\frac{-1-5\sqrt{5}}{2}=\frac{-56(1-25\cdot5)}{4}=\boxed{1736}.\]",0.0
+43,control,Uncertainty Management,"We use the formula $\left(\frac{\text{first term}}{1-(\text{common ratio})}\right)$ for the sum of a geometric series to get the sum $\left(\frac{4}{1-\frac{3}{a}}\right)=\frac{4}{\frac{a-3}{a}}=\frac{4a}{a-3}$. We want $\frac{4a}{a-3}$ to be a perfect square $b^2$, where $b$ is a positive integer. So we have $4a=b^2(a-3)$ and start trying values for $b$ until we get a positive integer $a$.
+If $b=1$, then $4a=a-3$, but that means $a=-1$.
+If $b=2$, then $4a=4(a-3)\qquad\Rightarrow 0=-12$.
+If $b=3$, then $4a=9(a-3)\qquad\Rightarrow -5a=-27$, which doesn't yield an integer value for $a$.
+If $b=4$, then $4a=16(a-3)\qquad\Rightarrow -12a=-48$, so $a=\boxed{4}$, which is a positive integer.
+
+OR
+
+For an infinite geometric series to converge, the common ratio must be between $-1$ and $1$. Thus $\frac{3}{a}$ must be less than 1, which means $a$ is greater than 3. We try $a=4$ and get that $\left(\frac{4}{1-\frac{3}{4}}\right)=\left(\frac{4}{\frac{1}{4}}\right)=4\cdot4=16$, which is a perfect square.",0.9375
+43,intervention,Uncertainty Management,"We use the formula $\left(\frac{\text{first term}}{1-(\text{common ratio})}\right)$ for the sum of a geometric series to get the sum $\left(\frac{4}{1-\frac{3}{a}}\right)=\frac{4}{\frac{a-3}{a}}=\frac{4a}{a-3}$. We want $\frac{4a}{a-3}$ to be a perfect square $b^2$, where $b$ is a positive integer. So we have $4a=b^2(a-3)$ and start trying values for $b$ until we get a positive integer $a$.
+If $b=1$, then $4a=a-3$, but that means $a=-1$.
+If $b=2$, then $4a=4(a-3)\qquad\Rightarrow 0=-12$.
+If $b=3$, then $4a=9(a-3)\qquad\Rightarrow -5a=-27$, which doesn't yield an integer value for $a$.
+If $b=4$, then $4a=16(a-3)\qquad\Rightarrow -12a=-48$, so $a=\boxed{4}$, which is a positive integer.
+
+OR
+
+For an infinite geometric series to converge, the common ratio must be between $-1$ and $1$. Thus $\frac{3}{a}$ must be less than 1, which means $a$ is greater than 3. We try $a=4$ and get that $\left(\frac{4}{1-\frac{3}{4}}\right)=\left(\frac{4}{\frac{1}{4}}\right)=4\cdot4=16$, which is a perfect square.",1.0
+44,control,Uncertainty Management,"Let
+\[S = \frac{c}{a} + \frac{a}{b + c} + \frac{b}{c}.\]Then
+\[S + 1 = \frac{c}{a} + \frac{a}{b + c} + \frac{b}{c} + 1 = \frac{c}{a} + \frac{a}{b + c} + \frac{b + c}{c}.\]By AM-GM,
+\begin{align*}
+S + 1 &= \frac{c}{a} + \frac{a}{b + c} + \frac{b + c}{c} \\
+&\ge 3 \sqrt[3]{\frac{c}{a} \cdot \frac{a}{b + c} \cdot \frac{b + c}{c}} \\
+&= 3.
+\end{align*}Note that equality occurs if and only if
+\[\frac{c}{a} = \frac{a}{b + c} = \frac{b + c}{c} = 1.\]Since $b$ and $c$ are positive,
+\[\frac{b + c}{c} > 1,\]which tells us that equality cannot occur.  Therefore, $S + 1 > 3,$ which means $S > 2.$
+
+We claim that $S$ can take on all real numbers that are greater than 2.  Let $c = a,$ so
+\[S = 1 + \frac{a}{b + a} + \frac{b}{a}.\]As $b$ approaches 0, this expression approaches 2.  This tells us that we can make this expression arbitrarily close to 2 as we want.
+
+On the other hand, as $b$ becomes very large, the expression also becomes very large.  This tells us that can we can make this expression arbitrarily large.  Hence, by a continuity argument, $S$ can take on all values in $\boxed{(2,\infty)}.$",0.0
+44,intervention,Uncertainty Management,"Let
+\[S = \frac{c}{a} + \frac{a}{b + c} + \frac{b}{c}.\]Then
+\[S + 1 = \frac{c}{a} + \frac{a}{b + c} + \frac{b}{c} + 1 = \frac{c}{a} + \frac{a}{b + c} + \frac{b + c}{c}.\]By AM-GM,
+\begin{align*}
+S + 1 &= \frac{c}{a} + \frac{a}{b + c} + \frac{b + c}{c} \\
+&\ge 3 \sqrt[3]{\frac{c}{a} \cdot \frac{a}{b + c} \cdot \frac{b + c}{c}} \\
+&= 3.
+\end{align*}Note that equality occurs if and only if
+\[\frac{c}{a} = \frac{a}{b + c} = \frac{b + c}{c} = 1.\]Since $b$ and $c$ are positive,
+\[\frac{b + c}{c} > 1,\]which tells us that equality cannot occur.  Therefore, $S + 1 > 3,$ which means $S > 2.$
+
+We claim that $S$ can take on all real numbers that are greater than 2.  Let $c = a,$ so
+\[S = 1 + \frac{a}{b + a} + \frac{b}{a}.\]As $b$ approaches 0, this expression approaches 2.  This tells us that we can make this expression arbitrarily close to 2 as we want.
+
+On the other hand, as $b$ becomes very large, the expression also becomes very large.  This tells us that can we can make this expression arbitrarily large.  Hence, by a continuity argument, $S$ can take on all values in $\boxed{(2,\infty)}.$",0.0
+45,control,Uncertainty Management,"The messy parts of the functions are irrelevant. All that matters for intersection is whether $f(x)-g(x)=0$. As $g(x)-f(x)=x^3-5x^2-8x+12=(x-6)(x+2)(x-1)$, the largest value of $x$ at which the graphs intersect is $x=\boxed{6}$.",1.0
+45,intervention,Uncertainty Management,"The messy parts of the functions are irrelevant. All that matters for intersection is whether $f(x)-g(x)=0$. As $g(x)-f(x)=x^3-5x^2-8x+12=(x-6)(x+2)(x-1)$, the largest value of $x$ at which the graphs intersect is $x=\boxed{6}$.",0.3125
+46,control,Uncertainty Management,"To save the most rope, we must have $HP$ having minimum length.
+For $HP$ to have minimum length, $HP$ must be perpendicular to $CD$. [asy]
+pair C, D, H, P;
+H=(90,120);
+C=(0,0);
+D=(140,0);
+P=(90,0);
+draw(H--C--D--H--P);
+label(""H"", H, N);
+label(""C"", C, SW);
+label(""D"", D, SE);
+label(""P"", P, S);
+label(""150"", (C+H)/2, NW);
+label(""130"", (D+H)/2, NE);
+[/asy] (Among other things, we can see from this diagram that sliding $P$ away from the perpendicular position does make $HP$ longer.)
+In the diagram, $HC=150$, $HD=130$ and $CD=140$.
+Let $HP=x$ and $PD=a$.  Then $CP=140-a$.
+By the Pythagorean Theorem in $\triangle HPC$, $x^2 + (140-a)^2 = 150^2$.
+By the Pythagorean Theorem in $\triangle HPD$, $x^2+a^2 = 130^2$.
+Subtracting the second equation from the first, we obtain \begin{align*}
+(140-a)^2 - a^2 & = 150^2 - 130^2 \\
+(19600 - 280a+a^2)-a^2 & = 5600 \\
+19600 -280a & = 5600 \\
+280a & = 14000 \\
+a & = 50
+\end{align*} Therefore, $x^2 + 90^2 = 150^2$ or $x^2 = 150^2 - 90^2 = 22500 - 8100 = 14400$ so $x =120$.
+So the shortest possible rope that we can use is 120 m, which saves $130+150-120 = \boxed{160}$ m of rope.",0.0
+46,intervention,Uncertainty Management,"To save the most rope, we must have $HP$ having minimum length.
+For $HP$ to have minimum length, $HP$ must be perpendicular to $CD$. [asy]
+pair C, D, H, P;
+H=(90,120);
+C=(0,0);
+D=(140,0);
+P=(90,0);
+draw(H--C--D--H--P);
+label(""H"", H, N);
+label(""C"", C, SW);
+label(""D"", D, SE);
+label(""P"", P, S);
+label(""150"", (C+H)/2, NW);
+label(""130"", (D+H)/2, NE);
+[/asy] (Among other things, we can see from this diagram that sliding $P$ away from the perpendicular position does make $HP$ longer.)
+In the diagram, $HC=150$, $HD=130$ and $CD=140$.
+Let $HP=x$ and $PD=a$.  Then $CP=140-a$.
+By the Pythagorean Theorem in $\triangle HPC$, $x^2 + (140-a)^2 = 150^2$.
+By the Pythagorean Theorem in $\triangle HPD$, $x^2+a^2 = 130^2$.
+Subtracting the second equation from the first, we obtain \begin{align*}
+(140-a)^2 - a^2 & = 150^2 - 130^2 \\
+(19600 - 280a+a^2)-a^2 & = 5600 \\
+19600 -280a & = 5600 \\
+280a & = 14000 \\
+a & = 50
+\end{align*} Therefore, $x^2 + 90^2 = 150^2$ or $x^2 = 150^2 - 90^2 = 22500 - 8100 = 14400$ so $x =120$.
+So the shortest possible rope that we can use is 120 m, which saves $130+150-120 = \boxed{160}$ m of rope.",0.0
+47,control,Uncertainty Management,"The only way for the sum of the numbers Paul and Jesse choose to be odd is if one of them chooses 2 and the other chooses an odd prime. There are five ways for Paul to choose 2 and Jesse to choose an odd prime, and there are five ways for Jesse to choose 2 and Paul to choose an odd prime. Since there are $6\cdot 6=36$ total possible ways for Paul and Jesse to choose their numbers, the probability that the sum of the numbers Paul and Jesse choose is NOT even is $\frac{10}{36}=\frac{5}{18}$. Therefore, the probability that the sum of the numbers Paul and Jesse choose IS even is $1-\frac{5}{18}=\boxed{\frac{13}{18}}$.",0.5
+47,intervention,Uncertainty Management,"The only way for the sum of the numbers Paul and Jesse choose to be odd is if one of them chooses 2 and the other chooses an odd prime. There are five ways for Paul to choose 2 and Jesse to choose an odd prime, and there are five ways for Jesse to choose 2 and Paul to choose an odd prime. Since there are $6\cdot 6=36$ total possible ways for Paul and Jesse to choose their numbers, the probability that the sum of the numbers Paul and Jesse choose is NOT even is $\frac{10}{36}=\frac{5}{18}$. Therefore, the probability that the sum of the numbers Paul and Jesse choose IS even is $1-\frac{5}{18}=\boxed{\frac{13}{18}}$.",0.9375
+48,control,Uncertainty Management,"Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then
+\[\frac{x - y}{x^4 + y^4 + 6} = \frac{x + z}{x^4 + z^4 + 6}.\]By AM-GM,
+\[x^4 + 1 + 1 + 1 \ge 4 \sqrt[4]{x^4} = 4x,\]and
+\[z^4 + 1 + 1 + 1 \ge 4 \sqrt[4]{z^4} = 4z.\]Then $x^4 + z^4 + 6 \ge 4(x + z),$ which implies
+\[\frac{x + z}{x^4 + z^4 + 6} \le \frac{1}{4}.\]Equality occurs when $x = z = 1,$ so the maximum value is $\boxed{\frac{1}{4}}.$",0.375
+48,intervention,Uncertainty Management,"Clearly, the maximum occurs when $x$ is positive and $y$ is negative.  Let $z = -y,$ so $z$ is positive, and $y = -z.$  Then
+\[\frac{x - y}{x^4 + y^4 + 6} = \frac{x + z}{x^4 + z^4 + 6}.\]By AM-GM,
+\[x^4 + 1 + 1 + 1 \ge 4 \sqrt[4]{x^4} = 4x,\]and
+\[z^4 + 1 + 1 + 1 \ge 4 \sqrt[4]{z^4} = 4z.\]Then $x^4 + z^4 + 6 \ge 4(x + z),$ which implies
+\[\frac{x + z}{x^4 + z^4 + 6} \le \frac{1}{4}.\]Equality occurs when $x = z = 1,$ so the maximum value is $\boxed{\frac{1}{4}}.$",0.3125
+49,control,Uncertainty Management,"First, we factor $10!:$
+\begin{align*} 10!&=10\cdot 9\cdot 8\cdot 7 \cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1\\ &=2^8\cdot 3^4 \cdot 5^2 \cdot 7.\end{align*}
+Hence, $x$ can be $1, 2^1, 2^2, 3, 2^1\cdot 3,\text{ or }2^2\cdot 3$ for a total of $\boxed{6}$ possible values of $x.$",0.6875
+49,intervention,Uncertainty Management,"First, we factor $10!:$
+\begin{align*} 10!&=10\cdot 9\cdot 8\cdot 7 \cdot 6\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1\\ &=2^8\cdot 3^4 \cdot 5^2 \cdot 7.\end{align*}
+Hence, $x$ can be $1, 2^1, 2^2, 3, 2^1\cdot 3,\text{ or }2^2\cdot 3$ for a total of $\boxed{6}$ possible values of $x.$",0.875

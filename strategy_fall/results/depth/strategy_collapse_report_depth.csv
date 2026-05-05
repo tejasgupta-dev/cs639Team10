@@ -1,0 +1,3 @@
+model,mean_strategy_entropy,mean_branching_factor,avg_unique_paths
+DeepSeek-depth,5.626,5.467,49.64
+Qwen-Instruct-depth,5.476,4.472,46.82
