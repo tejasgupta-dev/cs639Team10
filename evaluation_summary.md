@@ -1,6 +1,6 @@
 # Evaluation Summary
 
-_Generated: 2026-05-03 16:48_
+_Generated: 2026-05-05 22:31_
 
 ## Structural metrics — GSM8K (q1000)
 
